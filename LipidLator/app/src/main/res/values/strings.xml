@@ -3,7 +3,9 @@
     <string name="tvLipidClass">Lipid Class</string>
     <string name="tvIon">Ion</string>
     <string name="tvAcylChain">Acyl Chain</string>
+    <string name="btnSubmit">Submit</string>
     <string-array name="lipid_class_array">
+        <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
         <item>Wax esters</item>
         <item>Acyl Carnitines</item>
