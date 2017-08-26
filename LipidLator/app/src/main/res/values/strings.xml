@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Lipid-lator</string>
+    <string name="tvLipidClass">Lipid Class</string>
+    <string name="tvIon">Ion</string>
+    <string name="tvAcylChain">Acyl Chain</string>
+    <string-array name="lipid_class_array">
+        <item>Fatty Acids</item>
+        <item>Wax esters</item>
+        <item>Acyl Carnitines</item>
+        <item>CoA esters</item>
+        <item>Glycerolipids</item>
+        <item>Glycerophospholipids</item>
+        <item>Cardiolipins</item>
+        <item>Sphingolipids</item>
+        <item>Cholesteryl esters</item>
+    </string-array>
+    <string-array name="ion_array">
+        <item>[M+H]+</item>
+        <item>[M+H-H2O]+</item>
+        <item>[M+2H]2+</item>
+        <item>[M+3H]3+</item>
+        <item>[M+4H]4+</item>
+        <item>[M+K]+</item>
+        <item>[M+2K]2+</item>
+        <item>[M+2K-H]+</item>
+        <item>[M+Na]+</item>
+        <item>[M+2Na]2+</item>
+        <item>[M+2Na-H]+</item>
+        <item>[M+Li]+</item>
+        <item>[M+2Li]2+</item>
+        <item>[M+Ag]+</item>
+        <item>[M+NH4]+</item>
+        <item>[M-H]-</item>
+        <item>[M-CH3]-</item>
+        <item>[M-2H]2-</item>
+        <item>[M-3H]3-</item>
+        <item>[M-4H]4-</item>
+        <item>[M+Cl]-</item>
+        <item>[M+OAc]-</item>
+        <item>[M+Formate]-</item>
+        <item>M(neutral)</item>
+    </string-array>
+    <string-array name="ratios_array">
+        <item>2:0</item>
+        <item>4:0</item>
+        <item>6:0</item>
+        <item>8:0</item>
+        <item>10:0</item>
+        <item>12:0</item>
+        <item>13:0</item>
+        <item>14:0</item>
+        <item>14:1(9Z)</item>
+        <item>15:0</item>
+        <item>15:1(9Z)</item>
+        <item>16:0</item>
+        <item>16:1(9Z)</item>
+        <item>17:0</item>
+        <item>17:1(9Z)</item>
+        <item>17:2(9Z,12Z)</item>
+        <item>18:0</item>
+        <item>18:1(11E)</item>
+        <item>18:1(9Z)</item>
+        <item>18:2(9Z,12Z)</item>
+        <item>18:3(6Z,9Z,12Z)</item>
+        <item>18:3(9Z,12Z,15Z)</item>
+        <item>18:4(6Z,9Z,12Z,15Z)</item>
+        <item>19:0</item>
+        <item>20:0</item>
+        <item>20:1(11Z)</item>
+        <item>20:2(11Z,14Z)</item>
+        <item>20:3(8Z,11Z,14Z)</item>
+        <item>20:4(5Z,8Z,11Z,14Z)</item>
+        <item>20:5(5Z,8Z,11Z,14Z,17Z)</item>
+        <item>21:0</item>
+        <item>22:0</item>
+        <item>22:1(11Z)</item>
+        <item>22:2(13Z,16Z)</item>
+        <item>22:3(10Z,13Z,16Z)</item>
+        <item>22:4(7Z,10Z,13Z,16Z)</item>
+        <item>22:5(7Z,10Z,13Z,16Z,19Z)</item>
+        <item>22:6(4Z,7Z,10Z,13Z,16Z,19Z)</item>
+        <item>23:0</item>
+        <item>24:0</item>
+        <item>24:1(15Z)</item>
+        <item>25:0</item>
+        <item>26:0</item>
+    </string-array>
+</resources>
