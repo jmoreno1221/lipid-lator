@@ -1,1 +1,17 @@
 Jessica Testing
+---------------
+cd desktop
+cd lipidlator
+ls
+cd lipid-lator
+ls
+git pull
+
+// When you have a file or folder to add
+-------------
+git status
+git add _YourFileName_
+git commit -m "a msg"
+git push
+
+- Repeat.
