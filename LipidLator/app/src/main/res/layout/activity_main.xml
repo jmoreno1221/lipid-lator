@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnLipid"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -42,11 +42,11 @@
         android:text="@string/tvIon"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spnLipid"
         tools:ignore="HardcodedText" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spnIon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -69,11 +69,11 @@
         android:text="@string/tvAcylChain"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/spnIon"
         android:layout_marginStart="8dp" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/spnAcyl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"

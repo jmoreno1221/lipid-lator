@@ -4,6 +4,11 @@
     <string name="tvIon">Ion</string>
     <string name="tvAcylChain">Acyl Chain</string>
     <string name="btnSubmit">Submit</string>
+    <string name="tvResults">Results</string>
+    <string name="tvAbbreviation">Abbreviation</string>
+    <string name="tvFormula">Formula</string>
+    <string name="tvMolar_mass">Molar Mass</string>
+    <string name="btnGo_back">Go Back</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
@@ -41,6 +46,31 @@
         <item>[M+OAc]-</item>
         <item>[M+Formate]-</item>
         <item>M(neutral)</item>
+    </string-array>
+    <string-array name="ion_array_values">
+        <item>"MplusH"</item>
+        <item>"MplusH-H2O"</item>
+        <item>"Mplus2H"</item>
+        <item>"Mplus3H"</item>
+        <item>"Mplus4H"</item>
+        <item>"MplusNH4"</item>
+        <item>"MplusAg"</item>
+        <item>"MplusNa"</item>
+        <item>"Mplus2Na"</item>
+        <item>"Mplus2Na-H"</item>
+        <item>"MplusK"</item>
+        <item>"Mplus2K"</item>
+        <item>"Mplus2K-H"</item>
+        <item>"MplusLi"</item>
+        <item>"Mplus2Li"</item>
+        <item>"M-H"</item>
+        <item>"M-CH3"</item>
+        <item>"M-2H"</item>
+        <item>"M-3H"</item>
+        <item>"M-4H"</item>
+        <item>"M.Cl"</item>
+        <item>"M.OAc"</item>
+        <item>"M.Formate"</item>
     </string-array>
     <string-array name="ratios_array">
         <item>2:0</item>
