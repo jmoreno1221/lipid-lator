@@ -4,86 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
     tools:context="com.example.onerom.lipidlator.SelectionActivity">
 
     <Button
         android:id="@+id/btnBotMid"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        android:text="SL"
+        android:textSize="50sp"
         app:layout_constraintLeft_toRightOf="@+id/btnBotLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnCenter" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCenter"
+        app:layout_constraintRight_toLeftOf="@+id/btnBotRight"
+        android:layout_marginRight="32dp" />
 
     <Button
         android:id="@+id/btnBotLeft"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
+        android:text="CL"
+        android:textSize="50sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMidLeft" />
 
     <Button
         android:id="@+id/btnBotRight"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintLeft_toRightOf="@+id/btnBotMid"
-        app:layout_constraintTop_toBottomOf="@+id/btnMidRight" />
+        android:text="CE"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnMidRight"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/btnMidRight"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintLeft_toRightOf="@+id/btnCenter"
-        app:layout_constraintTop_toBottomOf="@+id/btnTopRight" />
+        android:text="GP"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopRight"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/btnCenter"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        android:text="GL"
+        android:textSize="50sp"
         app:layout_constraintLeft_toRightOf="@+id/btnMidLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnTopMid" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTopMid"
+        app:layout_constraintRight_toLeftOf="@+id/btnMidRight"
+        android:layout_marginRight="32dp" />
 
     <Button
         android:id="@+id/btnTopMid"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        android:text="WE"
+        android:textSize="50sp"
         app:layout_constraintLeft_toRightOf="@+id/btnTopLeft"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnTopRight"
+        android:layout_marginRight="32dp" />
 
     <Button
         android:id="@+id/btnTopLeft"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
+        android:text="FA"
+        android:textSize="50sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnTopRight"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintLeft_toRightOf="@+id/btnTopMid"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="AC"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/btnMidLeft"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
+        android:text="CA"
+        android:textSize="50sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTopLeft" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wax Esters"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCenter"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopMid"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Fatty Acids"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnMidLeft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopLeft"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/textView3"
+        android:layout_marginRight="16dp" />
 </android.support.constraint.ConstraintLayout>
