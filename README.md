@@ -17,3 +17,8 @@
     Jessica Sok
     1. Documentation Lead
     2. Data Modeler
+	
+	Joseph Tsegaye
+	1. Testing lead
+	2. Code Architecture/Lead Programmer
+	
