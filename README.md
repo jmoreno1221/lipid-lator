@@ -21,4 +21,8 @@
 	Joseph Tsegaye
 	1. Testing lead
 	2. Code Architecture/Lead Programmer
+    
+    Jose Moreno
+    1. UI/UX Design
+    2. Team Manager/Client Liaison
 	
