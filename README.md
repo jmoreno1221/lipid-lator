@@ -1,5 +1,5 @@
 ## 1. Team & Project Name 
-- **Team Name**: _Team Triple J_**
+- **Team Name**: _Team Triple J_
 - **Project Name**: Lipid-lator
   
 ## 2. Repo Location URL
@@ -25,4 +25,3 @@
     Jose Moreno
     1. UI/UX Design
     2. Team Manager/Client Liaison
-	
