@@ -9,18 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainLoading"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".ResultsActivity" />
-        <activity android:name=".SelectionActivity">     <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CholesterolEstersActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

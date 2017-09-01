@@ -19,7 +19,7 @@ public class MainLoading extends Activity {
         tv = (TextView) findViewById(R.id.tvName);
         Animation myanimation = AnimationUtils.loadAnimation(this, R.anim.mytransition);
         tv.startAnimation(myanimation);
-        final Intent i = new Intent(this, MainActivity.class);
+        final Intent i = new Intent(this, SelectionActivity.class);
         Thread timer = new Thread(){
             public void run() {
                 try {
