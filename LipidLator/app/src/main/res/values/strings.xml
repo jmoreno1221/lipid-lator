@@ -117,4 +117,23 @@
         <item>25:0</item>
         <item>26:0</item>
     </string-array>
+    <string-array name="headGroup_array_values">
+        <item>"unsubstituted(Ceramide)"</item>
+        <item>"Sphingomyelin"</item>
+        <item>"1-phosphate"</item>
+        <item>"1-phosphoethanolamine"</item>
+        <item>"1-phosphoinositol"</item>
+        <item>"Glucosyl"</item>
+        <item>"Galactosy"</item>
+        <item>"Lactosyl"</item>
+        <item>"GM3(NeuAca1-3Galb1-4Glcb)"</item>
+        <item>"GM4(NeuAca1-3Galb)"</item>
+        <item>"GB3(Gala1-4Galb1-4Glcb)"</item>
+        <item>"iGB3(Gala1-3Galb1-4Glcb)"</item>
+        <item>"asialo-GM2(GalNAcb1-4Galb1-4Glcb)"</item>
+        <item>"Lc3(GlcNAcb1-4Galb1-4Glcb)"</item>
+        <item>"Manb1-4Glc"</item>
+        <item>"Mollu(Manb1-3Manb1-4Glcb)"</item>
+        <item>"Arthro(GlcNAcb1-4Manb1-Glc)"</item>
+    </string-array>
 </resources>
