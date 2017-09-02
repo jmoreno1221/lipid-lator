@@ -9,6 +9,11 @@
     <string name="tvFormula">Formula</string>
     <string name="tvMolar_mass">Molar Mass</string>
     <string name="btnGo_back">Go Back</string>
+    <string name="fatty_acids">Fatty Acids</string>
+    <string name="acid_label">Acid:</string>
+    <string name="calculate_btn">Calculate</string>
+    <string name="ester_label">Ester:</string>
+    <string name="ion_label">Ion:</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
@@ -135,5 +140,10 @@
         <item>"Manb1-4Glc"</item>
         <item>"Mollu(Manb1-3Manb1-4Glcb)"</item>
         <item>"Arthro(GlcNAcb1-4Manb1-Glc)"</item>
+    </string-array>
+    <string-array name="ester_array_values">
+        <item>"Free acid"</item>
+        <item>"Methyl ester"</item>
+        <item>"Pentafluorobenzyl ester"</item>
     </string-array>
 </resources>

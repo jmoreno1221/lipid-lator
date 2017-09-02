@@ -15,9 +15,7 @@
         <activity
             android:name=".MainLoading"
             android:noHistory="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -32,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FattyAcidsActivity"></activity>
     </application>
 
 </manifest>
