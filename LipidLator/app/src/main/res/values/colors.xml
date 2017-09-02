@@ -5,6 +5,9 @@
     <color name="colorAccent">#64dd17</color>
     <color name="black">#000000</color>
     <color name="red">#FF0000</color>
+    <color name="lightblue">#99ccff</color>
+    <color name="darkblue">#0073e6</color>
+    <color name="orange">#ffcc66</color>
     <color name="darkteal">#458A79</color>
     <color name="buttoncolor">#D4D46A</color>
 </resources>
