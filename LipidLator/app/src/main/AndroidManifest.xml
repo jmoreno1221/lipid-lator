@@ -26,11 +26,9 @@
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SelectionActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".CholesterolEstersActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".CholesterolEstersActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HomeSelectionActivity"></activity>
     </application>
 
 </manifest>

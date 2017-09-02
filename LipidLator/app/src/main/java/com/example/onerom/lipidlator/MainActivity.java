@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import static com.example.onerom.lipidlator.R.id.parent;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
