@@ -14,6 +14,8 @@
     <string name="calculate_btn">Calculate</string>
     <string name="ester_label">Ester:</string>
     <string name="ion_label">Ion:</string>
+    <string name="ionTV">Ion:</string>
+    <string name="waxEstersTitle">Wax Esters</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>

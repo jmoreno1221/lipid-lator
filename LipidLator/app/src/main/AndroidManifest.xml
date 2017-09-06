@@ -15,7 +15,7 @@
         <activity
             android:name=".MainLoading"
             android:noHistory="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" /> // ADD THIS TO ALL ACTIVITY SCREENS!
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -24,13 +24,17 @@
             android:screenOrientation="portrait" />
         <activity android:name=".HomeSelectionActivity" />
         <activity android:name=".SphingolipidsActivity">
+
+        </activity>
+        <activity android:name=".FattyAcidsActivity" />
+        <activity android:name=".WaxEstersActivity">
+            // Move this to Screen you want to load first for testing!
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FattyAcidsActivity"></activity>
     </application>
 
 </manifest>
