@@ -15,7 +15,8 @@
         <activity
             android:name=".MainLoading"
             android:noHistory="true"
-            android:screenOrientation="portrait" /> // ADD THIS TO ALL ACTIVITY SCREENS!
+            android:screenOrientation="portrait" />
+        // ADD THIS TO ALL ACTIVITY SCREENS!
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -23,18 +24,35 @@
             android:name=".CholesterolEstersActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".HomeSelectionActivity" />
-        <activity android:name=".SphingolipidsActivity">
+        <activity android:name=".SphingolipidsActivity" />
 
-        </activity>
-        <activity android:name=".FattyAcidsActivity" />
-        <activity android:name=".WaxEstersActivity">
+
+        /* Jessica Sok: Fatty acids, Wax esters, Acyl carnitines, CoA esters, and Glycerolipids */
+
+        // 1. Fatty acids selection screen
+        <activity android:name=".FattyAcidsActivity">
+
             // Move this to Screen you want to load first for testing!
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            </intent-filter> />
+
+        </activity>>
+
+        // 2. Wax esters selection screen
+        <activity android:name=".WaxEstersActivity"></activity>
+
+        // 3. Acyl carnitines selection screen
+        <activity android:name=".AcylCarnitinesActivity"></activity>
+
+        // 4. CoA esters selection screen
+        <activity android:name=".CoA_EsterActivity"></activity>
+
+        // 5. Glycerolipids selection screen
+        <activity android:name=".GlycerolipidsActivity"></activity>
+
     </application>
 
 </manifest>
