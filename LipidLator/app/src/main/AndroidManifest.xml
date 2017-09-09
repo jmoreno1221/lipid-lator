@@ -16,7 +16,6 @@
             android:name=".MainLoading"
             android:noHistory="true"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -25,39 +24,40 @@
             android:screenOrientation="portrait" />
         <activity android:name=".HomeSelectionActivity" />
         <activity android:name=".SphingolipidsActivity" />
-
-
         /* Jessica Sok: Fatty acids, Wax esters, Acyl carnitines, CoA esters, and Glycerolipids */
 
         // 1. Fatty acids selection screen
-        <activity android:name=".FattyAcidsActivity"
+        <activity
+            android:name=".FattyAcidsActivity"
             android:screenOrientation="portrait">
-
             // Move this to Screen you want to load first for testing!
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> />
-
-        </activity>>
+            </intent-filter>
+            />
+        </activity>
+        >
 
         // 2. Wax esters selection screen
-        <activity android:name=".WaxEstersActivity"
-            android:screenOrientation="portrait" ></activity>
-
+        <activity
+            android:name=".WaxEstersActivity"
+            android:screenOrientation="portrait" />
         // 3. Acyl carnitines selection screen
-        <activity android:name=".AcylCarnitinesActivity"
-            android:screenOrientation="portrait" ></activity>
-
+        <activity
+            android:name=".AcylCarnitinesActivity"
+            android:screenOrientation="portrait" />
         // 4. CoA esters selection screen
-        <activity android:name=".CoA_EsterActivity"
-            android:screenOrientation="portrait" ></activity>
-
+        <activity
+            android:name=".CoA_EsterActivity"
+            android:screenOrientation="portrait" />
         // 5. Glycerolipids selection screen
-        <activity android:name=".GlycerolipidsActivity"
-            android:screenOrientation="portrait" ></activity>
-
+        <activity
+            android:name=".GlycerolipidsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CardiolipinsActivity" />
+        <activity android:name=".Glycerophospholipids_activity"></activity>
     </application>
 
 </manifest>

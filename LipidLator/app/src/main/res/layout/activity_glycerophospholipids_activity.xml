@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.onerom.lipidlator.GlycerolipidsActivity">
+    tools:context="com.example.onerom.lipidlator.Glycerophospholipids_activity">
 
     <TextView
-        android:id="@+id/glycerolipidsTV"
+        android:id="@+id/tvGlycerophospholipids"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Glycerolipids"
+        android:text="Glycerophospholipids"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,77 +23,78 @@
         android:layout_marginEnd="7dp" />
 
     <TextView
-        android:id="@+id/glycerolipidsIonTV"
+        android:id="@+id/tvGlycerophospholipidsIon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ion:"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/glycerolipidsTV"
+        app:layout_constraintTop_toBottomOf="@+id/tvGlycerophospholipids"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
 
     <TextView
-        android:id="@+id/glycerolipidsSN1TV"
+        android:id="@+id/tvGlyHeadGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sn1:"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/spnIon"
-        android:layout_marginStart="8dp" />
-
-    <TextView
-        android:id="@+id/glycerolipidsSn2TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sn2:"
+        android:text="Head Group:"
+        android:entries="@array/gly_headgroup_array_values"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:layout_marginTop="33dp"
-        app:layout_constraintTop_toBottomOf="@+id/spnSn1_1"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/spnGlyIon" />
 
     <TextView
-        android:id="@+id/tvSn3_1"
+        android:id="@+id/tvSn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sn3:"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="sn1(1'):"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/spnSn2_1"
-        android:layout_marginStart="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/spnGlyHeadGroup" />
+
+    <TextView
+        android:id="@+id/tvSn2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="sn2(1'):"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnSn1_1" />
 
     <Button
-        android:id="@+id/glycerolipidsBtn"
+        android:id="@+id/btnGly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:background="@android:color/black"
         android:text="@string/submit"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Spinner
-        android:id="@+id/spnIon"
+        android:id="@+id/spnGlyIon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -102,7 +103,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glycerolipidsIonTV"
+        app:layout_constraintTop_toBottomOf="@+id/tvGlycerophospholipidsIon"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
@@ -116,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glycerolipidsSN1TV"
+        app:layout_constraintTop_toBottomOf="@+id/tvSn1"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
@@ -130,21 +131,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glycerolipidsSn2TV"
+        app:layout_constraintTop_toBottomOf="@+id/tvSn2_1"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
     <Spinner
-        android:id="@+id/glycerolipidsSn3Spn"
+        android:id="@+id/spnGlyHeadGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSn3_1"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvGlyHeadGroup" />
+
 </android.support.constraint.ConstraintLayout>
