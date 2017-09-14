@@ -27,6 +27,12 @@
     <string name="ion">Ion:</string>
     <string name="sn1_1">sn1(1\'):</string>
     <string name="sn2_1">sn2(1\'):</string>
+    <string name="sphingolipids">Sphingolipids</string>
+    <string name="sphingoid_base">Sphingoid Base:</string>
+    <string name="btnsubmit">btnSubmit</string>
+    <string name="head_group_type">Head Groups:</string>
+    <string name="ion_type">Ions:</string>
+    <string name="n_acyl">N-acyl:</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
