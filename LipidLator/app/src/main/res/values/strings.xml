@@ -22,6 +22,11 @@
     <string name="button">Button</string>
     <string name="acyl_carnitines">Acyl carnitines</string>
     <string name="acyl_chain">Acyl chain</string>
+    <string name="glycerophospholipids">Glycerophospholipids</string>
+    <string name="head_group">Head Group:</string>
+    <string name="ion">Ion:</string>
+    <string name="sn1_1">sn1(1\'):</string>
+    <string name="sn2_1">sn2(1\'):</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
