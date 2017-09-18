@@ -33,6 +33,34 @@
     <string name="head_group_type">Head Groups:</string>
     <string name="ion_type">Ions:</string>
     <string name="n_acyl">N-acyl:</string>
+    <string name="cholesteryl_esters">Cholesteryl Esters</string>
+    <string name="abbreviation">Abbreviation:</string>
+    <string name="acyl_chain_chE">Acyl Chain:</string>
+    <string name="calculate_chE">Calculate</string>
+    <string name="ion_chE">Ion:</string>
+    <string name="m_z_ratio_chE">m/z ratio:</string>
+    <string name="cholesteryl_esters_act">Cholesteryl Esters</string>
+    <string name="acyl_chain_chE_act">Acyl Chain:</string>
+    <string name="calculate_chE_act">Calculate</string>
+    <string name="ion_chE_act">Ion:</string>
+    <string name="formula_shingolipids_result">Formula:</string>
+    <string name="cardiolipins">Cardiolipins</string>
+    <string name="ion_cardiolipins">Ion:</string>
+    <string name="sn1_1_cardiolipins">sn1(1\'):</string>
+    <string name="sn1_3_cardiolipins">sn1(3\'):</string>
+    <string name="sn2_1_cardiolipins">sn2(1\'):</string>
+    <string name="sn2_3_cardiolipins">sn2(3\'):</string>
+    <string name="cardiolipins_header">Cardiolipins</string>
+    <string name="ion_cardiolipins_selection">Ion:</string>
+    <string name="cardiolipins_sn1_1_selection">sn1(1\'):</string>
+    <string name="cardiolipins_selection_sn1_3">sn1(3\'):</string>
+    <string name="cardiolipins_selection_sn2_1">sn2(1\'):</string>
+    <string name="cardiolipins_selection_sn2_3">sn2(3\'):</string>
+    <string name="fomula_cardiolipins">Fomula:</string>
+    <string name="m_z_ratios_cardiolipins">m/z ratios:</string>
+    <string name="formula_Glycerophospholipids_result">Formula</string>
+    <string name="Home">Home</string>
+    <string name="m_z_ratio_sphingolipids">m_z_ratio:</string>
     <string-array name="lipid_class_array">
         <item>(Select a lipid)</item>
         <item>Fatty Acids</item>
@@ -267,14 +295,14 @@
 
     <string-array name="gly_headgroup_array_values">
         <item>"PC"</item>
-    <item>"PA"</item>
-    <item>"PS"</item>
-    <item>"PE"</item>
-    <item>"PG"</item>
-    <item>"PGP"</item>
-    <item>"PI"</item>
-    <item>"PIP"</item>
-    <item>"PIP2"</item>
-    <item>"PIP3"</item>
-        </string-array>
+        <item>"PA"</item>
+        <item>"PS"</item>
+        <item>"PE"</item>
+        <item>"PG"</item>
+        <item>"PGP"</item>
+        <item>"PI"</item>
+        <item>"PIP"</item>
+        <item>"PIP2"</item>
+        <item>"PIP3"</item>
+    </string-array>
 </resources>

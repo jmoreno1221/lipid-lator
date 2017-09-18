@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.onerom.lipidlator.SphingolipidsActivity">
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:text="@string/btnGo_back"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnN_acyl"
+        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintRight_toLeftOf="@+id/SphinBtn"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.629" />
+
     <EditText
         android:id="@+id/headSphin"
         android:layout_width="136dp"
@@ -138,21 +160,22 @@
         android:layout_marginEnd="8dp"  />
 
     <Button
-    android:id="@+id/SphinBtn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@android:color/black"
-    android:text="@string/btnsubmit"
-    android:textColor="@android:color/background_light"
-    android:textSize="18sp"
-    android:textStyle="bold"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginRight="8dp"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_marginLeft="8dp"
-    app:layout_constraintLeft_toLeftOf="parent"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp" />
+        android:id="@+id/SphinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/black"
+        android:text="@string/submit"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.632" />
 
 </android.support.constraint.ConstraintLayout>

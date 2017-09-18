@@ -20,10 +20,8 @@
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CholesterolEstersActivity"
+            android:name=".HomeSelectionActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".HomeSelectionActivity" />
-        <activity android:name=".SphingolipidsActivity" />
         /* Jessica Sok: Fatty acids, Wax esters, Acyl carnitines, CoA esters, and Glycerolipids */
 
         // 1. Fatty acids selection screen
@@ -56,8 +54,35 @@
         <activity
             android:name=".GlycerolipidsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".CardiolipinsActivity" />
-        <activity android:name=".Glycerophospholipids_activity"></activity>
+        // 6. Cardiolipins selection Activity
+        <activity
+            android:name=".CardiolipinsActivity"
+            android:screenOrientation="portrait" />
+        // 7. Glycerophospholipids selection Activity
+        <activity
+            android:name=".Glycerophospholipids_activity"
+            android:screenOrientation="portrait" />
+        //8. Cholesterol Esters selection activity
+        <activity
+            android:name=".CholesterolEstersResultAcivity"
+            android:screenOrientation="portrait" />
+        // 9. Sphingolipids selection activity
+        <activity
+            android:name=".Sphingolipids_Result_Activity"
+            android:screenOrientation="portrait" />
+        // 10. Cardiolipins selection activity
+        <activity
+            android:name=".Cardiolipins_Result_Activity"
+            android:screenOrientation="portrait" />
+        // 11. Cholesterol Esters selection activity
+        <activity
+            android:name=".CholesterolEstersActivity"
+            android:screenOrientation="portrait" />
+        // 12. Sphingolipids selection activity
+        <activity
+            android:name=".SphingolipidsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Glycerophospholipids_Result_Activity"></activity>
     </application>
 
 </manifest>

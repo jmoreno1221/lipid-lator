@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.onerom.lipidlator.Glycerophospholipids_activity">
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:text="@string/btnGo_back"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormula"
+        app:layout_constraintVertical_bias="0.578"
+        app:layout_constraintRight_toLeftOf="@+id/btnGly"
+        android:layout_marginRight="8dp"
+        tools:ignore="UnknownIdInLayout" />
+
     <TextView
         android:id="@+id/tvGlycerophospholipids"
         android:layout_width="wrap_content"
@@ -79,7 +101,7 @@
         android:id="@+id/btnGly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -91,7 +113,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.614" />
 
     <Spinner
         android:id="@+id/spnGlyIon"
