@@ -15,7 +15,14 @@
         <activity
             android:name=".MainLoading"
             android:noHistory="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -27,16 +34,9 @@
         // 1. Fatty acids selection screen
         <activity
             android:name=".FattyAcidsActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"/>
             // Move this to Screen you want to load first for testing!
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            />
-        </activity>
-        >
 
         // 2. Wax esters selection screen
         <activity
