@@ -33,7 +33,7 @@
     <string name="head_group_type">Head Groups:</string>
     <string name="ion_type">Ions:</string>
     <string name="n_acyl">N-acyl:</string>
-    <string name="cholesteryl_esters">Cholesteryl Esters</string>
+    <string name="cholesteryl_esters">Cholesteryl\nEsters</string>
     <string name="abbreviation">Abbreviation:</string>
     <string name="acyl_chain_chE">Acyl Chain:</string>
     <string name="calculate_chE">Calculate</string>
