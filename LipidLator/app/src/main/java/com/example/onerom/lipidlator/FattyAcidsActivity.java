@@ -18,7 +18,7 @@ public class FattyAcidsActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FattyAcidsActivity.this, Glycerophospholipids_Result_Activity.class);
+                Intent intent = new Intent(FattyAcidsActivity.this, FattyAcids_Result_Activity.class);
                 startActivity(intent);
             }
         });

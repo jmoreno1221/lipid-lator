@@ -16,13 +16,12 @@
             android:name=".MainLoading"
             android:noHistory="true"
             android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".ResultsActivity"
             android:screenOrientation="portrait" />
@@ -34,8 +33,8 @@
         // 1. Fatty acids selection screen
         <activity
             android:name=".FattyAcidsActivity"
-            android:screenOrientation="portrait"/>
-            // Move this to Screen you want to load first for testing!
+            android:screenOrientation="portrait" />
+        // Move this to Screen you want to load first for testing!
 
 
         // 2. Wax esters selection screen
@@ -82,7 +81,8 @@
         <activity
             android:name=".SphingolipidsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Glycerophospholipids_Result_Activity"></activity>
+        <activity android:name=".Glycerophospholipids_Result_Activity" />
+        <activity android:name=".FattyAcids_Result_Activity"></activity>
     </application>
 
 </manifest>
