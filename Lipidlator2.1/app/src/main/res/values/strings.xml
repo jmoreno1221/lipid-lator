@@ -1,6 +1,41 @@
 <resources>
     <string name="app_name">Lipidlator2.1</string>
     <string name="appTitle">Lipid-lator</string>
+    <string name="Ion">Ion:</string>
+    <string name="Acid">Acid:</string>
+    <string name="Ester">Ester:</string>
+    <string name="Alcohol">Alcohol:</string>
+    <string name="AcylChain">Acyl Chain:</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="FAResults">Fatty Acids\nMass Calculations</string>
+    <string name="WEResults">Wax Esters\nMass Calculations</string>
+    <string name="ACResults">Acyl Carnitines\nMass Calculations</string>
+    <string name="CoAResults">CoA Esters\nMass Calculations</string>
+    <string name="GLResults">Glycerolipids\nMass Calculations</string>
+    <string name="GPLResults">Glycerophospholipids\nMass Calculations</string>
+    <string name="CLResults">Cardiolipins\nMass Calculations</string>
+    <string name="SLResults">Sphingolipids\nMass Calculations</string>
+    <string name="CEResults">Cholesteryl Esters\nMass Calculations</string>
+    <string name="FAConfiguration">Fatty Acids\nConfiguration</string>
+    <string name="WEConfiguration">Wax Esters\nConfiguration</string>
+    <string name="ACConfiguration">Acyl Carnitines\nConfiguration</string>
+    <string name="CoAConfiguration">CoA Esters\nConfiguration</string>
+    <string name="GLConfiguration">Glycerolipids\nConfiguration</string>
+    <string name="GPLConfiguration">Glycerophospholipids\nConfiguration</string>
+    <string name="CLConfiguration">Cardiolipins\nConfiguration</string>
+    <string name="SLConfiguration">Sphingolipids\nConfiguration</string>
+    <string name="CEConfiguration">Cholesteryl Esters\nConfiguration</string>
+    <string name="Abbreviation">Abbreviation:</string>
+    <string name="Formula">Formula:</string>
+    <string name="MolarMass">Molar Mass:</string>
+    <string name="Back">BACK</string>
+    <string name="sn1_1">sn1(1\'):</string>
+    <string name="sn2_1">sn2(1\'):</string>
+    <string name="sn1_3">sn1(3\'):</string>
+    <string name="sn2_3">sn2(3\'):</string>
+    <string name="HeadGroup">Head Group:</string>
+    <string name="SphingoidBase">Sphingoid Base:</string>
+    <string name="NAcyl">N-acyl:</string>
     <string-array name="ion_array">
         <item>[M+H]+</item>
         <item>[M+H-H2O]+</item>
@@ -72,4 +107,121 @@
         <item>25:0</item>
         <item>26:0</item>
     </string-array>
+    <string-array name="ester_array_values">
+        <item>"Free acid"</item>
+        <item>"Methyl ester"</item>
+        <item>"Pentafluorobenzyl ester"</item>
+    </string-array>
+    <string-array name="sphingoid_array_values">
+        <item>"d18:1(4E)"</item>
+        <item>"d18:0"</item>>
+        <item>"d18:2"</item>
+        <item>"t18:0"</item>
+        <item>"t18:1"</item>
+        <item>"d20:1"</item>
+        <item>"d20:0"</item>
+        <item>"d20:2"</item>
+        <item>"t20:0"</item>
+        <item>"t20:1"</item>
+        <item>"d16:1"</item>
+        <item>"d16:0"</item>
+        <item>"d16:2"</item>
+        <item>"t16:0"</item>
+        <item>"t16:1"</item>
+        <item>"d14:1"</item>
+        <item>"d14:0"</item>
+        <item>"d14:2"</item>
+        <item>"t14:0"</item>
+        <item>"t14:1"</item>
+        <item>"d15:1"</item>
+        <item>"d15:0"</item>
+        <item>"d15:2"</item>
+        <item>"t15:0"</item>
+        <item>"t15:1"</item>
+        <item>"d17:1"</item>
+        <item>"d17:0"</item>
+        <item>"d17:2"</item>
+        <item>"t17:0"</item>
+        <item>"t17:1"</item>
+        <item>"d19:1"</item>
+        <item>"d19:0"</item>
+        <item>"d19:2"</item>
+        <item>"t19:0"</item>
+        <item>"t19:1"</item>
+        <item>"d21:1"</item>
+        <item>"d21:0"</item>
+        <item>"d21:2"</item>
+        <item>"t21:0"</item>
+        <item>"t21:1"</item>
+        <item>"d22:1"</item>
+        <item>"d22:0"</item>
+        <item>"d22:2"</item>
+        <item>"t22:0"</item>
+        <item>"t22:1"</item>
+    </string-array>
+    <string-array name="n_acyl_array_values">
+        <item>"12:0"</item>
+        <item>"13:0"</item>>
+        <item>"14:0"</item>
+        <item>"h14:0"</item>
+        <item>"15:0"</item>
+        <item>"h15:0"</item>
+        <item>"16:0"</item>
+        <item>"16:1"</item>
+        <item>"h16:0"</item>
+        <item>"h16:1"</item>
+        <item>"17:0"</item>
+        <item>"h17:0"</item>
+        <item>"18:0"</item>
+        <item>"18:1"</item>
+        <item>"h18:0"</item>
+        <item>"h18:1"</item>
+        <item>"19:0"</item>
+        <item>"h19:0"</item>
+        <item>"20:0"</item>
+        <item>"20:1"</item>
+        <item>"h20:0"</item>
+        <item>"h20:1"</item>
+        <item>"21:0"</item>
+        <item>"h21:0"</item>
+        <item>"22:0"</item>
+        <item>"22:1"</item>
+        <item>"h22:0"</item>
+        <item>"h22:1"</item>
+        <item>"23:0"</item>
+        <item>"h23:0"</item>
+        <item>"24:0"</item>
+        <item>"24:1"</item>
+        <item>"h24:0"</item>
+        <item>"25:0"</item>
+        <item>"26:0"</item>
+        <item>"26:1"</item>
+        <item>"h26:0"</item>
+        <item>"h26:1"</item>
+        <item>"27:0"</item>
+        <item>"h27:0"</item>
+        <item>"28:0"</item>
+        <item>"h28:0"</item>
+        <item>"29:0"</item>
+        <item>"h29:0"</item>
+        <item>"30:0"</item>
+        <item>"h30:0"</item>
+        <item>"31:0"</item>
+        <item>"h31:0"</item>
+        <item>"32:0"</item>
+        <item>"h32:0"</item>
+    </string-array>
+    <string-array name="gly_headgroup_array_values">
+        <item>"PC"</item>
+        <item>"PA"</item>
+        <item>"PS"</item>
+        <item>"PE"</item>
+        <item>"PG"</item>
+        <item>"PGP"</item>
+        <item>"PI"</item>
+        <item>"PIP"</item>
+        <item>"PIP2"</item>
+        <item>"PIP3"</item>
+    </string-array>
+
 </resources>
