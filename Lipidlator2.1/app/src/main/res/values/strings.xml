@@ -1,78 +1,41 @@
 <resources>
-    <string name="app_name">Lipid-lator</string>
-    <string name="tvLipidClass">Lipid Class</string>
-    <string name="tvIon">Ion</string>
-    <string name="tvAcylChain">Acyl Chain</string>
-    <string name="btnSubmit">Submit</string>
-    <string name="tvResults">Results</string>
-    <string name="tvAbbreviation">Abbreviation</string>
-    <string name="tvFormula">Formula</string>
-    <string name="tvMolar_mass">Molar Mass</string>
-    <string name="btnGo_back">Go Back</string>
-    <string name="fatty_acids">Fatty Acids</string>
-    <string name="acid_label">Acid:</string>
-    <string name="calculate_btn">Calculate</string>
-    <string name="ester_label">Ester:</string>
-    <string name="ion_label">Ion:</string>
-    <string name="ionTV">Ion:</string>
-    <string name="waxEstersTitle">Wax Esters</string>
-    <string name="acid">Acid:</string>
-    <string name="alcohol">Alcohol:</string>
-    <string name="submit">Submit</string>
-    <string name="button">Button</string>
-    <string name="acyl_carnitines">Acyl carnitines</string>
-    <string name="acyl_chain">Acyl chain</string>
-    <string name="glycerophospholipids">Glycerophospholipids</string>
-    <string name="head_group">Head Group:</string>
-    <string name="ion">Ion:</string>
+    <string name="app_name">Lipidlator2.1</string>
+    <string name="appTitle">Lipid-lator</string>
+    <string name="Ion">Ion:</string>
+    <string name="Acid">Acid:</string>
+    <string name="Ester">Ester:</string>
+    <string name="Alcohol">Alcohol:</string>
+    <string name="AcylChain">Acyl Chain:</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="FAResults">Fatty Acids\nMass Calculations</string>
+    <string name="WEResults">Wax Esters\nMass Calculations</string>
+    <string name="ACResults">Acyl Carnitines\nMass Calculations</string>
+    <string name="CoAResults">CoA Esters\nMass Calculations</string>
+    <string name="GLResults">Glycerolipids\nMass Calculations</string>
+    <string name="GPLResults">Glycerophospholipids\nMass Calculations</string>
+    <string name="CLResults">Cardiolipins\nMass Calculations</string>
+    <string name="SLResults">Sphingolipids\nMass Calculations</string>
+    <string name="CEResults">Cholesteryl Esters\nMass Calculations</string>
+    <string name="FAConfiguration">Fatty Acids\nConfiguration</string>
+    <string name="WEConfiguration">Wax Esters\nConfiguration</string>
+    <string name="ACConfiguration">Acyl Carnitines\nConfiguration</string>
+    <string name="CoAConfiguration">CoA Esters\nConfiguration</string>
+    <string name="GLConfiguration">Glycerolipids\nConfiguration</string>
+    <string name="GPLConfiguration">Glycerophospholipids\nConfiguration</string>
+    <string name="CLConfiguration">Cardiolipins\nConfiguration</string>
+    <string name="SLConfiguration">Sphingolipids\nConfiguration</string>
+    <string name="CEConfiguration">Cholesteryl Esters\nConfiguration</string>
+    <string name="Abbreviation">Abbreviation:</string>
+    <string name="Formula">Formula:</string>
+    <string name="MolarMass">Molar Mass:</string>
+    <string name="Back">BACK</string>
     <string name="sn1_1">sn1(1\'):</string>
     <string name="sn2_1">sn2(1\'):</string>
-    <string name="sphingolipids">Sphingolipids</string>
-    <string name="sphingoid_base">Sphingoid Base:</string>
-    <string name="btnsubmit">btnSubmit</string>
-    <string name="head_group_type">Head Groups:</string>
-    <string name="ion_type">Ions:</string>
-    <string name="n_acyl">N-acyl:</string>
-    <string name="cholesteryl_esters">Cholesteryl\nEsters</string>
-    <string name="abbreviation">Abbreviation:</string>
-    <string name="acyl_chain_chE">Acyl Chain:</string>
-    <string name="calculate_chE">Calculate</string>
-    <string name="ion_chE">Ion:</string>
-    <string name="m_z_ratio_chE">m/z ratio:</string>
-    <string name="cholesteryl_esters_act">Cholesteryl Esters</string>
-    <string name="acyl_chain_chE_act">Acyl Chain:</string>
-    <string name="calculate_chE_act">Calculate</string>
-    <string name="ion_chE_act">Ion:</string>
-    <string name="formula_shingolipids_result">Formula:</string>
-    <string name="cardiolipins">Cardiolipins</string>
-    <string name="ion_cardiolipins">Ion:</string>
-    <string name="sn1_1_cardiolipins">sn1(1\'):</string>
-    <string name="sn1_3_cardiolipins">sn1(3\'):</string>
-    <string name="sn2_1_cardiolipins">sn2(1\'):</string>
-    <string name="sn2_3_cardiolipins">sn2(3\'):</string>
-    <string name="cardiolipins_header">Cardiolipins</string>
-    <string name="ion_cardiolipins_selection">Ion:</string>
-    <string name="cardiolipins_sn1_1_selection">sn1(1\'):</string>
-    <string name="cardiolipins_selection_sn1_3">sn1(3\'):</string>
-    <string name="cardiolipins_selection_sn2_1">sn2(1\'):</string>
-    <string name="cardiolipins_selection_sn2_3">sn2(3\'):</string>
-    <string name="fomula_cardiolipins">Fomula:</string>
-    <string name="m_z_ratios_cardiolipins">m/z ratios:</string>
-    <string name="formula_Glycerophospholipids_result">Formula</string>
-    <string name="Home">Home</string>
-    <string name="m_z_ratio_sphingolipids">m_z_ratio:</string>
-    <string-array name="lipid_class_array">
-        <item>(Select a lipid)</item>
-        <item>Fatty Acids</item>
-        <item>Wax esters</item>
-        <item>Acyl Carnitines</item>
-        <item>CoA esters</item>
-        <item>Glycerolipids</item>
-        <item>Glycerophospholipids</item>
-        <item>Cardiolipins</item>
-        <item>Sphingolipids</item>
-        <item>Cholesteryl esters</item>
-    </string-array>
+    <string name="sn1_3">sn1(3\'):</string>
+    <string name="sn2_3">sn2(3\'):</string>
+    <string name="HeadGroup">Head Group:</string>
+    <string name="SphingoidBase">Sphingoid Base:</string>
+    <string name="NAcyl">N-acyl:</string>
     <string-array name="ion_array">
         <item>[M+H]+</item>
         <item>[M+H-H2O]+</item>
@@ -98,31 +61,6 @@
         <item>[M+OAc]-</item>
         <item>[M+Formate]-</item>
         <item>M(neutral)</item>
-    </string-array>
-    <string-array name="ion_array_values">
-        <item>"MplusH"</item>
-        <item>"MplusH-H2O"</item>
-        <item>"Mplus2H"</item>
-        <item>"Mplus3H"</item>
-        <item>"Mplus4H"</item>
-        <item>"MplusNH4"</item>
-        <item>"MplusAg"</item>
-        <item>"MplusNa"</item>
-        <item>"Mplus2Na"</item>
-        <item>"Mplus2Na-H"</item>
-        <item>"MplusK"</item>
-        <item>"Mplus2K"</item>
-        <item>"Mplus2K-H"</item>
-        <item>"MplusLi"</item>
-        <item>"Mplus2Li"</item>
-        <item>"M-H"</item>
-        <item>"M-CH3"</item>
-        <item>"M-2H"</item>
-        <item>"M-3H"</item>
-        <item>"M-4H"</item>
-        <item>"M.Cl"</item>
-        <item>"M.OAc"</item>
-        <item>"M.Formate"</item>
     </string-array>
     <string-array name="ratios_array">
         <item>2:0</item>
@@ -168,25 +106,6 @@
         <item>24:1(15Z)</item>
         <item>25:0</item>
         <item>26:0</item>
-    </string-array>
-    <string-array name="headGroup_array_values">
-        <item>"unsubstituted(Ceramide)"</item>
-        <item>"Sphingomyelin"</item>
-        <item>"1-phosphate"</item>
-        <item>"1-phosphoethanolamine"</item>
-        <item>"1-phosphoinositol"</item>
-        <item>"Glucosyl"</item>
-        <item>"Galactosy"</item>
-        <item>"Lactosyl"</item>
-        <item>"GM3(NeuAca1-3Galb1-4Glcb)"</item>
-        <item>"GM4(NeuAca1-3Galb)"</item>
-        <item>"GB3(Gala1-4Galb1-4Glcb)"</item>
-        <item>"iGB3(Gala1-3Galb1-4Glcb)"</item>
-        <item>"asialo-GM2(GalNAcb1-4Galb1-4Glcb)"</item>
-        <item>"Lc3(GlcNAcb1-4Galb1-4Glcb)"</item>
-        <item>"Manb1-4Glc"</item>
-        <item>"Mollu(Manb1-3Manb1-4Glcb)"</item>
-        <item>"Arthro(GlcNAcb1-4Manb1-Glc)"</item>
     </string-array>
     <string-array name="ester_array_values">
         <item>"Free acid"</item>
@@ -292,7 +211,6 @@
         <item>"32:0"</item>
         <item>"h32:0"</item>
     </string-array>
-
     <string-array name="gly_headgroup_array_values">
         <item>"PC"</item>
         <item>"PA"</item>
@@ -305,4 +223,5 @@
         <item>"PIP2"</item>
         <item>"PIP3"</item>
     </string-array>
+
 </resources>

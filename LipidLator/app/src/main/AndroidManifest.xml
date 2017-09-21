@@ -63,7 +63,7 @@
             android:screenOrientation="portrait" />
         //8. Cholesterol Esters selection activity
         <activity
-            android:name=".CholesterolEstersResultAcivity"
+            android:name=".CholesterolEsters_Result_Activity"
             android:screenOrientation="portrait" />
         // 9. Sphingolipids selection activity
         <activity
