@@ -36,6 +36,11 @@
     <string name="HeadGroup">Head Group:</string>
     <string name="SphingoidBase">Sphingoid Base:</string>
     <string name="NAcyl">N-acyl:</string>
+
+    // String for Home Activity Image Desciption
+    <string name="FALabel">Fatty Acids\nTesting</string>
+    <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
+
     <string-array name="ion_array">
         <item>[M+H]+</item>
         <item>[M+H-H2O]+</item>
