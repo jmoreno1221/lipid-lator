@@ -13,14 +13,16 @@
             android:name=".Loading"
             android:noHistory="true"
             android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"/>
-        <activity android:name=".HelpActivity"/>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".FattyAcidsActivity" />
+        <activity android:name=".FattyAcids_Result_Activity"></activity>
     </application>
 
 </manifest>

@@ -29,6 +29,7 @@
     <string name="Formula">Formula:</string>
     <string name="MolarMass">Molar Mass:</string>
     <string name="Back">BACK</string>
+    <string name="Home">HOME</string>
     <string name="sn1_1">sn1(1\'):</string>
     <string name="sn2_1">sn2(1\'):</string>
     <string name="sn1_3">sn1(3\'):</string>
@@ -36,6 +37,12 @@
     <string name="HeadGroup">Head Group:</string>
     <string name="SphingoidBase">Sphingoid Base:</string>
     <string name="NAcyl">N-acyl:</string>
+    <string name="ResultPlaceHolder">XXXXX</string>
+
+    // String for Home Activity Image Desciption
+    <string name="FALabel">Fatty Acids\nTesting</string>
+    <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
+
     <string-array name="ion_array">
         <item>[M+H]+</item>
         <item>[M+H-H2O]+</item>

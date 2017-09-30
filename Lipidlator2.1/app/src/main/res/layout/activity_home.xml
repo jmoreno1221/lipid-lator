@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context="teamtriplej.com.lipidlator21.HomeActivity">
 
+    <ImageButton
+        android:id="@+id/imbtnFattyAcids"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="41dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/FAImageDesc"
+        android:cropToPadding="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/tvTesting"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/FALabel"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imbtnFattyAcids" />
 </android.support.constraint.ConstraintLayout>
