@@ -135,8 +135,8 @@
 
     <Spinner
         android:id="@+id/spnSphingoidBase"
-        android:layout_width="333dp"
-        android:layout_height="21dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -165,16 +165,16 @@
 
     <Spinner
         android:id="@+id/spnNAcyl"
-        android:layout_width="327dp"
-        android:layout_height="22dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="11dp"
         android:entries="@array/n_acyl_array_values"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNAcyl"
-        tools:layout_editor_absoluteX="32dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_editor_absoluteX="32dp" />
 
 </android.support.constraint.ConstraintLayout>
