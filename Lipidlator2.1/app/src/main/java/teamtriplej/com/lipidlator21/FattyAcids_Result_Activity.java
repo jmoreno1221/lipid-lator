@@ -18,9 +18,12 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
         int ion = getIntent().getExtras().getInt("ion");
+        int massIndex = getIntent().getExtras().getInt("massIndex");
+        int esterIndex = getIntent().getExtras().getInt("esterIndex");
 
-        FattyAcidsActivity fa = new FattyAcidsActivity();
-        double molarMass = Math.round(fa.calculateMass(ion)*10000d)/10000d;
+        Calculations calc = new Calculations();
+        double mass = calc.calculateFABasicMass(0,massIndex,esterIndex,0,0,0);
+        double molarMass = Math.round(calc.calculateFinalMass(ion, mass,0,0,0,0,0,0,0,0,0)*10000d)/10000d;
         tvMolarMassResult.setText(Double.toString(molarMass));
 
 
