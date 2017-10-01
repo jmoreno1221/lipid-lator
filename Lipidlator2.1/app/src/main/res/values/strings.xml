@@ -40,7 +40,16 @@
     <string name="ResultPlaceHolder">XXXXX</string>
 
     // String for Home Activity Image Desciption
+    <string name="HomeTitle">Select Your \nLipid Class</string>
     <string name="FALabel">Fatty Acids\nTesting</string>
+    <string name="WELabel">Wax Esters\nTesting</string>
+    <string name="ACLabel">Acyl Carnitines\nTesting</string>
+    <string name="CAELabel">CoA Esters\nTesting</string>
+    <string name="GlyLabel">Glycerolipids\nTesting</string>
+    <string name="GlpLabel">Glycerophospholipids\nTesting</string>
+    <string name="CALabel">Cardiolipins\nTesting</string>
+    <string name="SPLabel">Sphingolipids\nTesting</string>
+    <string name="CELabel">Cholesteryl Esters\nTesting</string>
     <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
 
     <string-array name="ion_array">
@@ -231,4 +240,69 @@
         <item>"PIP3"</item>
     </string-array>
 
+    <string-array name="sph_headgroup_array_values">
+        <item>"unsubstituted(Ceramide)"</item>
+        <item>"Sphingomyelin"</item>
+        <item>"1-phosphate"</item>
+        <item>"1-phosphoethanolamine"</item>
+        <item>"1-phosphoinositol"</item>
+        <item>"Glucosyl"</item>
+        <item>"Galactosy"</item>
+        <item>"Lactosyl"</item>
+        <item>"GM3(NeuAca1-3Galb1-4Glcb)"</item>
+        <item>"GM4(NeuAca1-3Galb)"</item>
+        <item>"GB3(Gala1-4Galb1-4Glcb)"</item>
+        <item>"iGB3(Gala1-3Galb1-4Glcb)"</item>
+        <item>"asialo-GM2(GalNAcb1-4Galb1-4Glcb)"</item>
+        <item>"Lc3(GlcNAcb1-4Galb1-4Glcb)"</item>
+        <item>"Manb1-4Glc"</item>
+        <item>"Mollu(Manb1-3Manb1-4Glcb)"</item>
+        <item>"Arthro(GlcNAcb1-4Manb1-Glc)"</item>
+    </string-array>
+
+    <string-array name="sn_array">
+        <item>2:0</item>
+        <item>4:0</item>
+        <item>6:0</item>
+        <item>8:0</item>
+        <item>10:0</item>
+        <item>12:0</item>
+        <item>13:0</item>
+        <item>14:0</item>
+        <item>14:1(9Z)</item>
+        <item>15:0</item>
+        <item>15:1(9Z)</item>
+        <item>16:0</item>
+        <item>16:1(9Z)</item>
+        <item>17:0</item>
+        <item>17:1(9Z)</item>
+        <item>17:2(9Z,12Z)</item>
+        <item>18:0</item>
+        <item>18:1(11E)</item>
+        <item>18:1(9Z)</item>
+        <item>18:2(9Z,12Z)</item>
+        <item>18:3(6Z,9Z,12Z)</item>
+        <item>18:3(9Z,12Z,15Z)</item>
+        <item>18:4(6Z,9Z,12Z,15Z)</item>
+        <item>19:0</item>
+        <item>20:0</item>
+        <item>20:1(11Z)</item>
+        <item>20:2(11Z,14Z)</item>
+        <item>20:3(8Z,11Z,14Z)</item>
+        <item>20:4(5Z,8Z,11Z,14Z)</item>
+        <item>20:5(5Z,8Z,11Z,14Z,17Z)</item>
+        <item>21:0</item>
+        <item>22:0</item>
+        <item>22:1(11Z)</item>
+        <item>22:2(13Z,16Z)</item>
+        <item>22:3(10Z,13Z,16Z)</item>
+        <item>22:4(7Z,10Z,13Z,16Z)</item>
+        <item>22:5(7Z,10Z,13Z,16Z,19Z)</item>
+        <item>22:6(4Z,7Z,10Z,13Z,16Z,19Z)</item>
+        <item>23:0</item>
+        <item>24:0</item>
+        <item>24:1(15Z)</item>
+        <item>25:0</item>
+        <item>26:0</item>
+    </string-array>
 </resources>

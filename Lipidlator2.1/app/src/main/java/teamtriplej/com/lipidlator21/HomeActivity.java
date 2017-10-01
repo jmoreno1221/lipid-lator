@@ -22,5 +22,45 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton cholesterylEsters = (ImageButton) findViewById(R.id.imbtnCholesterylEsters);
+
+        cholesterylEsters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, CholesterylEstersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton sphingolipids = (ImageButton) findViewById(R.id.imbtnSphingolipids);
+
+        sphingolipids.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Sphingolipids_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton cardiolipins = (ImageButton) findViewById(R.id.imbtnCardiolipins);
+
+        cardiolipins.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Cardiolipins.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton glycerophospholipids = (ImageButton) findViewById(R.id.imbtnGlycerophospholipids);
+
+        glycerophospholipids.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Glycerophospholipids_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
