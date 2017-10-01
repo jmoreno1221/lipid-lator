@@ -22,7 +22,15 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".FattyAcidsActivity" />
-        <activity android:name=".FattyAcids_Result_Activity"></activity>
+        <activity android:name=".FattyAcids_Result_Activity" />
+        <activity android:name=".CholesterylEstersActivity" />
+        <activity android:name=".CholesterylEsters_Result_Activity" />
+        <activity android:name=".Sphingolipids_Activity" />
+        <activity android:name=".Sphingolipids_Result_Activity" />
+        <activity android:name=".Cardiolipins" />
+        <activity android:name=".Cardiolipins_Result_Activity" />
+        <activity android:name=".Glycerophospholipids_Activity" />
+        <activity android:name=".Glycerophospholipids_Result_Activity"></activity>
     </application>
 
 </manifest>
