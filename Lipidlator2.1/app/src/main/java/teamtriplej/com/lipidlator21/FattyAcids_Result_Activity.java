@@ -20,7 +20,7 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         int ion = getIntent().getExtras().getInt("ion");
 
         FattyAcidsActivity fa = new FattyAcidsActivity();
-        double molarMass = fa.calculateMass(ion);
+        double molarMass = Math.round(fa.calculateMass(ion)*10000d)/10000d;
         tvMolarMassResult.setText(Double.toString(molarMass));
 
 

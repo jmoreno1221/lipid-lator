@@ -1,58 +1,11 @@
 package teamtriplej.com.lipidlator21;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Spinner;
+/**
+ * Created by Jose Moreno on 10/1/2017.
+ */
 
-import static teamtriplej.com.lipidlator21.R.id.spnIon;
-
-public class FattyAcidsActivity extends AppCompatActivity {
-
-    public int ion;
-    public double basicMass = 60.02113;
-    public int numC, numH, numO, numN, numP, numAg,numS, numLi, numNa, numK, numCl;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fatty_acids);
-
-        final Spinner spnI = (Spinner) findViewById(spnIon);
-        Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
-
-
-        btnSubmit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                ion = spnI.getSelectedItemPosition();
-                setIon(ion);
-                Intent intent = new Intent(FattyAcidsActivity.this, FattyAcids_Result_Activity.class);
-                intent.putExtra("ion",getIon());
-                intent.putExtra("basicMass",getBasicMass());
-                startActivity(intent);
-
-            }
-        });
-
-        btnBack.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(FattyAcidsActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
-    }
-
-
-    public double calculateMass(int ion)
+public class Calculations {
+    /*public double calculateMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; numH++;}
         else if(ion == 1){basicMass+= 1.00727 -(18.010565) ; numH--; numO--;}
@@ -78,18 +31,5 @@ public class FattyAcidsActivity extends AppCompatActivity {
         else if(ion == 21){basicMass = 59.013305 + 0.000555 + basicMass;  numC+=2;  numH+=3;  numO+=2;}
         else if(ion == 22){basicMass = 44.997655 + 0.000555 + basicMass;  numC++;  numH++;  numO+=2;}
         return basicMass;
-    }
-
-    public void setIon(int ion2)
-    {
-        ion = ion2;
-    }
-    public int getIon()
-    {
-        return ion;
-    }
-    public double getBasicMass()
-    {
-        return basicMass;
-    }
+    }*/
 }
