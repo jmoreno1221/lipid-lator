@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class FattyAcids_Result_Activity extends AppCompatActivity {
 
@@ -13,8 +14,15 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatty_acids_result);
 
+        TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
+        int ion = getIntent().getExtras().getInt("ion");
+
+        FattyAcidsActivity fa = new FattyAcidsActivity();
+        double molarMass = fa.calculateMass(ion);
+        tvMolarMassResult.setText(Double.toString(molarMass));
+
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
