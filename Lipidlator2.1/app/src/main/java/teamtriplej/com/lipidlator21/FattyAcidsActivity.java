@@ -8,23 +8,18 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 public class FattyAcidsActivity extends AppCompatActivity {
-
     public int ion, massIndex, esterIndex;
     public double basicMass = 0.00;
-    public String ionSelected, esterSelected;
-
+    public String ionSelected, esterSelected, acidSelected;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatty_acids);
-
         final Spinner spnI = (Spinner) findViewById(R.id.spnIon);
         final Spinner spnA = (Spinner) findViewById(R.id.spnAcid);
         final Spinner spnE = (Spinner) findViewById(R.id.spnEster);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
-
-
         btnSubmit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -33,6 +28,7 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 esterIndex = spnE.getSelectedItemPosition();
                 ionSelected = spnI.getSelectedItem().toString();
                 esterSelected = spnE.getSelectedItem().toString();
+                acidSelected = spnA.getSelectedItem().toString();
                 setIon(ion);
                 Intent intent = new Intent(FattyAcidsActivity.this, FattyAcids_Result_Activity.class);
                 intent.putExtra("ion",getIon());
@@ -41,11 +37,10 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 intent.putExtra("esterIndex", getEsterIndex());
                 intent.putExtra("ionSelected",ionSelected);
                 intent.putExtra("esterSelected",esterSelected);
+                intent.putExtra("acidSelected", acidSelected);
                 startActivity(intent);
-
             }
         });
-
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -53,12 +48,7 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
-
 
     public void setIon(int ion2)
     {

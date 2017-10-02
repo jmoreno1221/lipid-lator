@@ -9,7 +9,6 @@ public class Calculations {
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
     public Calculations() {
     }
-
     public String calculateFormula(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
