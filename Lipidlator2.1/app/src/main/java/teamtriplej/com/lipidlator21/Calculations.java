@@ -28,50 +28,49 @@ public class Calculations {
     }
     public double calculateFABasicMass(int massIndex, int ester)
     {
-        if(massIndex == 0 && ester == 0){setMass(60.021130); setNumC(2); setNumH(4); setNumO(2);}
-        else if(massIndex == 1 && ester == 0){setMass(60.021130);setNumC(2);setNumH(4);setNumO(2);}
-        else if(massIndex == 2 && ester == 0){setMass(88.052430);setNumC(4);setNumH(8);setNumO(2);}
-        else if(massIndex == 3 && ester == 0){setMass(116.083730);setNumC(6);setNumH(12);setNumO(2);}
-        else if(massIndex == 4 && ester == 0){setMass(144.115030);setNumC(8);setNumH(16);setNumO(2);}
-        else if(massIndex == 5 && ester == 0){setMass(172.146330);setNumC(10);setNumH(20);setNumO(2);}
-        else if(massIndex == 6 && ester == 0){setMass(200.177630);setNumC(12);setNumH(24);setNumO(2);}
-        else if(massIndex == 7 && ester == 0){setMass(214.193280);setNumC(13);setNumH(26);setNumO(2);}
-        else if(massIndex == 8 && ester == 0){setMass(228.208930);setNumC(14);setNumH(28);setNumO(2);}
-        else if(massIndex == 9 && ester == 0){setMass(226.193280);setNumC(14);setNumH(26);setNumO(2);}
-        else if(massIndex == 10 && ester == 0){setMass(242.224580);setNumC(15);setNumH(30);setNumO(2);}
-        else if(massIndex == 11 && ester == 0){setMass(240.208930);setNumC(15);setNumH(28);setNumO(2);}
-        else if(massIndex == 12 && ester == 0){setMass(256.240230);setNumC(16);setNumH(32);setNumO(2);}
-        else if(massIndex == 13 && ester == 0){setMass(254.224580);setNumC(16);setNumH(30);setNumO(2);}
-        else if(massIndex == 14 && ester == 0){setMass(270.255880);setNumC(17);setNumH(34);setNumO(2);}
-        else if(massIndex == 15 && ester == 0){setMass(268.240230);setNumC(17);setNumH(32);setNumO(2);}
-        else if(massIndex == 16 && ester == 0){setMass(266.224580);setNumC(17);setNumH(30);setNumO(2);}
-        else if(massIndex == 17 && ester == 0){setMass(284.271530);setNumC(18);setNumH(36);setNumO(2);}
+        if(massIndex == 0 && ester == 0){setMass(60.021130);setNumC(2);setNumH(4);setNumO(2);}
+        else if(massIndex == 1 && ester == 0){setMass(88.052430);setNumC(4);setNumH(8);setNumO(2);}
+        else if(massIndex == 2 && ester == 0){setMass(116.083730);setNumC(6);setNumH(12);setNumO(2);}
+        else if(massIndex == 3 && ester == 0){setMass(144.115030);setNumC(8);setNumH(16);setNumO(2);}
+        else if(massIndex == 4 && ester == 0){setMass(172.146330);setNumC(10);setNumH(20);setNumO(2);}
+        else if(massIndex == 5 && ester == 0){setMass(200.177630);setNumC(12);setNumH(24);setNumO(2);}
+        else if(massIndex == 6 && ester == 0){setMass(214.193280);setNumC(13);setNumH(26);setNumO(2);}
+        else if(massIndex == 7 && ester == 0){setMass(228.208930);setNumC(14);setNumH(28);setNumO(2);}
+        else if(massIndex == 8 && ester == 0){setMass(226.193280);setNumC(14);setNumH(26);setNumO(2);}
+        else if(massIndex == 9 && ester == 0){setMass(242.224580);setNumC(15);setNumH(30);setNumO(2);}
+        else if(massIndex == 10 && ester == 0){setMass(240.208930);setNumC(15);setNumH(28);setNumO(2);}
+        else if(massIndex == 11 && ester == 0){setMass(256.240230);setNumC(16);setNumH(32);setNumO(2);}
+        else if(massIndex == 12 && ester == 0){setMass(254.224580);setNumC(16);setNumH(30);setNumO(2);}
+        else if(massIndex == 13 && ester == 0){setMass(270.255880);setNumC(17);setNumH(34);setNumO(2);}
+        else if(massIndex == 14 && ester == 0){setMass(268.240230);setNumC(17);setNumH(32);setNumO(2);}
+        else if(massIndex == 15 && ester == 0){setMass(266.224580);setNumC(17);setNumH(30);setNumO(2);}
+        else if(massIndex == 16 && ester == 0){setMass(284.271530);setNumC(18);setNumH(36);setNumO(2);}
+        else if(massIndex == 17 && ester == 0){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
         else if(massIndex == 18 && ester == 0){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
-        else if(massIndex == 19 && ester == 0){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
-        else if(massIndex == 20 && ester == 0){setMass(280.240230);setNumC(18);setNumH(32);setNumO(2);}
+        else if(massIndex == 19 && ester == 0){setMass(280.240230);setNumC(18);setNumH(32);setNumO(2);}
+        else if(massIndex == 20 && ester == 0){setMass(278.224580);setNumC(18);setNumH(30);setNumO(2);}
         else if(massIndex == 21 && ester == 0){setMass(278.224580);setNumC(18);setNumH(30);setNumO(2);}
-        else if(massIndex == 22 && ester == 0){setMass(278.224580);setNumC(18);setNumH(30);setNumO(2);}
-        else if(massIndex == 23 && ester == 0){setMass(276.208930);setNumC(18);setNumH(28);setNumO(2);}
-        else if(massIndex == 24 && ester == 0){setMass(298.287180);setNumC(19);setNumH(38);setNumO(2);}
-        else if(massIndex == 25 && ester == 0){setMass(312.302830);setNumC(20);setNumH(40);setNumO(2);}
-        else if(massIndex == 26 && ester == 0){setMass(310.287180);setNumC(20);setNumH(38);setNumO(2);}
-        else if(massIndex == 27 && ester == 0){setMass(308.271530);setNumC(20);setNumH(36);setNumO(2);}
-        else if(massIndex == 28 && ester == 0){setMass(306.255880);setNumC(20);setNumH(34);setNumO(2);}
-        else if(massIndex == 29 && ester == 0){setMass(304.240230);setNumC(20);setNumH(32);setNumO(2);}
-        else if(massIndex == 30 && ester == 0){setMass(302.224580);setNumC(20);setNumH(30);setNumO(2);}
-        else if(massIndex == 31 && ester == 0){setMass(326.318480);setNumC(21);setNumH(42);setNumO(2);}
-        else if(massIndex == 32 && ester == 0){setMass(340.334130);setNumC(22);setNumH(44);setNumO(2);}
-        else if(massIndex == 33 && ester == 0){setMass(338.318480);setNumC(22);setNumH(42);setNumO(2);}
-        else if(massIndex == 34 && ester == 0){setMass(336.302830);setNumC(22);setNumH(40);setNumO(2);}
-        else if(massIndex == 35 && ester == 0){setMass(334.287180);setNumC(22);setNumH(38);setNumO(2);}
-        else if(massIndex == 36 && ester == 0){setMass(332.271530);setNumC(22);setNumH(36);setNumO(2);}
-        else if(massIndex == 37 && ester == 0){setMass(330.255880);setNumC(22);setNumH(34);setNumO(2);}
-        else if(massIndex == 38 && ester == 0){setMass(328.240230);setNumC(22);setNumH(32);setNumO(2);}
-        else if(massIndex == 39 && ester == 0){setMass(354.349780);setNumC(23);setNumH(46);setNumO(2);}
-        else if(massIndex == 40 && ester == 0){setMass(368.365430);setNumC(24);setNumH(48);setNumO(2);}
-        else if(massIndex == 41 && ester == 0){setMass(366.349780);setNumC(24);setNumH(46);setNumO(2);}
-        else if(massIndex == 42 && ester == 0){setMass(382.381080);setNumC(25);setNumH(50);setNumO(2);}
-        else if(massIndex == 43 && ester == 0){setMass(396.396730);setNumC(26);setNumH(52);setNumO(2);}
+        else if(massIndex == 22 && ester == 0){setMass(276.208930);setNumC(18);setNumH(28);setNumO(2);}
+        else if(massIndex == 23 && ester == 0){setMass(298.287180);setNumC(19);setNumH(38);setNumO(2);}
+        else if(massIndex == 24 && ester == 0){setMass(312.302830);setNumC(20);setNumH(40);setNumO(2);}
+        else if(massIndex == 25 && ester == 0){setMass(310.287180);setNumC(20);setNumH(38);setNumO(2);}
+        else if(massIndex == 26 && ester == 0){setMass(308.271530);setNumC(20);setNumH(36);setNumO(2);}
+        else if(massIndex == 27 && ester == 0){setMass(306.255880);setNumC(20);setNumH(34);setNumO(2);}
+        else if(massIndex == 28 && ester == 0){setMass(304.240230);setNumC(20);setNumH(32);setNumO(2);}
+        else if(massIndex == 29 && ester == 0){setMass(302.224580);setNumC(20);setNumH(30);setNumO(2);}
+        else if(massIndex == 30 && ester == 0){setMass(326.318480);setNumC(21);setNumH(42);setNumO(2);}
+        else if(massIndex == 31 && ester == 0){setMass(340.334130);setNumC(22);setNumH(44);setNumO(2);}
+        else if(massIndex == 32 && ester == 0){setMass(338.318480);setNumC(22);setNumH(42);setNumO(2);}
+        else if(massIndex == 33 && ester == 0){setMass(336.302830);setNumC(22);setNumH(40);setNumO(2);}
+        else if(massIndex == 34 && ester == 0){setMass(334.287180);setNumC(22);setNumH(38);setNumO(2);}
+        else if(massIndex == 35 && ester == 0){setMass(332.271530);setNumC(22);setNumH(36);setNumO(2);}
+        else if(massIndex == 36 && ester == 0){setMass(330.255880);setNumC(22);setNumH(34);setNumO(2);}
+        else if(massIndex == 37 && ester == 0){setMass(328.240230);setNumC(22);setNumH(32);setNumO(2);}
+        else if(massIndex == 38 && ester == 0){setMass(354.349780);setNumC(23);setNumH(46);setNumO(2);}
+        else if(massIndex == 39 && ester == 0){setMass(368.365430);setNumC(24);setNumH(48);setNumO(2);}
+        else if(massIndex == 40 && ester == 0){setMass(366.349780);setNumC(24);setNumH(46);setNumO(2);}
+        else if(massIndex == 41 && ester == 0){setMass(382.381080);setNumC(25);setNumH(50);setNumO(2);}
+        else if(massIndex == 42 && ester == 0){setMass(396.396730);setNumC(26);setNumH(52);setNumO(2);}
         return getMass();
     }
     public double calculateFinalMass(int ion, double basicMass)
