@@ -11,7 +11,7 @@ public class FattyAcidsActivity extends AppCompatActivity {
 
     public int ion, massIndex, esterIndex;
     public double basicMass = 0.00;
-    public int numC, numH, numO, numN, numP, numAg,numS, numLi, numNa, numK, numCl;
+    public String ionSelected, esterSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +31,16 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 ion = spnI.getSelectedItemPosition();
                 massIndex = spnA.getSelectedItemPosition();
                 esterIndex = spnE.getSelectedItemPosition();
+                ionSelected = spnI.getSelectedItem().toString();
+                esterSelected = spnE.getSelectedItem().toString();
                 setIon(ion);
                 Intent intent = new Intent(FattyAcidsActivity.this, FattyAcids_Result_Activity.class);
                 intent.putExtra("ion",getIon());
                 intent.putExtra("basicMass",getBasicMass());
                 intent.putExtra("massIndex", getMassIndex());
                 intent.putExtra("esterIndex", getEsterIndex());
+                intent.putExtra("ionSelected",ionSelected);
+                intent.putExtra("esterSelected",esterSelected);
                 startActivity(intent);
 
             }

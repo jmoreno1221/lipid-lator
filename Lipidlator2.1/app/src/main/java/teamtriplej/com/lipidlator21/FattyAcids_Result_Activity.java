@@ -15,16 +15,31 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_fatty_acids_result);
 
         TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
+        TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormulaResult);
+        TextView tvEsterSelected = (TextView) findViewById(R.id.tvEsterResult);
+        TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
+
+        //Bring over the data from previous screen
         int ion = getIntent().getExtras().getInt("ion");
         int massIndex = getIntent().getExtras().getInt("massIndex");
         int esterIndex = getIntent().getExtras().getInt("esterIndex");
+        String ionSelected = getIntent().getExtras().getString("ionSelected");
+        String esterSelected = getIntent().getExtras().getString("esterSelected");
 
         Calculations calc = new Calculations();
-        double mass = calc.calculateFABasicMass(0,massIndex,esterIndex,0,0,0);
-        double molarMass = Math.round(calc.calculateFinalMass(ion, mass,0,0,0,0,0,0,0,0,0)*10000d)/10000d;
+        double mass = calc.calculateFABasicMass(massIndex,esterIndex);
+        double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
+        String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
+                calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
+                calc.getNumP(), calc.getNumS(), calc.getNumF());
+
+        //Set all results here
         tvMolarMassResult.setText(Double.toString(molarMass));
+        tvFormulaResult.setText(formula);
+        tvIonSelected.setText(ionSelected);
+        tvEsterSelected.setText(esterSelected);
 
 
         btnBack.setOnClickListener(new View.OnClickListener(){
