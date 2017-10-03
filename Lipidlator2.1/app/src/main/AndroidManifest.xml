@@ -34,7 +34,11 @@
         <activity android:name=".WaxEstersActivity" />
         <activity android:name=".AcylCarnitinesActivity" />
         <activity android:name=".CoA_EstersActivity" />
-        <activity android:name=".GlycerolipidsActivity"></activity>
+        <activity android:name=".GlycerolipidsActivity" />
+        <activity android:name=".WaxEsters_Result_Activity" />
+        <activity android:name=".AcylCarnitines_Result_Activity" />
+        <activity android:name=".CoA_Esters_Result_Activity" />
+        <activity android:name=".Glycerolipids_Result_Activity"></activity>
     </application>
 
 </manifest>

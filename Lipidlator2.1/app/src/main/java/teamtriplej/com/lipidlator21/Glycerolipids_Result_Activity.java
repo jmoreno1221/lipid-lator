@@ -6,26 +6,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class GlycerolipidsActivity extends AppCompatActivity {
+public class Glycerolipids_Result_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_glycerolipids);
+        setContentView(R.layout.activity_glycerolipids_result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
-        btnSubmit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(GlycerolipidsActivity.this, Glycerolipids_Result_Activity.class);
-                startActivity(intent);
-            }
-        });
-
+        Button btnHome = (Button) findViewById(R.id.btnHome);
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GlycerolipidsActivity.this, HomeActivity.class);
+                Intent intent = new Intent(Glycerolipids_Result_Activity.this, GlycerolipidsActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnHome.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Glycerolipids_Result_Activity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

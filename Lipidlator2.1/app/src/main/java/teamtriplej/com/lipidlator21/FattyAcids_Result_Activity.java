@@ -13,9 +13,9 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatty_acids_result);
         TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
-        TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormulaResult);
+        TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormula);
         TextView tvEsterSelected = (TextView) findViewById(R.id.tvEsterResult);
-        TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
+        TextView tvIonSelected = (TextView) findViewById(R.id.tvMolarMassResult);
         TextView tvAcidSelected = (TextView) findViewById(R.id.tvAbbreviationResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
