@@ -70,8 +70,4 @@ public class FattyAcidsActivity extends AppCompatActivity {
     {
         return esterIndex;
     }
-    public void setMass(double mass)
-    {
-        basicMass = mass;
-    }
 }
