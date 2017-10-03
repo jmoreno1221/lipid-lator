@@ -33,6 +33,36 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton acylCarnitines = (ImageButton) findViewById(R.id.imbtnAcylCarnitines);
+
+        acylCarnitines.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, AcylCarnitinesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton coA_Esters = (ImageButton) findViewById(R.id.imbtnCoAEsters);
+
+        coA_Esters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, CoA_EstersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton glycerolipids = (ImageButton) findViewById(R.id.imbtnGlycerolipids);
+
+        glycerolipids.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, GlycerolipidsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton cholesterylEsters = (ImageButton) findViewById(R.id.imbtnCholesterylEsters);
 
         cholesterylEsters.setOnClickListener(new View.OnClickListener() {

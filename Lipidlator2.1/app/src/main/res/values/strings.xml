@@ -30,6 +30,9 @@
     <string name="MolarMass">Molar Mass:</string>
     <string name="Back">BACK</string>
     <string name="Home">HOME</string>
+    <string name="sn1">sn1:</string>
+    <string name="sn2">sn2:</string>
+    <string name="sn3">sn3:</string>
     <string name="sn1_1">sn1(1\'):</string>
     <string name="sn2_1">sn2(1\'):</string>
     <string name="sn1_3">sn1(3\'):</string>
