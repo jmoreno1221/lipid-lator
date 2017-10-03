@@ -113,6 +113,49 @@ public class Calculations {
         else if(massIndex == 40 && esterIndex == 1){setMass(380.365430);setNumC(25);setNumH(48);setNumO(2);}
         else if(massIndex == 41 && esterIndex == 1){setMass(396.396730);setNumC(26);setNumH(52);setNumO(2);}
         else if(massIndex == 42 && esterIndex == 1){setMass(410.412380);setNumC(27);setNumH(54);setNumO(2);}
+        else if(massIndex == 0 && esterIndex == 2){setMass(240.020970);setNumC(9);setNumH(5);setNumO(2);setNumF(5);}
+        else if(massIndex == 1 && esterIndex == 2){setMass(268.052270);setNumC(11);setNumH(9);setNumO(2);setNumF(5);}
+        else if(massIndex == 2 && esterIndex == 2){setMass(296.083570);setNumC(13);setNumH(13);setNumO(2);setNumF(5);}
+        else if(massIndex == 3 && esterIndex == 2){setMass(324.114870);setNumC(15);setNumH(17);setNumO(2);setNumF(5);}
+        else if(massIndex == 4 && esterIndex == 2){setMass(352.146170);setNumC(17);setNumH(21);setNumO(2);setNumF(5);}
+        else if(massIndex == 5 && esterIndex == 2){setMass(380.177470);setNumC(19);setNumH(25);setNumO(2);setNumF(5);}
+        else if(massIndex == 6 && esterIndex == 2){setMass(394.193120);setNumC(20);setNumH(27);setNumO(2);setNumF(5);}
+        else if(massIndex == 7 && esterIndex == 2){setMass(408.208770);setNumC(21);setNumH(29);setNumO(2);setNumF(5);}
+        else if(massIndex == 8 && esterIndex == 2){setMass(406.193120);setNumC(21);setNumH(27);setNumO(2);setNumF(5);}
+        else if(massIndex == 9 && esterIndex == 2){setMass(422.224420);setNumC(22);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 10 && esterIndex == 2){setMass(420.208770);setNumC(22);setNumH(29);setNumO(2);setNumF(5);}
+        else if(massIndex == 11 && esterIndex == 2){setMass(436.240070);setNumC(23);setNumH(33);setNumO(2);setNumF(5);}
+        else if(massIndex == 12 && esterIndex == 2){setMass(434.224420);setNumC(23);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 13 && esterIndex == 2){setMass(450.255720);setNumC(24);setNumH(35);setNumO(2);setNumF(5);}
+        else if(massIndex == 14 && esterIndex == 2){setMass(448.240070);setNumC(24);setNumH(33);setNumO(2);setNumF(5);}
+        else if(massIndex == 15 && esterIndex == 2){setMass(446.224420);setNumC(24);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 16 && esterIndex == 2){setMass(464.271370);setNumC(25);setNumH(37);setNumO(2);setNumF(5);}
+        else if(massIndex == 17 && esterIndex == 2){setMass(462.255720);setNumC(25);setNumH(35);setNumO(2);setNumF(5);}
+        else if(massIndex == 18 && esterIndex == 2){setMass(462.255720);setNumC(25);setNumH(35);setNumO(2);setNumF(5);}
+        else if(massIndex == 19 && esterIndex == 2){setMass(460.240070);setNumC(25);setNumH(33);setNumO(2);setNumF(5);}
+        else if(massIndex == 20 && esterIndex == 2){setMass(458.224420);setNumC(25);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 21 && esterIndex == 2){setMass(458.224420);setNumC(25);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 22 && esterIndex == 2){setMass(456.208770);setNumC(25);setNumH(29);setNumO(2);setNumF(5);}
+        else if(massIndex == 23 && esterIndex == 2){setMass(478.287020);setNumC(26);setNumH(39);setNumO(2);setNumF(5);}
+        else if(massIndex == 24 && esterIndex == 2){setMass(492.302670);setNumC(27);setNumH(41);setNumO(2);setNumF(5);}
+        else if(massIndex == 25 && esterIndex == 2){setMass(490.287020);setNumC(27);setNumH(39);setNumO(2);setNumF(5);}
+        else if(massIndex == 26 && esterIndex == 2){setMass(488.271370);setNumC(27);setNumH(37);setNumO(2);setNumF(5);}
+        else if(massIndex == 27 && esterIndex == 2){setMass(486.255720);setNumC(27);setNumH(35);setNumO(2);setNumF(5);}
+        else if(massIndex == 28 && esterIndex == 2){setMass(484.240070);setNumC(27);setNumH(33);setNumO(2);setNumF(5);}
+        else if(massIndex == 29 && esterIndex == 2){setMass(482.224420);setNumC(27);setNumH(31);setNumO(2);setNumF(5);}
+        else if(massIndex == 30 && esterIndex == 2){setMass(506.318320);setNumC(28);setNumH(43);setNumO(2);setNumF(5);}
+        else if(massIndex == 31 && esterIndex == 2){setMass(520.333970);setNumC(29);setNumH(45);setNumO(2);setNumF(5);}
+        else if(massIndex == 32 && esterIndex == 2){setMass(518.318320);setNumC(29);setNumH(43);setNumO(2);setNumF(5);}
+        else if(massIndex == 33 && esterIndex == 2){setMass(516.302670);setNumC(29);setNumH(41);setNumO(2);setNumF(5);}
+        else if(massIndex == 34 && esterIndex == 2){setMass(514.287020);setNumC(29);setNumH(39);setNumO(2);setNumF(5);}
+        else if(massIndex == 35 && esterIndex == 2){setMass(512.271370);setNumC(29);setNumH(37);setNumO(2);setNumF(5);}
+        else if(massIndex == 36 && esterIndex == 2){setMass(510.255720);setNumC(29);setNumH(35);setNumO(2);setNumF(5);}
+        else if(massIndex == 37 && esterIndex == 2){setMass(508.240070);setNumC(29);setNumH(33);setNumO(2);setNumF(5);}
+        else if(massIndex == 38 && esterIndex == 2){setMass(534.349620);setNumC(30);setNumH(47);setNumO(2);setNumF(5);}
+        else if(massIndex == 39 && esterIndex == 2){setMass(548.365270);setNumC(31);setNumH(49);setNumO(2);setNumF(5);}
+        else if(massIndex == 40 && esterIndex == 2){setMass(546.349620);setNumC(31);setNumH(47);setNumO(2);setNumF(5);}
+        else if(massIndex == 41 && esterIndex == 2){setMass(562.380920);setNumC(32);setNumH(51);setNumO(2);setNumF(5);}
+        else if(massIndex == 42 && esterIndex == 2){setMass(576.396570);setNumC(33);setNumH(53);setNumO(2);setNumF(5);}
         return getMass();
     }
     public double calculateFinalMass(int ion, double basicMass)

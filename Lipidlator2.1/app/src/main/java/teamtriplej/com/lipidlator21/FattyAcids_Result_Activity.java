@@ -37,7 +37,8 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         tvFormulaResult.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvEsterSelected.setText(esterSelected);
-        tvAcidSelected.setText(acidSelected);
+        if(esterIndex == 0){tvAcidSelected.setText(acidSelected);}else
+        tvAcidSelected.setText(acidSelected + " " + esterSelected);
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
