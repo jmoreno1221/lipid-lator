@@ -23,7 +23,7 @@ public class Loading extends AppCompatActivity {
         Thread timer = new Thread(){
             public void run(){
                 try {
-                    sleep(3000);
+                    sleep(1750);
                 } catch (InterruptedException e){
                     e.printStackTrace();
                 }
