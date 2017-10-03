@@ -30,7 +30,8 @@
         <activity android:name=".Cardiolipins" />
         <activity android:name=".Cardiolipins_Result_Activity" />
         <activity android:name=".Glycerophospholipids_Activity" />
-        <activity android:name=".Glycerophospholipids_Result_Activity"></activity>
+        <activity android:name=".Glycerophospholipids_Result_Activity" />
+        <activity android:name=".WaxEstersActivity"></activity>
     </application>
 
 </manifest>

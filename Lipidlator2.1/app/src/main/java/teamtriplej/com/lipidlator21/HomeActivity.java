@@ -23,6 +23,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton waxEsters = (ImageButton) findViewById(R.id.imbtnWaxEsters);
+
+        waxEsters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, WaxEstersActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton cholesterylEsters = (ImageButton) findViewById(R.id.imbtnCholesterylEsters);
 
         cholesterylEsters.setOnClickListener(new View.OnClickListener() {
