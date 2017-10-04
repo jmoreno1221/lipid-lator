@@ -39,6 +39,7 @@ public class WaxEsters_Result_Activity extends AppCompatActivity {
         tvIonSelected.setText(ionSelected);
         tvAlcoholResult.setText(alcoholSelected);
         tvAcidResult.setText(acidSelected);
+        tvAbbreviation.setText("WE(" + alcoholSelected + "/" + acidSelected + ")");
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
