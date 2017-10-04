@@ -160,7 +160,28 @@ public class Calculations {
     }
     public double calculateWEBasicMass(int alcoholIndex, int acidIndex)
     {
-        return 0;
+        double[] values = {60.021130,2,4,88.052430,4,8,116.083730,6,12,144.115030,8,16,
+                172.146330,10,20,200.177630,12,24,214.193280,13,26,228.208930,14,28,
+                226.193280,14,26,242.224580,15,30,240.208930,15,28,256.240230,16,32,
+                254.224580,16,30,270.255880,17,34,268.240230,17,32,266.224580,17,30,
+                284.271530,18,36,282.255880,18,34,282.255880,18,34,280.240230,18,32,
+                278.224580,18,30,278.224580,18,30,276.208930,18,28,298.287180,19,38,
+                312.302830,20,40,310.287180,20,38,308.271530,20,36,306.255880,20,34,
+                304.240230,20,32,302.224580,20,30,326.318480,21,42,340.334130,22,44,
+                338.318480,22,42,336.302830,22,40,334.287180,22,38,332.271530,22,36,
+                330.255880,22,34,328.240230,22,32,354.349780,23,46,368.365430,24,48,
+                366.349780,24,46,382.381080,25,50,396.396730,26,52};
+        double alcohol = values[(alcoholIndex * 3)] - 31.99205;
+        int carbonAlcohol = (int)values[(alcoholIndex * 3) + 1];
+        int hydrogenAlcohol = (int)values[(alcoholIndex * 3) + 2];
+        double acid = values[(acidIndex * 3)] - 31.99205;
+        int carbonAcid = (int)values[(acidIndex * 3) + 1];
+        int hydrogenAcid = (int)values[(acidIndex * 3) + 2];
+        setMass((alcohol + acid) + 31.99205);
+        setNumC(carbonAlcohol + carbonAcid);
+        setNumH(hydrogenAlcohol + hydrogenAcid);
+        setNumO(2);
+        return getMass();
     }
     public double calculateFinalMass(int ion, double basicMass)
     {

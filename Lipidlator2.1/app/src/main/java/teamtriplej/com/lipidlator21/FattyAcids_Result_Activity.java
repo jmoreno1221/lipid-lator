@@ -13,10 +13,10 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatty_acids_result);
         TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
-        TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormula);
+        TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormulaResult);
         TextView tvEsterSelected = (TextView) findViewById(R.id.tvEsterResult);
-        TextView tvIonSelected = (TextView) findViewById(R.id.tvMolarMassResult);
-        TextView tvAcidSelected = (TextView) findViewById(R.id.tvAbbreviationResult);
+        TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
+        TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviationResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
         //Bring over the data from previous screen
@@ -37,8 +37,8 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         tvFormulaResult.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvEsterSelected.setText(esterSelected);
-        if(esterIndex == 0){tvAcidSelected.setText(acidSelected);}else
-        tvAcidSelected.setText(acidSelected + " " + esterSelected);
+        if(esterIndex == 0){tvAbbreviation.setText(acidSelected);}else
+            tvAbbreviation.setText(acidSelected + " " + esterSelected);
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
