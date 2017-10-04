@@ -158,6 +158,10 @@ public class Calculations {
         else if(massIndex == 42 && esterIndex == 2){setMass(576.396570);setNumC(33);setNumH(53);setNumO(2);setNumF(5);}
         return getMass();
     }
+    public double calculateWEBasicMass(int alcoholIndex, int acidIndex)
+    {
+        return 0;
+    }
     public double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
