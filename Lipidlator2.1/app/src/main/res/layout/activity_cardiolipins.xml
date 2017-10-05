@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="teamtriplej.com.lipidlator21.Cardiolipins">
+    tools:context="teamtriplej.com.lipidlator21.CardiolipinsActivity">
 
     <Button
         android:id="@+id/btnSubmit"

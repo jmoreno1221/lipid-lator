@@ -7,6 +7,20 @@ package teamtriplej.com.lipidlator21;
 public class Calculations {
     private double mass;
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
+    private double[] ratioValues = {28.02908,2,4,56.06038,4,8,84.09168,6,12,112.12298,8,16,
+            140.15428,10,20,168.18558,12,24,182.20123,13,26,
+            196.21688,14,28,194.20123,14,26,210.23253,15,30,
+            208.21688,15,28,224.24818,16,32,222.23253,16,30,
+            238.26383,17,34,236.24818,17,32,234.23253,17,30,
+            252.27948,18,36,250.26383,18,34,250.26383,18,34,
+            248.24818,18,32,246.23253,18,30,246.23253,18,30,
+            244.21688,18,28,266.29513,19,38,280.31078,20,40,
+            278.29513,20,38,276.27948,20,36,274.26383,20,34,
+            272.24818,20,32,270.23253,20,30,294.32643,21,42,
+            308.34208,22,44,306.32643,22,42,304.31078,22,40,
+            302.29513,22,38,300.27948,22,36,298.26383,22,34,
+            296.24818,22,32,322.35773,23,46,336.37338,24,48,
+            334.35773,24,46,350.38903,25,50,364.40468,26,52};
     public Calculations() {
     }
     public String calculateFormula(int numC, int numH, int numO, int numN
@@ -160,26 +174,12 @@ public class Calculations {
     }
     public double calculateWEBasicMass(int alcoholIndex, int acidIndex)
     {
-        double[] values = {28.02908,2,4,56.06038,4,8,84.09168,6,12,112.12298,8,16,
-                140.15428,10,20,168.18558,12,24,182.20123,13,26,
-                196.21688,14,28,194.20123,14,26,210.23253,15,30,
-                208.21688,15,28,224.24818,16,32,222.23253,16,30,
-                238.26383,17,34,236.24818,17,32,234.23253,17,30,
-                252.27948,18,36,250.26383,18,34,250.26383,18,34,
-                248.24818,18,32,246.23253,18,30,246.23253,18,30,
-                244.21688,18,28,266.29513,19,38,280.31078,20,40,
-                278.29513,20,38,276.27948,20,36,274.26383,20,34,
-                272.24818,20,32,270.23253,20,30,294.32643,21,42,
-                308.34208,22,44,306.32643,22,42,304.31078,22,40,
-                302.29513,22,38,300.27948,22,36,298.26383,22,34,
-                296.24818,22,32,322.35773,23,46,336.37338,24,48,
-                334.35773,24,46,350.38903,25,50,364.40468,26,52};
-        double alcohol = values[(alcoholIndex * 3)];
-        int carbonAlcohol = (int)values[(alcoholIndex * 3) + 1];
-        int hydrogenAlcohol = (int)values[(alcoholIndex * 3) + 2];
-        double acid = values[(acidIndex * 3)];
-        int carbonAcid = (int)values[(acidIndex * 3) + 1];
-        int hydrogenAcid = (int)values[(acidIndex * 3) + 2];
+        double alcohol = ratioValues[(alcoholIndex * 3)];
+        int carbonAlcohol = (int)ratioValues[(alcoholIndex * 3) + 1];
+        int hydrogenAlcohol = (int)ratioValues[(alcoholIndex * 3) + 2];
+        double acid = ratioValues[(acidIndex * 3)];
+        int carbonAcid = (int)ratioValues[(acidIndex * 3) + 1];
+        int hydrogenAcid = (int)ratioValues[(acidIndex * 3) + 2];
         setMass((alcohol + acid) + 31.99205);
         setNumC(carbonAlcohol + carbonAcid);
         setNumH(hydrogenAlcohol + hydrogenAcid);

@@ -88,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
         cardiolipins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, Cardiolipins.class);
+                Intent intent = new Intent(HomeActivity.this, CardiolipinsActivity.class);
                 startActivity(intent);
             }
         });

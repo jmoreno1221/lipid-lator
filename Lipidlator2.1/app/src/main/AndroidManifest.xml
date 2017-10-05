@@ -27,7 +27,7 @@
         <activity android:name=".CholesterylEsters_Result_Activity" />
         <activity android:name=".Sphingolipids_Activity" />
         <activity android:name=".Sphingolipids_Result_Activity" />
-        <activity android:name=".Cardiolipins" />
+        <activity android:name=".CardiolipinsActivity" />
         <activity android:name=".Cardiolipins_Result_Activity" />
         <activity android:name=".Glycerophospholipids_Activity" />
         <activity android:name=".Glycerophospholipids_Result_Activity" />
