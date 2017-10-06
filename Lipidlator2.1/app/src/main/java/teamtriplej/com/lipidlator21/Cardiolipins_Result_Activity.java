@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static teamtriplej.com.lipidlator21.R.id.btnBack;
-
 public class Cardiolipins_Result_Activity extends AppCompatActivity {
 
     @Override
@@ -17,9 +15,12 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_cardiolipins__result_);
 
         TextView tvIonResult = (TextView) findViewById(R.id.tvIonResult);
-        TextView tvSpn1Result = (TextView) findViewById(R.id.tvSn1Result);
-        TextView tvSpn2Result = (TextView) findViewById(R.id.tvSn1)
-        Button btnBack = (Button) findViewById(btnBack);
+        TextView tvSpn1Result = (TextView) findViewById(R.id.tvSn1_Result);
+        TextView tvSpn2Result = (TextView) findViewById(R.id.tvSn1_3_Result);
+        TextView tvSpn3Result = (TextView) findViewById(R.id.tvSn2_1_Result);
+        TextView tvSpn4Result = (TextView) findViewById(R.id.tvSn2_3_Result);
+
+        Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
 
         btnBack.setOnClickListener(new View.OnClickListener(){

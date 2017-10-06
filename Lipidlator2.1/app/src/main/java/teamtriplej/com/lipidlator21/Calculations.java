@@ -186,6 +186,16 @@ public class Calculations {
         setNumO(2);
         return getMass();
     }
+    public double calculateACBasicMass(int acylIndex)
+    {
+        double[] acArray = {203.115759,9,17,4,1,231.147059,11,21,4,1};
+        setMass(acArray[(acylIndex * 5)]);
+        setNumC((int)acArray[(acylIndex * 5) + 1]);
+        setNumH((int)acArray[(acylIndex * 5) + 2]);
+        setNumO((int)acArray[(acylIndex * 5) + 3]);
+        setNumN((int)acArray[(acylIndex * 5) + 4]);
+        return getMass();
+    }
     public double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}

@@ -28,6 +28,7 @@ public class WaxEsters_Result_Activity extends AppCompatActivity {
         String ionSelected = getIntent().getExtras().getString("ionSelected");
         String alcoholSelected = getIntent().getExtras().getString("alcoholSelected");
         String acidSelected = getIntent().getExtras().getString("acidSelected");
+      //  Toast.makeText(this, acidSelected, Toast.LENGTH_SHORT).show();
         Calculations calc = new Calculations();
         double mass = calc.calculateWEBasicMass(alcoholIndex,acidIndex);
         double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
