@@ -32,7 +32,6 @@ public class WaxEstersActivity extends AppCompatActivity {
                 setIon(ion);
                 Intent intent = new Intent(WaxEstersActivity.this, WaxEsters_Result_Activity.class);
                 intent.putExtra("ion",getIon());
-                intent.putExtra("basicMass",getBasicMass());
                 intent.putExtra("alcoholIndex", getAlcoholIndex());
                 intent.putExtra("acidIndex", getAcidIndex());
                 intent.putExtra("ionSelected",ionSelected);

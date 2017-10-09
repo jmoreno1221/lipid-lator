@@ -24,8 +24,19 @@ public class AcylCarnitines_Result_Activity extends AppCompatActivity {
         int acyl = getIntent().getExtras().getInt("acylIndex");
         String ionSelected = getIntent().getExtras().getString("ionSelected");
         String acylSelected = getIntent().getExtras().getString("acylSelected");
-        double basicMass = getIntent().getExtras().getDouble("basicMass");
-       // Toast.makeText(this, acyl, Toast.LENGTH_SHORT).show();
+        Calculations calc = new Calculations();
+        double mass = calc.calculateACBasicMass(acyl);
+        double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
+        String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
+                calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
+                calc.getNumP(), calc.getNumS(), calc.getNumF());
+        molarMassResult.setText(Double.toString(molarMass));
+        formulaResult.setText(formula);
+        ionResult.setText(ionSelected);
+        acylResult.setText(acylSelected);
+        abbreviationResult.setText("CAR(" + acylSelected + ")");
+
+        // Toast.makeText(this, acyl, Toast.LENGTH_SHORT).show();
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

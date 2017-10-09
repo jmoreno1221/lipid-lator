@@ -42,7 +42,7 @@
     <string name="NAcyl">N-acyl:</string>
     <string name="ResultPlaceHolder">XXXXX</string>
 
-    // String for Home Activity Image Desciption
+    // String for Home Activity Image Description
     <string name="HomeTitle">Select Your \nLipid Class</string>
     <string name="FALabel">Fatty Acids\nTesting</string>
     <string name="WELabel">Wax Esters\nTesting</string>
