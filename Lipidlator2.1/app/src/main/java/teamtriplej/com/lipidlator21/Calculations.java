@@ -206,6 +206,15 @@ public class Calculations {
         setNumN(1);
         return getMass();
     }
+    public double calculateCLBasicMass()
+    {
+        double startingMass = 568.095831;
+        setNumC(17);
+        setNumH(30);
+        setNumO(17);
+        setNumP(2);
+        return getMass();
+    }
     public double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
