@@ -41,135 +41,63 @@ public class Calculations {
     }
     public double calculateFABasicMass(int massIndex, int esterIndex)
     {
-        if(massIndex == 0 && esterIndex == 0){setMass(60.021130);setNumC(2);setNumH(4);setNumO(2);}
-        else if(massIndex == 1 && esterIndex == 0){setMass(88.052430);setNumC(4);setNumH(8);setNumO(2);}
-        else if(massIndex == 2 && esterIndex == 0){setMass(116.083730);setNumC(6);setNumH(12);setNumO(2);}
-        else if(massIndex == 3 && esterIndex == 0){setMass(144.115030);setNumC(8);setNumH(16);setNumO(2);}
-        else if(massIndex == 4 && esterIndex == 0){setMass(172.146330);setNumC(10);setNumH(20);setNumO(2);}
-        else if(massIndex == 5 && esterIndex == 0){setMass(200.177630);setNumC(12);setNumH(24);setNumO(2);}
-        else if(massIndex == 6 && esterIndex == 0){setMass(214.193280);setNumC(13);setNumH(26);setNumO(2);}
-        else if(massIndex == 7 && esterIndex == 0){setMass(228.208930);setNumC(14);setNumH(28);setNumO(2);}
-        else if(massIndex == 8 && esterIndex == 0){setMass(226.193280);setNumC(14);setNumH(26);setNumO(2);}
-        else if(massIndex == 9 && esterIndex == 0){setMass(242.224580);setNumC(15);setNumH(30);setNumO(2);}
-        else if(massIndex == 10 && esterIndex == 0){setMass(240.208930);setNumC(15);setNumH(28);setNumO(2);}
-        else if(massIndex == 11 && esterIndex == 0){setMass(256.240230);setNumC(16);setNumH(32);setNumO(2);}
-        else if(massIndex == 12 && esterIndex == 0){setMass(254.224580);setNumC(16);setNumH(30);setNumO(2);}
-        else if(massIndex == 13 && esterIndex == 0){setMass(270.255880);setNumC(17);setNumH(34);setNumO(2);}
-        else if(massIndex == 14 && esterIndex == 0){setMass(268.240230);setNumC(17);setNumH(32);setNumO(2);}
-        else if(massIndex == 15 && esterIndex == 0){setMass(266.224580);setNumC(17);setNumH(30);setNumO(2);}
-        else if(massIndex == 16 && esterIndex == 0){setMass(284.271530);setNumC(18);setNumH(36);setNumO(2);}
-        else if(massIndex == 17 && esterIndex == 0){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
-        else if(massIndex == 18 && esterIndex == 0){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
-        else if(massIndex == 19 && esterIndex == 0){setMass(280.240230);setNumC(18);setNumH(32);setNumO(2);}
-        else if(massIndex == 20 && esterIndex == 0){setMass(278.224580);setNumC(18);setNumH(30);setNumO(2);}
-        else if(massIndex == 21 && esterIndex == 0){setMass(278.224580);setNumC(18);setNumH(30);setNumO(2);}
-        else if(massIndex == 22 && esterIndex == 0){setMass(276.208930);setNumC(18);setNumH(28);setNumO(2);}
-        else if(massIndex == 23 && esterIndex == 0){setMass(298.287180);setNumC(19);setNumH(38);setNumO(2);}
-        else if(massIndex == 24 && esterIndex == 0){setMass(312.302830);setNumC(20);setNumH(40);setNumO(2);}
-        else if(massIndex == 25 && esterIndex == 0){setMass(310.287180);setNumC(20);setNumH(38);setNumO(2);}
-        else if(massIndex == 26 && esterIndex == 0){setMass(308.271530);setNumC(20);setNumH(36);setNumO(2);}
-        else if(massIndex == 27 && esterIndex == 0){setMass(306.255880);setNumC(20);setNumH(34);setNumO(2);}
-        else if(massIndex == 28 && esterIndex == 0){setMass(304.240230);setNumC(20);setNumH(32);setNumO(2);}
-        else if(massIndex == 29 && esterIndex == 0){setMass(302.224580);setNumC(20);setNumH(30);setNumO(2);}
-        else if(massIndex == 30 && esterIndex == 0){setMass(326.318480);setNumC(21);setNumH(42);setNumO(2);}
-        else if(massIndex == 31 && esterIndex == 0){setMass(340.334130);setNumC(22);setNumH(44);setNumO(2);}
-        else if(massIndex == 32 && esterIndex == 0){setMass(338.318480);setNumC(22);setNumH(42);setNumO(2);}
-        else if(massIndex == 33 && esterIndex == 0){setMass(336.302830);setNumC(22);setNumH(40);setNumO(2);}
-        else if(massIndex == 34 && esterIndex == 0){setMass(334.287180);setNumC(22);setNumH(38);setNumO(2);}
-        else if(massIndex == 35 && esterIndex == 0){setMass(332.271530);setNumC(22);setNumH(36);setNumO(2);}
-        else if(massIndex == 36 && esterIndex == 0){setMass(330.255880);setNumC(22);setNumH(34);setNumO(2);}
-        else if(massIndex == 37 && esterIndex == 0){setMass(328.240230);setNumC(22);setNumH(32);setNumO(2);}
-        else if(massIndex == 38 && esterIndex == 0){setMass(354.349780);setNumC(23);setNumH(46);setNumO(2);}
-        else if(massIndex == 39 && esterIndex == 0){setMass(368.365430);setNumC(24);setNumH(48);setNumO(2);}
-        else if(massIndex == 40 && esterIndex == 0){setMass(366.349780);setNumC(24);setNumH(46);setNumO(2);}
-        else if(massIndex == 41 && esterIndex == 0){setMass(382.381080);setNumC(25);setNumH(50);setNumO(2);}
-        else if(massIndex == 42 && esterIndex == 0){setMass(396.396730);setNumC(26);setNumH(52);setNumO(2);}
-        else if(massIndex == 0 && esterIndex == 1){setMass(74.036780);setNumC(3);setNumH(6);setNumO(2);}
-        else if(massIndex == 1 && esterIndex == 1){setMass(102.068080);setNumC(5);setNumH(10);setNumO(2);}
-        else if(massIndex == 2 && esterIndex == 1){setMass(130.099380);setNumC(7);setNumH(14);setNumO(2);}
-        else if(massIndex == 3 && esterIndex == 1){setMass(158.130680);setNumC(9);setNumH(18);setNumO(2);}
-        else if(massIndex == 4 && esterIndex == 1){setMass(186.161980);setNumC(11);setNumH(22);setNumO(2);}
-        else if(massIndex == 5 && esterIndex == 1){setMass(214.193280);setNumC(13);setNumH(26);setNumO(2);}
-        else if(massIndex == 6 && esterIndex == 1){setMass(228.208930);setNumC(14);setNumH(28);setNumO(2);}
-        else if(massIndex == 7 && esterIndex == 1){setMass(242.224580);setNumC(15);setNumH(30);setNumO(2);}
-        else if(massIndex == 8 && esterIndex == 1){setMass(240.208930);setNumC(15);setNumH(28);setNumO(2);}
-        else if(massIndex == 9 && esterIndex == 1){setMass(256.240230);setNumC(16);setNumH(32);setNumO(2);}
-        else if(massIndex == 10 && esterIndex == 1){setMass(254.224580);setNumC(16);setNumH(30);setNumO(2);}
-        else if(massIndex == 11 && esterIndex == 1){setMass(270.255880);setNumC(17);setNumH(34);setNumO(2);}
-        else if(massIndex == 12 && esterIndex == 1){setMass(268.240230);setNumC(17);setNumH(32);setNumO(2);}
-        else if(massIndex == 13 && esterIndex == 1){setMass(284.271530);setNumC(18);setNumH(36);setNumO(2);}
-        else if(massIndex == 14 && esterIndex == 1){setMass(282.255880);setNumC(18);setNumH(34);setNumO(2);}
-        else if(massIndex == 15 && esterIndex == 1){setMass(280.240230);setNumC(18);setNumH(32);setNumO(2);}
-        else if(massIndex == 16 && esterIndex == 1){setMass(298.287180);setNumC(19);setNumH(38);setNumO(2);}
-        else if(massIndex == 17 && esterIndex == 1){setMass(296.271530);setNumC(19);setNumH(36);setNumO(2);}
-        else if(massIndex == 18 && esterIndex == 1){setMass(296.271530);setNumC(19);setNumH(36);setNumO(2);}
-        else if(massIndex == 19 && esterIndex == 1){setMass(294.255880);setNumC(19);setNumH(34);setNumO(2);}
-        else if(massIndex == 20 && esterIndex == 1){setMass(292.240230);setNumC(19);setNumH(32);setNumO(2);}
-        else if(massIndex == 21 && esterIndex == 1){setMass(292.240230);setNumC(19);setNumH(32);setNumO(2);}
-        else if(massIndex == 22 && esterIndex == 1){setMass(290.224580);setNumC(19);setNumH(30);setNumO(2);}
-        else if(massIndex == 23 && esterIndex == 1){setMass(312.302830);setNumC(20);setNumH(40);setNumO(2);}
-        else if(massIndex == 24 && esterIndex == 1){setMass(326.318480);setNumC(21);setNumH(42);setNumO(2);}
-        else if(massIndex == 25 && esterIndex == 1){setMass(324.302830);setNumC(21);setNumH(40);setNumO(2);}
-        else if(massIndex == 26 && esterIndex == 1){setMass(322.287180);setNumC(21);setNumH(38);setNumO(2);}
-        else if(massIndex == 27 && esterIndex == 1){setMass(320.271530);setNumC(21);setNumH(36);setNumO(2);}
-        else if(massIndex == 28 && esterIndex == 1){setMass(318.255880);setNumC(21);setNumH(34);setNumO(2);}
-        else if(massIndex == 29 && esterIndex == 1){setMass(316.240230);setNumC(21);setNumH(32);setNumO(2);}
-        else if(massIndex == 30 && esterIndex == 1){setMass(340.334130);setNumC(22);setNumH(44);setNumO(2);}
-        else if(massIndex == 31 && esterIndex == 1){setMass(354.349780);setNumC(23);setNumH(46);setNumO(2);}
-        else if(massIndex == 32 && esterIndex == 1){setMass(352.334130);setNumC(23);setNumH(44);setNumO(2);}
-        else if(massIndex == 33 && esterIndex == 1){setMass(350.318480);setNumC(23);setNumH(42);setNumO(2);}
-        else if(massIndex == 34 && esterIndex == 1){setMass(348.302830);setNumC(23);setNumH(40);setNumO(2);}
-        else if(massIndex == 35 && esterIndex == 1){setMass(346.287180);setNumC(23);setNumH(38);setNumO(2);}
-        else if(massIndex == 36 && esterIndex == 1){setMass(344.271530);setNumC(23);setNumH(36);setNumO(2);}
-        else if(massIndex == 37 && esterIndex == 1){setMass(342.255880);setNumC(23);setNumH(34);setNumO(2);}
-        else if(massIndex == 38 && esterIndex == 1){setMass(368.365430);setNumC(24);setNumH(48);setNumO(2);}
-        else if(massIndex == 39 && esterIndex == 1){setMass(382.381080);setNumC(25);setNumH(50);setNumO(2);}
-        else if(massIndex == 40 && esterIndex == 1){setMass(380.365430);setNumC(25);setNumH(48);setNumO(2);}
-        else if(massIndex == 41 && esterIndex == 1){setMass(396.396730);setNumC(26);setNumH(52);setNumO(2);}
-        else if(massIndex == 42 && esterIndex == 1){setMass(410.412380);setNumC(27);setNumH(54);setNumO(2);}
-        else if(massIndex == 0 && esterIndex == 2){setMass(240.020970);setNumC(9);setNumH(5);setNumO(2);setNumF(5);}
-        else if(massIndex == 1 && esterIndex == 2){setMass(268.052270);setNumC(11);setNumH(9);setNumO(2);setNumF(5);}
-        else if(massIndex == 2 && esterIndex == 2){setMass(296.083570);setNumC(13);setNumH(13);setNumO(2);setNumF(5);}
-        else if(massIndex == 3 && esterIndex == 2){setMass(324.114870);setNumC(15);setNumH(17);setNumO(2);setNumF(5);}
-        else if(massIndex == 4 && esterIndex == 2){setMass(352.146170);setNumC(17);setNumH(21);setNumO(2);setNumF(5);}
-        else if(massIndex == 5 && esterIndex == 2){setMass(380.177470);setNumC(19);setNumH(25);setNumO(2);setNumF(5);}
-        else if(massIndex == 6 && esterIndex == 2){setMass(394.193120);setNumC(20);setNumH(27);setNumO(2);setNumF(5);}
-        else if(massIndex == 7 && esterIndex == 2){setMass(408.208770);setNumC(21);setNumH(29);setNumO(2);setNumF(5);}
-        else if(massIndex == 8 && esterIndex == 2){setMass(406.193120);setNumC(21);setNumH(27);setNumO(2);setNumF(5);}
-        else if(massIndex == 9 && esterIndex == 2){setMass(422.224420);setNumC(22);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 10 && esterIndex == 2){setMass(420.208770);setNumC(22);setNumH(29);setNumO(2);setNumF(5);}
-        else if(massIndex == 11 && esterIndex == 2){setMass(436.240070);setNumC(23);setNumH(33);setNumO(2);setNumF(5);}
-        else if(massIndex == 12 && esterIndex == 2){setMass(434.224420);setNumC(23);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 13 && esterIndex == 2){setMass(450.255720);setNumC(24);setNumH(35);setNumO(2);setNumF(5);}
-        else if(massIndex == 14 && esterIndex == 2){setMass(448.240070);setNumC(24);setNumH(33);setNumO(2);setNumF(5);}
-        else if(massIndex == 15 && esterIndex == 2){setMass(446.224420);setNumC(24);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 16 && esterIndex == 2){setMass(464.271370);setNumC(25);setNumH(37);setNumO(2);setNumF(5);}
-        else if(massIndex == 17 && esterIndex == 2){setMass(462.255720);setNumC(25);setNumH(35);setNumO(2);setNumF(5);}
-        else if(massIndex == 18 && esterIndex == 2){setMass(462.255720);setNumC(25);setNumH(35);setNumO(2);setNumF(5);}
-        else if(massIndex == 19 && esterIndex == 2){setMass(460.240070);setNumC(25);setNumH(33);setNumO(2);setNumF(5);}
-        else if(massIndex == 20 && esterIndex == 2){setMass(458.224420);setNumC(25);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 21 && esterIndex == 2){setMass(458.224420);setNumC(25);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 22 && esterIndex == 2){setMass(456.208770);setNumC(25);setNumH(29);setNumO(2);setNumF(5);}
-        else if(massIndex == 23 && esterIndex == 2){setMass(478.287020);setNumC(26);setNumH(39);setNumO(2);setNumF(5);}
-        else if(massIndex == 24 && esterIndex == 2){setMass(492.302670);setNumC(27);setNumH(41);setNumO(2);setNumF(5);}
-        else if(massIndex == 25 && esterIndex == 2){setMass(490.287020);setNumC(27);setNumH(39);setNumO(2);setNumF(5);}
-        else if(massIndex == 26 && esterIndex == 2){setMass(488.271370);setNumC(27);setNumH(37);setNumO(2);setNumF(5);}
-        else if(massIndex == 27 && esterIndex == 2){setMass(486.255720);setNumC(27);setNumH(35);setNumO(2);setNumF(5);}
-        else if(massIndex == 28 && esterIndex == 2){setMass(484.240070);setNumC(27);setNumH(33);setNumO(2);setNumF(5);}
-        else if(massIndex == 29 && esterIndex == 2){setMass(482.224420);setNumC(27);setNumH(31);setNumO(2);setNumF(5);}
-        else if(massIndex == 30 && esterIndex == 2){setMass(506.318320);setNumC(28);setNumH(43);setNumO(2);setNumF(5);}
-        else if(massIndex == 31 && esterIndex == 2){setMass(520.333970);setNumC(29);setNumH(45);setNumO(2);setNumF(5);}
-        else if(massIndex == 32 && esterIndex == 2){setMass(518.318320);setNumC(29);setNumH(43);setNumO(2);setNumF(5);}
-        else if(massIndex == 33 && esterIndex == 2){setMass(516.302670);setNumC(29);setNumH(41);setNumO(2);setNumF(5);}
-        else if(massIndex == 34 && esterIndex == 2){setMass(514.287020);setNumC(29);setNumH(39);setNumO(2);setNumF(5);}
-        else if(massIndex == 35 && esterIndex == 2){setMass(512.271370);setNumC(29);setNumH(37);setNumO(2);setNumF(5);}
-        else if(massIndex == 36 && esterIndex == 2){setMass(510.255720);setNumC(29);setNumH(35);setNumO(2);setNumF(5);}
-        else if(massIndex == 37 && esterIndex == 2){setMass(508.240070);setNumC(29);setNumH(33);setNumO(2);setNumF(5);}
-        else if(massIndex == 38 && esterIndex == 2){setMass(534.349620);setNumC(30);setNumH(47);setNumO(2);setNumF(5);}
-        else if(massIndex == 39 && esterIndex == 2){setMass(548.365270);setNumC(31);setNumH(49);setNumO(2);setNumF(5);}
-        else if(massIndex == 40 && esterIndex == 2){setMass(546.349620);setNumC(31);setNumH(47);setNumO(2);setNumF(5);}
-        else if(massIndex == 41 && esterIndex == 2){setMass(562.380920);setNumC(32);setNumH(51);setNumO(2);setNumF(5);}
-        else if(massIndex == 42 && esterIndex == 2){setMass(576.396570);setNumC(33);setNumH(53);setNumO(2);setNumF(5);}
+        double[] esterArray1 = {60.021130,4,88.052430,4,8,116.083730,6,12,
+                144.115030,8,16,172.146330,10,20,200.177630,12,24,
+                214.193280,13,26,228.208930,14,28,226.193280,14,26,
+                242.224580,15,30,240.208930,15,28,256.240230,16,32,
+                254.224580,16,30,270.255880,17,34,268.240230,17,32,
+                266.224580,17,30,284.271530,18,36,282.255880,18,34,
+                282.255880,18,34,280.240230,18,32,278.224580,18,30,
+                278.224580,18,30,276.208930,18,28,298.287180,19,38,
+                312.302830,20,40,310.287180,20,38,308.271530,20,36,
+                306.255880,20,34,304.240230,20,32,302.224580,20,30,
+                326.318480,21,42,340.334130,22,44,338.318480,22,42,
+                336.302830,22,40,334.287180,22,38,332.271530,22,36,
+                330.255880,22,34,328.240230,22,32,354.349780,23,46,
+                368.365430,24,48,366.349780,24,46,382.381080,25,50,
+                396.396730,26,52};
+        double[] esterArray2 = {74.036780,3,6,102.068080,5,10,130.099380,7,14,
+                158.130680,9,18,186.161980,11,22,214.193280,13,26,
+                228.208930,14,28,242.224580,15,30,240.208930,15,28,
+                256.240230,16,32,254.224580,16,30,270.255880,17,34,
+                268.240230,17,32,284.271530,18,36,282.255880,18,34,
+                280.240230,18,32,298.287180,19,38,296.271530,19,36,
+                296.271530,19,36,294.255880,19,34,292.240230,19,32,
+                292.240230,19,32,290.224580,19,30,312.302830,20,40,
+                326.318480,21,42,324.302830,21,40,322.287180,21,38,
+                320.271530,21,36,318.255880,21,34,316.240230,21,32,
+                340.334130,22,44,354.349780,23,46,352.334130,23,44,
+                350.318480,23,42,348.302830,23,40,346.287180,23,38,
+                344.271530,23,36,342.255880,23,34,368.365430,24,48,
+                382.381080,25,50,380.365430,25,48,396.396730,26,52,
+                410.412380,27,54};
+        double[] esterArray3 = {240.020970,9,5,268.052270,11,9,296.083570,13,13,
+                324.114870,15,17,352.146170,17,21,380.177470,19,25,394.193120,20,27,
+                408.208770,21,29,406.193120,21,27,422.224420,22,31,420.208770,22,29,
+                436.240070,23,33,434.224420,23,31,450.255720,24,35,448.240070,24,33,
+                446.224420,24,31,464.271370,25,37,462.255720,25,35,462.255720,25,35,
+                460.240070,25,33,458.224420,25,31,458.224420,25,31,456.208770,25,29,
+                478.287020,26,39,492.302670,27,41,490.287020,27,39,488.271370,27,37,
+                486.255720,27,35,484.240070,27,33,482.224420,27,31,506.318320,28,43,
+                520.333970,29,45,518.318320,29,43,516.302670,29,41,514.287020,29,39,
+                512.271370,29,37,510.255720,29,35,508.240070,29,33,534.349620,30,47,
+                548.365270,31,49,546.349620,31,47,562.380920,32,51,576.396570,33,53};
+        if(esterIndex == 0){
+            setMass(esterArray1[(massIndex * 3)]);
+            setNumC((int)esterArray1[(massIndex * 3)+1]);
+            setNumH((int)esterArray1[(massIndex * 3)+2]);
+            setNumO(2);
+        }else if(esterIndex == 1){
+            setMass(esterArray2[(massIndex * 3)]);
+            setNumC((int)esterArray2[(massIndex * 3)+1]);
+            setNumH((int)esterArray2[(massIndex * 3)+2]);
+            setNumO(2);
+        }else
+            setMass(esterArray3[(massIndex * 3)]);
+            setNumC((int)esterArray3[(massIndex * 3)+1]);
+            setNumH((int)esterArray3[(massIndex * 3)+2]);
+            setNumO(2);
+            setNumF(5);
         return getMass();
     }
     public double calculateWEBasicMass(int alcoholIndex, int acidIndex)
