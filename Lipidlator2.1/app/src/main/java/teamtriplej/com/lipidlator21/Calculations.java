@@ -134,7 +134,7 @@ public class Calculations {
         setNumN(1);
         return getMass();
     }
-    public double calculateCLBasicMass()
+    public double calculateCLBasicMass(int index1, int index2, int index3, int index4)
     {
         double startingMass = 568.095831;
         setNumC(17);
