@@ -143,6 +143,9 @@ public class Calculations {
         setNumP(2);
         return getMass();
     }
+    
+
+
     public double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
