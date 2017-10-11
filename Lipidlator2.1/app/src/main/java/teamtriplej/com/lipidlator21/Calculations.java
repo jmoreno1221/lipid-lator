@@ -39,7 +39,7 @@ public class Calculations {
         if(numF == 1){formula+= "F";} else if(numF > 1){formula+= "F"+numF;}
         return formula;
     }
-    public double calculateFABasicMass(int massIndex, int esterIndex)
+    double calculateFABasicMass(int massIndex, int esterIndex)
     {
         double[] esterArray1 = {60.021130,4,88.052430,4,8,116.083730,6,12,
                 144.115030,8,16,172.146330,10,20,200.177630,12,24,
@@ -143,7 +143,6 @@ public class Calculations {
         setNumP(2);
         return getMass();
     }
-
     public double calculateCoABasicMass(int acylIndex)
     {
         double[] coaArray = {809.125784,23,38,837.157084,25,42,865.188384,27,46,
@@ -171,7 +170,6 @@ public class Calculations {
 
         return getMass();
     }
-
     public double calculateCHEBasicMass(int acylIndex)
     {
         double[] arrayCHE = {428.365430,29,48,456.396730,31,52,484.428030,33,56,
@@ -191,7 +189,6 @@ public class Calculations {
         setNumO((int)arrayCHE[(acylIndex * 3) + 3]);
         return getMass();
     }
-
     public double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
