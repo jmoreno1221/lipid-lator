@@ -143,8 +143,6 @@ public class Calculations {
         setNumP(2);
         return getMass();
     }
-    
-
 
     public double calculateFinalMass(int ion, double basicMass)
     {
