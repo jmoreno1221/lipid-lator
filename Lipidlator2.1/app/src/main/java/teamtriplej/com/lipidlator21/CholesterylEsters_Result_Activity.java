@@ -18,7 +18,7 @@ public class CholesterylEsters_Result_Activity extends AppCompatActivity {
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
 
-        TextView ionResult = (TextView) findViewById(R.id.tvIon_Result);
+        TextView ionResult = (TextView) findViewById(R.id.tvIonResult);
         TextView acylResult = (TextView) findViewById(R.id.tvAcylChainResult);
         TextView abbreviationResult = (TextView) findViewById(R.id.tvAbbreviationResult);
         TextView formulaResult = (TextView) findViewById(R.id.tvFormulaResult);
