@@ -183,12 +183,12 @@ class Calculations {
                 708.678430,49,88,706.662780,49,86,704.647130,49,84,702.631480,49,82,
                 700.615830,49,80,698.600180,49,78,696.584530,49,76,722.694080,50,90,
                 736.709730,51,92,734.694080,51,90,750.725380,52,94,764.741030,53,96};
-        setMass(arrayCHE[acylIndex] * 3);
+        setMass(arrayCHE[acylIndex * 3]);
         setNumC((int)arrayCHE[(acylIndex * 3) + 1]);
         setNumH((int)arrayCHE[(acylIndex * 3) + 2]);
-        setNumO((int)arrayCHE[(acylIndex * 3) + 3]);
+        setNumO(2);
         return getMass();
-    }
+    }[]
     double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
