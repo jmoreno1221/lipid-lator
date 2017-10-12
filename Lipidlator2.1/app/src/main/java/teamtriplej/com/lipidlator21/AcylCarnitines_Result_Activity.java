@@ -28,7 +28,7 @@ public class AcylCarnitines_Result_Activity extends AppCompatActivity {
         String acylSelected = getIntent().getExtras().getString("acylSelected");
         Calculations calc = new Calculations();
         double mass = calc.calculateACBasicMass(acyl);
-        double molarMass = Math.round(calc.calculateFinalMass(ion, mass));
+        double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
