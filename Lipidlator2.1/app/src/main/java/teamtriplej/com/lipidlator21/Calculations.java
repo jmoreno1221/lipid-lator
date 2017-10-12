@@ -188,7 +188,7 @@ class Calculations {
         setNumH((int)arrayCHE[(acylIndex * 3) + 2]);
         setNumO(2);
         return getMass();
-    }[]
+    }
     double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
