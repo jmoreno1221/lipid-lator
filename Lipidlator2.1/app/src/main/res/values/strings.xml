@@ -275,11 +275,15 @@
         <item>14:1(9Z)</item>
         <item>15:0</item>
         <item>15:1(9Z)</item>
+        <item>O-16:0</item>
+        <item>P-16:0</item>
         <item>16:0</item>
         <item>16:1(9Z)</item>
         <item>17:0</item>
         <item>17:1(9Z)</item>
         <item>17:2(9Z,12Z)</item>
+        <item>O-18:0</item>
+        <item>P-18:0</item>
         <item>18:0</item>
         <item>18:1(11E)</item>
         <item>18:1(9Z)</item>
@@ -288,6 +292,8 @@
         <item>18:3(9Z,12Z,15Z)</item>
         <item>18:4(6Z,9Z,12Z,15Z)</item>
         <item>19:0</item>
+        <item>O-20:0</item>
+        <item>P-20:0</item>
         <item>20:0</item>
         <item>20:1(11Z)</item>
         <item>20:2(11Z,14Z)</item>
