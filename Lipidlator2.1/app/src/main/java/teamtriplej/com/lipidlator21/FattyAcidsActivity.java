@@ -9,7 +9,6 @@ import android.widget.Spinner;
 
 public class FattyAcidsActivity extends AppCompatActivity {
     public int ion, massIndex, esterIndex;
-    public double basicMass = 0.00;
     public String ionSelected, esterSelected, acidSelected;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +28,10 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 ionSelected = spnI.getSelectedItem().toString();
                 esterSelected = spnE.getSelectedItem().toString();
                 acidSelected = spnA.getSelectedItem().toString();
-                setIon(ion);
                 Intent intent = new Intent(FattyAcidsActivity.this, FattyAcids_Result_Activity.class);
-                intent.putExtra("ion",getIon());
-                intent.putExtra("basicMass",getBasicMass());
-                intent.putExtra("massIndex", getMassIndex());
-                intent.putExtra("esterIndex", getEsterIndex());
+                intent.putExtra("ion",ion);
+                intent.putExtra("massIndex", massIndex);
+                intent.putExtra("esterIndex", esterIndex);
                 intent.putExtra("ionSelected",ionSelected);
                 intent.putExtra("esterSelected",esterSelected);
                 intent.putExtra("acidSelected", acidSelected);
@@ -50,24 +47,4 @@ public class FattyAcidsActivity extends AppCompatActivity {
         });
     }
 
-    public void setIon(int ion2)
-    {
-        ion = ion2;
-    }
-    public int getIon()
-    {
-        return ion;
-    }
-    public double getBasicMass()
-    {
-        return basicMass;
-    }
-    public int getMassIndex()
-    {
-        return massIndex;
-    }
-    public int getEsterIndex()
-    {
-        return esterIndex;
-    }
 }
