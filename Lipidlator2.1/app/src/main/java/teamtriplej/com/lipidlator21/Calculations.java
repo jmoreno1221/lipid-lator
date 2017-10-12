@@ -4,7 +4,7 @@ package teamtriplej.com.lipidlator21;
  * Created by Jose Moreno on 10/1/2017
  */
 
-public class Calculations {
+class Calculations {
     private double mass;
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
     private double[] ratioValues = {28.02908,2,4,56.06038,4,8,84.09168,6,12,112.12298,8,16,
@@ -21,9 +21,9 @@ public class Calculations {
             302.29513,22,38,300.27948,22,36,298.26383,22,34,
             296.24818,22,32,322.35773,23,46,336.37338,24,48,
             334.35773,24,46,350.38903,25,50,364.40468,26,52};
-    public Calculations() {
+    Calculations() {
     }
-    public String calculateFormula(int numC, int numH, int numO, int numN
+    String calculateFormula(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
         String formula = "C" + numC + "H" + numH;
@@ -41,7 +41,7 @@ public class Calculations {
     }
     double calculateFABasicMass(int massIndex, int esterIndex)
     {
-        double[] esterArray1 = {60.021130,4,88.052430,4,8,116.083730,6,12,
+        double[] esterArray1 = {60.021130,2,4,88.052430,4,8,116.083730,6,12,
                 144.115030,8,16,172.146330,10,20,200.177630,12,24,
                 214.193280,13,26,228.208930,14,28,226.193280,14,26,
                 242.224580,15,30,240.208930,15,28,256.240230,16,32,
@@ -92,15 +92,15 @@ public class Calculations {
             setNumC((int)esterArray2[(massIndex * 3)+1]);
             setNumH((int)esterArray2[(massIndex * 3)+2]);
             setNumO(2);
-        }else
+        }else if(esterIndex == 2){
             setMass(esterArray3[(massIndex * 3)]);
             setNumC((int)esterArray3[(massIndex * 3)+1]);
             setNumH((int)esterArray3[(massIndex * 3)+2]);
             setNumO(2);
-            setNumF(5);
+            setNumF(5);}
         return getMass();
     }
-    public double calculateWEBasicMass(int alcoholIndex, int acidIndex)
+    double calculateWEBasicMass(int alcoholIndex, int acidIndex)
     {
         double alcohol = ratioValues[(alcoholIndex * 3)];
         int carbonAlcohol = (int)ratioValues[(alcoholIndex * 3) + 1];
@@ -114,7 +114,7 @@ public class Calculations {
         setNumO(2);
         return getMass();
     }
-    public double calculateACBasicMass(int acylIndex)
+    double calculateACBasicMass(int acylIndex)
     {
         double[] acArray = {203.115759,9,17,231.147059,11,21,259.178359,13,25,287.209659,15,29,
                 315.240959,17,33,343.272259,19,37,357.287909,20,39,371.303559,21,41,
@@ -134,7 +134,7 @@ public class Calculations {
         setNumN(1);
         return getMass();
     }
-    public double calculateCLBasicMass(int index1, int index2, int index3, int index4)
+    double calculateCLBasicMass(int index1, int index2, int index3, int index4)
     {
         double startingMass = 568.095831;
         setNumC(17);
@@ -143,7 +143,7 @@ public class Calculations {
         setNumP(2);
         return getMass();
     }
-    public double calculateCoABasicMass(int acylIndex)
+    double calculateCoABasicMass(int acylIndex)
     {
         double[] coaArray = {809.125784,23,38,837.157084,25,42,865.188384,27,46,
                 893.219684,29,50,921.250984,31,54,949.282284,33,58,963.297934,34,60,
@@ -170,7 +170,7 @@ public class Calculations {
 
         return getMass();
     }
-    public double calculateCHEBasicMass(int acylIndex)
+    double calculateCHEBasicMass(int acylIndex)
     {
         double[] arrayCHE = {428.365430,29,48,456.396730,31,52,484.428030,33,56,
                 512.459330,35,60,540.490630,37,64,568.521930,39,68,582.537580,40,70,
@@ -189,7 +189,7 @@ public class Calculations {
         setNumO((int)arrayCHE[(acylIndex * 3) + 3]);
         return getMass();
     }
-    public double calculateFinalMass(int ion, double basicMass)
+    double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}
         else if(ion == 1){basicMass+= 1.00727 -(18.010565) ; setNumH(getNumH()-1); setNumO(getNumO()-1);}
@@ -217,107 +217,107 @@ public class Calculations {
         return basicMass;
     }
 
-    public double getMass() {
+    private double getMass() {
         return mass;
     }
 
-    public int getNumC() {
+    int getNumC() {
         return numC;
     }
 
-    public int getNumH() {
+    int getNumH() {
         return numH;
     }
 
-    public int getNumN() {
+    int getNumN() {
         return numN;
     }
 
-    public int getNumO() {
+    int getNumO() {
         return numO;
     }
 
-    public int getNumAg() {
+    int getNumAg() {
         return numAg;
     }
 
-    public int getNumLi() {
+    int getNumLi() {
         return numLi;
     }
 
-    public int getNumNa() {
+    int getNumNa() {
         return numNa;
     }
 
-    public int getNumK() {
+    int getNumK() {
         return numK;
     }
 
-    public int getNumCl() {
+    int getNumCl() {
         return numCl;
     }
 
-    public int getNumP() {
+    int getNumP() {
         return numP;
     }
 
-    public int getNumS() {
+    int getNumS() {
         return numS;
     }
 
-    public int getNumF() {
+    int getNumF() {
         return numF;
     }
 
-    public void setMass(double mass) {
+    private void setMass(double mass) {
         this.mass = mass;
     }
 
-    public void setNumC(int numC) {
+    private void setNumC(int numC) {
         this.numC = numC;
     }
 
-    public void setNumH(int numH) {
+    private void setNumH(int numH) {
         this.numH = numH;
     }
 
-    public void setNumN(int numN) {
+    private void setNumN(int numN) {
         this.numN = numN;
     }
 
-    public void setNumO(int numO) {
+    private void setNumO(int numO) {
         this.numO = numO;
     }
 
-    public void setNumAg(int numAg) {
+    private void setNumAg(int numAg) {
         this.numAg = numAg;
     }
 
-    public void setNumLi(int numLi) {
+    private void setNumLi(int numLi) {
         this.numLi = numLi;
     }
 
-    public void setNumNa(int numNa) {
+    private void setNumNa(int numNa) {
         this.numNa = numNa;
     }
 
-    public void setNumK(int numK) {
+    private void setNumK(int numK) {
         this.numK = numK;
     }
 
-    public void setNumCl(int numCl) {
+    private void setNumCl(int numCl) {
         this.numCl = numCl;
     }
 
-    public void setNumP(int numP) {
+    private void setNumP(int numP) {
         this.numP = numP;
     }
 
-    public void setNumS(int numS) {
+    private void setNumS(int numS) {
         this.numS = numS;
     }
 
-    public void setNumF(int numF) {
+    private void setNumF(int numF) {
         this.numF = numF;
     }
 }
