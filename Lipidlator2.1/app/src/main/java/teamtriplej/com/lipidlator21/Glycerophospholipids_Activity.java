@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 public class Glycerophospholipids_Activity extends AppCompatActivity {
-    private int ionIndex, headGroupIndex, sn1_1Index, sn2_1Index;
-    private String ionString, headGroupString, sn1_1String, sn2_1String;
+    public int ionIndex, headGroupIndex, sn1_1Index, sn2_1Index;
+    public String ionString, headGroupString, sn1_1String, sn2_1String;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Glycerophospholipids_Activity extends AppCompatActivity {
                 ionIndex = spnIon.getSelectedItemPosition();
                 headGroupIndex = spnHeadGroup.getSelectedItemPosition();
                 sn1_1Index = spnSn1_1.getSelectedItemPosition();
-                sn2_1String = spnSn2_1.getSelectedItemPosition();
+                sn2_1Index = spnSn2_1.getSelectedItemPosition();
                 setIon(ionIndex);
 
                 Intent intent = new Intent(Glycerophospholipids_Activity.this, Glycerophospholipids_Result_Activity.class);
