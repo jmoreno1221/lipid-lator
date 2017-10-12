@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 public class AcylCarnitinesActivity extends AppCompatActivity {
-    public int ionIndex, acylIndex;
+    public int ion, acylIndex;
     public String ionSelected, acylSelected;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,13 @@ public class AcylCarnitinesActivity extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ionIndex = spnI.getSelectedItemPosition(); //Returns index value of Ion Spinner of currently selected.
+                ion = spnI.getSelectedItemPosition(); //Returns index value of Ion Spinner of currently selected.
                 acylIndex = spnAcyl.getSelectedItemPosition();
                 ionSelected = spnI.getSelectedItem().toString();
                 acylSelected = spnAcyl.getSelectedItem().toString();
-                setIon(ionIndex);
                 Intent intent = new Intent(AcylCarnitinesActivity.this, AcylCarnitines_Result_Activity.class);
-                intent.putExtra("ionIndex", getIonIndex());
-                intent.putExtra("acylIndex", getAcylIndex());
+                intent.putExtra("ionIndex", ion);
+                intent.putExtra("acylIndex", acylIndex);
                 intent.putExtra("ionSelected", ionSelected);
                 intent.putExtra("acylSelected", acylSelected);
                 startActivity(intent);
@@ -42,17 +41,5 @@ public class AcylCarnitinesActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public void setIon(int ion2)
-    {
-        ionIndex = ion2;
-    }
-    public int getIonIndex()
-    {
-        return ionIndex;
-    }
-    public int getAcylIndex()
-    {
-        return acylIndex;
     }
 }

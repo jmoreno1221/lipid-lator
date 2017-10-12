@@ -9,7 +9,6 @@ import android.widget.Spinner;
 
 public class WaxEstersActivity extends AppCompatActivity {
     public int ion, alcoholIndex, acidIndex;
-    public double basicMass = 0.00;
     public String ionSelected, alcoholSelected, acidSelected;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +28,10 @@ public class WaxEstersActivity extends AppCompatActivity {
                 ionSelected = spnI.getSelectedItem().toString();
                 alcoholSelected = spnAl.getSelectedItem().toString();
                 acidSelected = spnAc.getSelectedItem().toString();
-                setIon(ion);
                 Intent intent = new Intent(WaxEstersActivity.this, WaxEsters_Result_Activity.class);
-                intent.putExtra("ion",getIon());
-                intent.putExtra("alcoholIndex", getAlcoholIndex());
-                intent.putExtra("acidIndex", getAcidIndex());
+                intent.putExtra("ion",ion);
+                intent.putExtra("alcoholIndex", alcoholIndex);
+                intent.putExtra("acidIndex", acidIndex);
                 intent.putExtra("ionSelected",ionSelected);
                 intent.putExtra("alcoholSelected",alcoholSelected);
                 intent.putExtra("acidSelected", acidSelected);
@@ -48,25 +46,5 @@ public class WaxEstersActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public void setIon(int ion2)
-    {
-        ion = ion2;
-    }
-    public int getIon()
-    {
-        return ion;
-    }
-    public double getBasicMass()
-    {
-        return basicMass;
-    }
-    public int getAlcoholIndex()
-    {
-        return alcoholIndex;
-    }
-    public int getAcidIndex()
-    {
-        return acidIndex;
     }
 }

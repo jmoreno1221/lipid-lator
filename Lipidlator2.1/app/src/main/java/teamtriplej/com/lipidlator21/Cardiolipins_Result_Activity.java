@@ -13,13 +13,11 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardiolipins__result_);
-
         TextView tvIonResult = (TextView) findViewById(R.id.tvIonResult);
         TextView tvSpn1Result = (TextView) findViewById(R.id.tvSn1_Result);
         TextView tvSpn2Result = (TextView) findViewById(R.id.tvSn1_3_Result);
         TextView tvSpn3Result = (TextView) findViewById(R.id.tvSn2_1_Result);
         TextView tvSpn4Result = (TextView) findViewById(R.id.tvSn2_3_Result);
-
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
 

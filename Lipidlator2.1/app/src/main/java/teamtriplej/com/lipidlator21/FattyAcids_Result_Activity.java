@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class FattyAcids_Result_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
         //Set all results here
-        tvMolarMassResult.setText(Double.toString(molarMass));
+        tvMolarMassResult.setText(String.format(Locale.ENGLISH,"% ,4f",molarMass));
         tvFormulaResult.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvEsterSelected.setText(esterSelected);
