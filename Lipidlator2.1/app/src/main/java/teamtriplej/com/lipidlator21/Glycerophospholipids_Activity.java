@@ -30,7 +30,7 @@ public class Glycerophospholipids_Activity extends AppCompatActivity {
                 ionIndex = spnIon.getSelectedItemPosition();
                 headGroupIndex = spnHeadGroup.getSelectedItemPosition();
                 sn1_1Index = spnSn1_1.getSelectedItemPosition();
-                sn2_1String = spnSn2_1.getSelectedItemPosition();
+                sn2_1String ,= spnSn2_1.getSelectedItemPosition();
                 setIon(ionIndex);
 
                 Intent intent = new Intent(Glycerophospholipids_Activity.this, Glycerophospholipids_Result_Activity.class);
