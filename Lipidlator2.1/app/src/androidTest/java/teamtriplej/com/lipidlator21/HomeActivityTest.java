@@ -11,7 +11,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by joseph on 10/14/2017.
+ * Created by Joseph on 10/13/2017.
  */
 
 public class HomeActivityTest {

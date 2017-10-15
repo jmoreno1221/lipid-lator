@@ -13,7 +13,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.*;
 
 /**
- * Created by joseph on 10/13/2017.
+ * Created by Joseph on 10/13/2017.
  */
 public class CholesterylEstersActivityTest {
 
