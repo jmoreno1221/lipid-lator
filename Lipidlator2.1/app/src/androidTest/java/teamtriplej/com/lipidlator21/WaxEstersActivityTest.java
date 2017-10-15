@@ -16,17 +16,15 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.*;
 
 /**
- * Created by joseph  on 10/14/2017.
+ * Created by joseph on 10/15/2017.
  */
-
-public class FattyAcidsActivityTest {
-
+public class WaxEstersActivityTest {
     @Rule
-    public ActivityTestRule<FattyAcidsActivity> mActivityTestRule = new ActivityTestRule<FattyAcidsActivity>(FattyAcidsActivity.class);
+    public ActivityTestRule<WaxEstersActivity> mActivityTestRule = new ActivityTestRule<WaxEstersActivity>(WaxEstersActivity.class);
 
-    private FattyAcidsActivity mActivity = null;
+    private WaxEstersActivity mActivity = null;
 
-    Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(FattyAcids_Result_Activity.class.getName(),null,false);
+    Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(WaxEsters_Result_Activity.class.getName(),null,false);
     Instrumentation.ActivityMonitor home = getInstrumentation().addMonitor(HomeActivity.class.getName(),null,false);
 
     @Before
@@ -39,11 +37,11 @@ public class FattyAcidsActivityTest {
     @Test
     public void testLaunchOfResultActivity()
     {
-    assertNotNull(mActivity.findViewById(R.id.btnSubmit));
-    onView(withId(R.id.btnSubmit)).perform(click());
-    Activity fattyAcid_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
-    assertNotNull(fattyAcid_Result);
-        fattyAcid_Result.finish();
+        assertNotNull(mActivity.findViewById(R.id.btnSubmit));
+        onView(withId(R.id.btnSubmit)).perform(click());
+        Activity waxEster_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
+        assertNotNull(waxEster_Result);
+        waxEster_Result.finish();
     }
 
     //This tests out the back button and it should take you to the Home screen to pass
