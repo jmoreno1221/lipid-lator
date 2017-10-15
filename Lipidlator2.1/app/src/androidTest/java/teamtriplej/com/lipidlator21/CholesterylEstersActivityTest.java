@@ -1,5 +1,4 @@
 package teamtriplej.com.lipidlator21;
-
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.support.test.rule.ActivityTestRule;
