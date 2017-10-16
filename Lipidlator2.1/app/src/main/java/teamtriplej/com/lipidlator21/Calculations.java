@@ -26,6 +26,11 @@ class Calculations {
     String calculateFormula(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
+        String SUB_ZERO = "\u2080";String SUB_FIVE = "\u2085";
+        String SUB_ONE = "\u2081";String SUB_SIX = "\u2086";
+        String SUB_TWO = "\u2082";String SUB_SEVEN = "\u2087";
+        String SUB_THREE = "\u2083";String SUB_EIGHT = "\u2088";
+        String SUB_FOUR = "\u2084";String SUB_NINE = "\u2089";
         String formula = "C" + numC + "H" + numH;
         if(numN == 1){formula+= "N";} else if(numN > 1){formula+= "N"+numN;}
         if(numO == 1){formula+= "O";} else if(numO > 1){formula+= "O"+numO;}
@@ -37,7 +42,11 @@ class Calculations {
         if(numK == 1){formula+= "K";} else if(numK > 1){formula+= "K"+numK;}
         if(numCl == 1){formula+= "Cl";} else if(numCl > 1){formula+= "Cl"+numCl;}
         if(numF == 1){formula+= "F";} else if(numF > 1){formula+= "F"+numF;}
-        return formula;
+        String newFormula = formula.replaceAll("0", SUB_ZERO).replaceAll("1", SUB_ONE)
+                .replaceAll("2", SUB_TWO).replaceAll("3", SUB_THREE).replaceAll("4", SUB_FOUR)
+                .replaceAll("5", SUB_FIVE).replaceAll("6", SUB_SIX).replaceAll("7", SUB_SEVEN)
+                .replaceAll("8", SUB_EIGHT).replaceAll("9", SUB_NINE);
+        return newFormula;
     }
     double calculateFABasicMass(int massIndex, int esterIndex)
     {
