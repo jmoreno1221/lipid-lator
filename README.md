@@ -43,7 +43,7 @@ Our time tracking tool requires you to be logged in to view.
     1. Data Modeler
     2. Team Manager/Client Liaison
    
-## 7. Interface (UI) Design
+## 7. User Interface (UI) and User Experience (UX) Design
 
 ![LipidLatorMockUp](MockUp/LipidLatorMockUp_PNG.png)
 
@@ -53,4 +53,4 @@ _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Conventi
 _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/ResultScreenLayout.jpg" target="_blank">Result Screen Layout Design</a>_
 
 ### Links to Our Coding Convention:
-_![Coding Convention Example](https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/NamingConventionExample.PNG)_
+_<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/NamingConventionExample.PNG" target="_blank">Coding Convention Example</a>_
