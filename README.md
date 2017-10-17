@@ -47,6 +47,10 @@ Our time tracking tool requires you to be logged in to view.
 
 ![LipidLatorMockUp](MockUp/LipidLatorMockUp_PNG.png)
 
+### Links to Lipid-Lator's Screens Layout Design:
 _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/ConfigurationScreenLayout.jpg" target="_blank">Configuration Screen Layout Design</a>_
 
 _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/ResultScreenLayout.jpg" target="_blank">Result Screen Layout Design</a>_
+
+### Links to Our Coding Convention:
+_![Coding Convention Example](https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/NamingConventionExample.PNG)_
