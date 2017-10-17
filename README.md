@@ -1,27 +1,41 @@
-## 1. Team & Project Name 
+**Welcome to Team Triple J's GitHub!**
+=============================
+
+Team Triple J consists of members: Jessica Sok, Joseph Tsegaye, and Jose Moreno. Client, Dr. Jon Rees, a part-time chemistry professor at Georgia Gwinnett College (GGC) and a full-time employee at the CDC, requested Team Triple J to build him an android application that would allow him to calculate the mass of lipid ions offline.
+
+##**_Table of Content:_ **
+
+[TOC] 
+
+1. Team & Project Name 
+-----------------------------------
 - **Team Name**: _Team Triple J_
 - **Project Name**: Lipid-lator
   
-## 2. Repo Location URL
+2. Repo Location URL
+-----------------------------------
 - _[Repo location URL](https://github.com/soft-eng-practicum/lipid-lator.git)_
 
-## 3. Process Tool & URL
-- **Process tool**: JIRA
-- _[Process Tool URL](http://itec-gunay.duckdns.org:8080/projects/TRIP/summary)_
+3. Process Tool & URL
+------------------------------------
+We are using _Trello_ as our process tool/US and tasks tool to keep track of what tasks need to be down and who is responsible for completing each task.
 
-# 4. US and Tasks Tool & URL
-- **US and Tasks Tool**: Trello
-- _[US and Tasks Tool URL](https://trello.com/b/5US6pwCy/configuration-result-screens)_
+- **Current Process Tool**:  _<a href="https://trello.com/teamtriplej1" target="_blank">Trello</a>_
+- **Previous Process Tool**:  _<a href="http://itec-gunay.duckdns.org:8080/projects/TRIP/summary" target="_blank">JIRA</a>_
 
-# 5. Time Tracking Tool & URL
-- **Time Tracking Tool**: JIRA
-- _[Time Tracking Tool URL](https://www.toggl.com/app/dashboard/team/2299373/period/prevWeek)_
+4. Time Tracking Tool & URL
+-----------------------------------------
+Our time tracking tool requires you to be logged in to view.
 
-## 6. Communication Tools
+- **Time Tracking Tool**: _<a href="https://toggl.com/app/dashboard/team/2299373/period/thisWeek" target="_blank">Toggl</a>_
+
+5. Communication Tools
+-----------------------------------
 - **Slack Channel**: _teamtriplej_
-- **GroupMe**
+- **GroupMe**: _Team Triple J_
 	 
-## 7. Members and Primary roles
+6. Members and Primary roles
+--------------------------------------------
     Jessica Sok
     1. Documentation Lead
     2. UI/UX Design
@@ -33,3 +47,12 @@
     Jose Moreno
     1. Data Modeler
     2. Team Manager/Client Liaison
+   
+7. User Experience (UX) & Interface (UI) Design
+---
+![LipidLatorMockUp](MockUp/LipidLatorMockUp_PNG.png)
+
+MockUp/LipidLatorMockUp_PNG.png
+_<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/ConfigurationScreenLayout.jpg" target="_blank">Configuration Screen Layout Design</a>_
+
+_<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/ResultScreenLayout.jpg" target="_blank">Result Screen Layout Design</a>_
