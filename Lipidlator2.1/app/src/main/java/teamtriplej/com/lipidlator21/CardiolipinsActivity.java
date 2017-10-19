@@ -9,7 +9,6 @@ import android.widget.Spinner;
 
 public class CardiolipinsActivity extends AppCompatActivity {
     public int ion, spn1Index, spn2Index, spn3Index, spn4Index;
-    public double basicMass = 0.00;
     public String ionSelected, spn1Selected, spn2Selected, spn3Selected, spn4Selected;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +34,8 @@ public class CardiolipinsActivity extends AppCompatActivity {
                 spn2Selected = spnSn1_3.getSelectedItem().toString();
                 spn3Selected = spnSn2_1.getSelectedItem().toString();
                 spn4Selected = spnSn2_3.getSelectedItem().toString();
-                setIon(ion);
                 Intent intent = new Intent(CardiolipinsActivity.this, Cardiolipins_Result_Activity.class);
                 intent.putExtra("ion", getIon());
-                intent.putExtra("basicMass", getBasicMass());
                 intent.putExtra("spn1Index",getSpn1Index());
                 intent.putExtra("spn2Index", getSpn2Index());
                 intent.putExtra("spn3Index", getSpn3Index());
@@ -67,10 +64,6 @@ public class CardiolipinsActivity extends AppCompatActivity {
     public int getIon()
     {
         return ion;
-    }
-    public double getBasicMass()
-    {
-        return basicMass;
     }
     public int getSpn1Index()
     {
