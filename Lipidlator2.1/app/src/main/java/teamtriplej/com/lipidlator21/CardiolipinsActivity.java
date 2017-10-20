@@ -35,11 +35,11 @@ public class CardiolipinsActivity extends AppCompatActivity {
                 spn3Selected = spnSn2_1.getSelectedItem().toString();
                 spn4Selected = spnSn2_3.getSelectedItem().toString();
                 Intent intent = new Intent(CardiolipinsActivity.this, Cardiolipins_Result_Activity.class);
-                intent.putExtra("ion", getIon());
-                intent.putExtra("spn1Index",getSpn1Index());
-                intent.putExtra("spn2Index", getSpn2Index());
-                intent.putExtra("spn3Index", getSpn3Index());
-                intent.putExtra("spn4Index", getSpn4Index());
+                intent.putExtra("ion", ion);
+                intent.putExtra("spn1Index",spn1Index);
+                intent.putExtra("spn2Index", spn2Index);
+                intent.putExtra("spn3Index", spn3Index);
+                intent.putExtra("spn4Index", spn4Index);
                 intent.putExtra("spn1Selected", spn1Selected);
                 intent.putExtra("spn2Selected", spn2Selected);
                 intent.putExtra("spn3Selected", spn3Selected);
@@ -57,28 +57,4 @@ public class CardiolipinsActivity extends AppCompatActivity {
         });
     }
 
-    public void setIon(int ion2)
-    {
-        ion = ion2;
-    }
-    public int getIon()
-    {
-        return ion;
-    }
-    public int getSpn1Index()
-    {
-        return spn1Index;
-    }
-    public int getSpn2Index()
-    {
-        return spn2Index;
-    }
-    public int getSpn3Index()
-    {
-        return spn3Index;
-    }
-    public int getSpn4Index()
-    {
-        return spn4Index;
-    }
 }
