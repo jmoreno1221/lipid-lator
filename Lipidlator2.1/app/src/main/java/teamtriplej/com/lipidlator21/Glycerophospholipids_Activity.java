@@ -15,6 +15,7 @@ public class Glycerophospholipids_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glycerophospholipids_);
+
         //Create an instance of each of the interactive things on our screen
         //for example in this case we have 2 buttons and 4 spinners
 
@@ -50,7 +51,6 @@ public class Glycerophospholipids_Activity extends AppCompatActivity {
                 intent.putExtra("headGroupIndex", headGroupIndex);
                 intent.putExtra("sn1_1Index", sn1_1Index);
                 intent.putExtra("sn2_1Index", sn2_1Index);
-
                 startActivity(intent);
             }
         });
