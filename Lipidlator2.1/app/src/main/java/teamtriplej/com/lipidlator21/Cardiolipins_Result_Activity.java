@@ -50,6 +50,8 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         tvSpn2Result.setText(spn2selected);
         tvSpn3Result.setText(spn3selected);
         tvSpn4Result.setText(spn4selected);
+        tvAbbreviation.setText("CL(" + spn1selected + "/" + spn2selected + "/" + spn3selected
+        + "/" + spn4selected + ")");
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
