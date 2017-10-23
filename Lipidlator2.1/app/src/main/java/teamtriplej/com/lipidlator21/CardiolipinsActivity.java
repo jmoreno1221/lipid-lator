@@ -40,6 +40,7 @@ public class CardiolipinsActivity extends AppCompatActivity {
                 intent.putExtra("spn2Index", spn2Index);
                 intent.putExtra("spn3Index", spn3Index);
                 intent.putExtra("spn4Index", spn4Index);
+                intent.putExtra("ionselected", ionSelected);
                 intent.putExtra("spn1Selected", spn1Selected);
                 intent.putExtra("spn2Selected", spn2Selected);
                 intent.putExtra("spn3Selected", spn3Selected);
