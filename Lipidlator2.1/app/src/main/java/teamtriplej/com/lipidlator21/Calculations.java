@@ -145,10 +145,10 @@ class Calculations {
     }
     double calculateCLBasicMass(int index1, int index2, int index3, int index4)
     {
-        double carbon = 12;
-        double hydrogen = 1.00727;
-        double oxygen = 15.996025;
-        double phosphorus = 30.972653;
+        double carbon = 12.000000;
+        double hydrogen = 1.007825;
+        double oxygen = 15.994915;
+        double phosphorus = 30.973761;
         int cCount = 15;
         int hCount = 26;
         int[] sn1_elements = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,16,
