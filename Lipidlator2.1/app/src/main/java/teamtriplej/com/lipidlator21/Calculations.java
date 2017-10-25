@@ -7,6 +7,18 @@ package teamtriplej.com.lipidlator21;
 class Calculations {
     private double mass;
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
+    private final double CARBON = 12.000000;
+    private final double HYDROGEN = 1.007825;
+    private final double NITROGEN = 14.003074;
+    private final double OXYGEN = 15.994915;
+    private final double SILVER = 106.905090;
+    private final double LITHIUM = 7.016004;
+    private final double SODIUM = 22.989771;
+    private final double POTASSIUM = 38.963707;
+    private final double CHLORIDE = 34.968853;
+    private final double PHOSPHORUS = 30.973761;
+    private final double SULFUR = 31.972071;
+    private final double FLUORIDE = 18.998404;
     private double[] ratioValues = {28.02908,2,4,56.06038,4,8,84.09168,6,12,112.12298,8,16,
             140.15428,10,20,168.18558,12,24,182.20123,13,26,
             196.21688,14,28,194.20123,14,26,210.23253,15,30,
@@ -145,31 +157,38 @@ class Calculations {
     }
     double calculateCLBasicMass(int index1, int index2, int index3, int index4)
     {
-        double carbon = 12.000000;
-        double hydrogen = 1.007825;
-        double oxygen = 15.994915;
-        double phosphorus = 30.973761;
         int cCount = 15;
         int hCount = 26;
         int[] sn1_elements = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,16,
                 34,16,32,16,32,16,30,17,34,17,32,17,30,18,38,18,36,18,36,18,34,18,34,18,32,18,30,
                 18,30,18,28,19,38,20,42,20,40,20,40,20,38,20,36,20,34,20,32,20,30,21,42,22,44,22,
                 42,22,40,22,38,22,36,22,34,22,32,23,46,24,48,24,46,25,50,26,52};
-        int[] other_sn_elements = {0,0,2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,
+        int[] other_sn_elements = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,
                 16,32,16,30,17,34,17,32,17,30,18,36,18,34,18,34,18,32,18,30,18,30,18,28,19,38,20,
                 40,20,38,20,36,20,34,20,32,20,30,21,42,22,44,22,42,22,40,22,38,22,36,22,34,22,32,
                 23,46,24,48,24,46,25,50,26,52};
-
-        setNumC((sn1_elements[index1*2]+other_sn_elements[index2*2]+
-                other_sn_elements[index3*2]+other_sn_elements[index4*2])+cCount);
-        setNumH((sn1_elements[(index1*2)+1]+other_sn_elements[(index2*2)+1]+
-                other_sn_elements[(index3*2)+1]+other_sn_elements[(index4*2)+1])+hCount);
+        int numC1, numC2, numC3, numC4, numH1, numH2, numH3, numH4;
+        numC1 = sn1_elements[index1*2];
+        numC2 = other_sn_elements[index2*2];
+        numC3 = other_sn_elements[index3*2];
+        numC4 = other_sn_elements[index4*2];
+        numH1 = sn1_elements[(index1*2)+1];
+        numH2 = other_sn_elements[(index2*2)+1];
+        numH3 = other_sn_elements[(index3*2)+1];
+        numH4 = other_sn_elements[(index4*2)+1];
+        if(index2 == 0){numC2 = 0; numH2 = 0;}
+        if(index3 == 0){numC3 = 0; numH3 = 0;}
+        if(index4 == 0){numC4 = 0; numH4 = 0;}
+        setNumC((numC1+numC2+numC3+numC4)+cCount);
+        setNumH((numH1+numH2+numH3+numH4)+hCount);
         if(index1 == 11 ||index1 == 12 ||index1 == 18 ||index1 == 19 ||index1 == 28 ||index1 == 29){
             setNumO(16);
         }else{
             setNumO(17);}
         setNumP(2);
-        setMass(((getNumC()*carbon)+(getNumH()*hydrogen)+(getNumO()*oxygen)+(getNumP()*phosphorus)));
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
     double calculateCoABasicMass(int acylIndex)
@@ -340,6 +359,13 @@ class Calculations {
         setNumN(1);
         setNumP(1);
         return getMass();
+    }
+    double calculateInitialMass(int numC, int numH, int numO, int numN
+            , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
+    {
+        return mass = ((CARBON*numC)+(HYDROGEN*numH)+(OXYGEN*numO)+(NITROGEN*numN)+(SILVER*numAg)+
+                (LITHIUM*numLi)+(SODIUM*numNa)+(POTASSIUM*numK)+(CHLORIDE*numCl)+(PHOSPHORUS*numP)+
+                (SULFUR*numS)+(FLUORIDE*numF));
     }
     double calculateFinalMass(int ion, double basicMass)
     {
