@@ -176,11 +176,20 @@ class Calculations {
         numH2 = other_sn_elements[(index2*2)+1];
         numH3 = other_sn_elements[(index3*2)+1];
         numH4 = other_sn_elements[(index4*2)+1];
+        if(index1 == 0){numC1 = 0; numH1 = 0;}
         if(index2 == 0){numC2 = 0; numH2 = 0;}
         if(index3 == 0){numC3 = 0; numH3 = 0;}
         if(index4 == 0){numC4 = 0; numH4 = 0;}
-        setNumC((numC1+numC2+numC3+numC4)+cCount);
-        setNumH((numH1+numH2+numH3+numH4)+hCount);
+        if((index1 == 0 && index2 == 0 && index3 == 0 && index4 == 0)||(index1 != 0 && index2 == 0 && index3 == 0 && index4 == 0)){cCount = 17; hCount = 30;
+            setNumC(((numC1+numC2+numC3+numC4)+cCount));
+            setNumH(((numH1+numH2+numH3+numH4)+hCount));}
+        else if(index1 != 0 && index2 != 0 && index3 != 0 && index4 != 0){
+            setNumC(((numC1+numC2+numC3+numC4)+cCount)-6);
+            setNumH(((numH1+numH2+numH3+numH4)+hCount)-12);}
+        else{
+            setNumC(((numC1+numC2+numC3+numC4)+cCount));
+            setNumH(((numH1+numH2+numH3+numH4)+hCount));
+        }
         if(index1 == 11 ||index1 == 12 ||index1 == 18 ||index1 == 19 ||index1 == 28 ||index1 == 29){
             setNumO(16);
         }else{
