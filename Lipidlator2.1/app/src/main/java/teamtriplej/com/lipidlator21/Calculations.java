@@ -257,7 +257,7 @@ class Calculations {
         setNumO(2);
         return getMass();
     }
-    double calculateGBasicMass(int index1, int index2, int index3){
+    double calculateGBasicMass(int i1, int i2, int i3){
 
         // SN1 Dropdown: 49 values
         // SN2 Dropdown: 44 Values
@@ -265,7 +265,7 @@ class Calculations {
         // # of Possible Combination: 94,864
 
 
-        double[] arrayGlycerolipid_sn1 = {
+        double[] aGL_sn1 = {
                 5,10,4, 7,14,4, 9,18,4, 11,22,4,
                 13,26,4, 15,30,4, 16,32,4,
                 17,34,4, 17,32,4, 18,36,4, 18,34,4,
@@ -281,7 +281,7 @@ class Calculations {
                 25,38,4,26,52,4,27,54,4,27,52,4,
                 28,56,4,29,58,4};
 
-        double[] arrayGlycerolipid_sn2_3 = {
+        double[] aGL_other = {
                 5,10,4,7,12,5,9,16,5,
                 11,20,5,13,24,5,15,28,5,17,32,5,
                 18,34,5,19,36,5,19,34,5,20,38,5,
@@ -295,9 +295,31 @@ class Calculations {
                 28,54,5,29,56,5,29,54,5,30,58,5,
                 31,60,5};
 
-        setNumC((int)arrayGlycerolipid_sn1[(index1 * 3) + 0]);
-        setNumH((int)arrayGlycerolipid_sn2_3[(index2 * 3) + 0]);
-        setNumO((int)arrayGlycerolipid_sn2_3[(index3 * 3) + 0]);
+        // If SN1 Dropdown index is not O or P
+        if (i1 != 11 || i1 != 12 || i1 != 18 || i1 != 19 || i1 != 28 || i1 != 29) {
+
+            if ((i2 == 0 && i2 == 0))
+                setNumO(4);
+
+            else if ((i2 == 0 && i3 != 0) || (i2 != 0 && i3 == 0))
+                setNumO(5);
+
+            else if (i2 != 0 && i3 != 0)
+                setNumO(6);
+
+        }
+
+        else if ((i2 == 0 && i3 != 0) || (i2 != 0 && i3 == 0))
+            setNumO(4);
+
+        else if (i2 != 0 && i3 != 0)
+            setNumO(5);
+
+        else setNumO(3);
+
+       // setNumC((int)aGL_sn1[(i1 * 2) + 0]);
+        // setNumH((int)aGL_sn1[(i2 * 2) + 0]);
+        // setNumO((int)arrayGlycerolipid_sn2_3[(i3 * 3) + 0]);
 
         setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
                 getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
