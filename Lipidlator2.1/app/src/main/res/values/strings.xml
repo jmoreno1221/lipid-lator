@@ -133,7 +133,7 @@
     </string-array>
     <string-array name="sphingoid_array_values">
         <item>"d18:1(4E)"</item>
-        <item>"d18:0"</item>>
+        <item>"d18:0"</item>
         <item>"d18:2"</item>
         <item>"t18:0"</item>
         <item>"t18:1"</item>
@@ -180,7 +180,7 @@
     </string-array>
     <string-array name="n_acyl_array_values">
         <item>"12:0"</item>
-        <item>"13:0"</item>>
+        <item>"13:0"</item>
         <item>"14:0"</item>
         <item>"h14:0"</item>
         <item>"15:0"</item>
