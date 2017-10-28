@@ -367,6 +367,10 @@ class Calculations {
         setNumP(1);
         return getMass();
     }
+    double calculateSLBasicMass(int headgroup, int sBase, int nAcyl)
+    {
+        return getMass();
+    }
     double calculateInitialMass(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
