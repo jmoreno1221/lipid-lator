@@ -391,6 +391,49 @@ class Calculations {
     }
     double calculateSLBasicMass(int headgroup, int sBase, int nAcyl)
     {
+        int[] sBaseDif = {0,0,0,0,0,2,0,0,0,-2,0,0,0,2,1,0,0,0,1,0,2,4,0,0,
+                2,6,0,0,2,2,0,0,2,6,1,0,2,4,1,0,-2,-4,0,0,-2,-2,0,0,-2,-6,0,0,
+                -2,-2,1,0,-2,-4,1,0,-4,-8,0,0,-4,-6,0,0,-4,-10,0,0,-4,-6,1,0,
+                -4,-8,1,0,-3,-6,0,0,-3,-4,0,0,-3,-8,0,0,-3,-4,1,0,-3,-6,1,0,
+                -1,-2,0,0,-1,0,0,0,-1,-4,0,0,-1,0,1,0,-1,-2,1,0,1,2,0,0,1,4,
+                0,0,1,0,0,0,1,4,1,0,1,2,1,0,3,6,0,0,3,8,0,0,3,4,0,0,3,8,1,0,
+                3,6,1,0,4,8,0,0,4,10,0,0,4,6,0,0,4,10,1,0,4,8,1,0};
+        int[] nAcylDif = {0,0,0,0,1,2,0,0,2,4,0,0,2,4,1,0,3,6,0,0,3,6,1,0,4,8,0,0,
+                4,6,0,0,4,8,1,0,4,6,1,0,5,10,0,0,5,10,1,0,6,12,0,0,6,10,0,0,6,12,1,0,
+                6,10,1,0,7,14,0,0,7,14,1,0,8,16,0,0,8,14,0,0,8,16,1,0,8,14,1,0,9,18,0,0,
+                9,18,1,0,10,20,0,0,10,18,0,0,10,20,1,0,10,18,1,0,11,22,0,0,11,22,1,0,
+                12,24,0,0,12,22,0,0,12,24,1,0,12,22,1,0,13,26,0,0,13,26,1,0,14,28,0,0,
+                14,26,0,0,14,28,1,0,14,26,1,0,15,30,0,0,15,30,1,0,16,32,0,0,16,32,1,0,
+                17,34,0,0,17,34,1,0,18,36,0,0,18,36,1,0,19,38,0,0,19,38,1,0,20,40,0,0,20,40,1,0};
+        int carbon, hydrogen, oxygen, nitrogen, phosphorus = 0;
+        if(headgroup==0){carbon = 30;hydrogen = 59;oxygen = 3;nitrogen = 1;}
+        else if(headgroup==1){carbon = 35;hydrogen = 71;oxygen = 6;nitrogen = 2;}
+        else if(headgroup==2){carbon = 30;hydrogen = 60;oxygen = 6;nitrogen = 1;phosphorus = 1;}
+        else if(headgroup==3){carbon = 32;hydrogen = 65;oxygen = 6;nitrogen = 2;phosphorus = 1;}
+        else if(headgroup==4){carbon = 36;hydrogen = 70;oxygen = 11;nitrogen = 1;phosphorus = 1;}
+        else if(headgroup==5){carbon = 36;hydrogen = 69;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==6){carbon = 36;hydrogen = 69;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==7){carbon = 42;hydrogen = 79;oxygen = 13;nitrogen = 1;}
+        else if(headgroup==8){carbon = 53;hydrogen = 96;oxygen = 21;nitrogen = 2;}
+        else if(headgroup==9){carbon = 47;hydrogen = 86;oxygen = 16;nitrogen = 2;}
+        else if(headgroup==10){carbon = 48;hydrogen = 89;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==11){carbon = 48;hydrogen = 89;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==12){carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+        else if(headgroup==13){carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+        else if(headgroup==14){carbon = 42;hydrogen = 79;oxygen = 13;nitrogen = 1;}
+        else if(headgroup==15){carbon = 48;hydrogen = 89;oxygen = 18;nitrogen = 1;}
+        else {carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+
+        setNumC(carbon+(sBaseDif[sBase * 4])+(nAcylDif[nAcyl * 4]));
+        setNumH(hydrogen+(sBaseDif[(sBase * 4)+1])+(nAcylDif[(nAcyl * 4)+1]));
+        setNumO(oxygen+(sBaseDif[(sBase * 4)+2])+(nAcylDif[(nAcyl * 4)+2]));
+        setNumN(nitrogen+(sBaseDif[(sBase * 4)+3])+(nAcylDif[(nAcyl * 4)+3]));
+        setNumP(phosphorus);
+
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
+
         return getMass();
     }
     double calculateInitialMass(int numC, int numH, int numO, int numN
