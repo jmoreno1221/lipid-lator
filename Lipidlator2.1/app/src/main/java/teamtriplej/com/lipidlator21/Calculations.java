@@ -6,6 +6,7 @@ package teamtriplej.com.lipidlator21;
 
 class Calculations {
     private double mass;
+    private String newFormula;
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
     private final double CARBON = 12.000000;
     private final double HYDROGEN = 1.007825;
@@ -54,11 +55,10 @@ class Calculations {
         if(numK == 1){formula+= "K";} else if(numK > 1){formula+= "K"+numK;}
         if(numCl == 1){formula+= "Cl";} else if(numCl > 1){formula+= "Cl"+numCl;}
         if(numF == 1){formula+= "F";} else if(numF > 1){formula+= "F"+numF;}
-        String newFormula = formula.replaceAll("0", SUB_ZERO).replaceAll("1", SUB_ONE)
+        return newFormula = formula.replaceAll("0", SUB_ZERO).replaceAll("1", SUB_ONE)
                 .replaceAll("2", SUB_TWO).replaceAll("3", SUB_THREE).replaceAll("4", SUB_FOUR)
                 .replaceAll("5", SUB_FIVE).replaceAll("6", SUB_SIX).replaceAll("7", SUB_SEVEN)
                 .replaceAll("8", SUB_EIGHT).replaceAll("9", SUB_NINE);
-        return newFormula;
     }
     double calculateFABasicMass(int massIndex, int esterIndex)
     {
@@ -159,6 +159,7 @@ class Calculations {
     {
         int cCount = 15;
         int hCount = 26;
+        int trueCount = 0;
         int[] sn1_elements = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,16,
                 34,16,32,16,32,16,30,17,34,17,32,17,30,18,38,18,36,18,36,18,34,18,34,18,32,18,30,
                 18,30,18,28,19,38,20,42,20,40,20,40,20,38,20,36,20,34,20,32,20,30,21,42,22,44,22,
@@ -180,15 +181,25 @@ class Calculations {
         if(index2 == 0){numC2 = 0; numH2 = 0;}
         if(index3 == 0){numC3 = 0; numH3 = 0;}
         if(index4 == 0){numC4 = 0; numH4 = 0;}
-        if((index1 == 0 && index2 == 0 && index3 == 0 && index4 == 0)||(index1 != 0 && index2 == 0 && index3 == 0 && index4 == 0)){cCount = 17; hCount = 30;
-            setNumC(((numC1+numC2+numC3+numC4)+cCount));
-            setNumH(((numH1+numH2+numH3+numH4)+hCount));}
-        else if(index1 != 0 && index2 != 0 && index3 != 0 && index4 != 0){
-            setNumC(((numC1+numC2+numC3+numC4)+cCount)-6);
-            setNumH(((numH1+numH2+numH3+numH4)+hCount)-12);}
-        else{
+        if(index1 > 0){trueCount++;}
+        if(index2 > 0){trueCount++;}
+        if(index3 > 0){trueCount++;}
+        if(index4 > 0){trueCount++;}
+        if(trueCount == 0){
+            setNumC(((numC1+numC2+numC3+numC4)+cCount)+2);
+            setNumH(((numH1+numH2+numH3+numH4)+hCount)+4);
+        }else if(trueCount == 1){
             setNumC(((numC1+numC2+numC3+numC4)+cCount));
             setNumH(((numH1+numH2+numH3+numH4)+hCount));
+        }else if(trueCount == 2){
+            setNumC(((numC1+numC2+numC3+numC4)+cCount)-2);
+            setNumH(((numH1+numH2+numH3+numH4)+hCount)-4);
+        }else if(trueCount == 3){
+            setNumC(((numC1+numC2+numC3+numC4)+cCount)-4);
+            setNumH(((numH1+numH2+numH3+numH4)+hCount)-8);
+        }else{
+            setNumC(((numC1+numC2+numC3+numC4)+cCount)-6);
+            setNumH(((numH1+numH2+numH3+numH4)+hCount)-12);
         }
         if(index1 == 11 ||index1 == 12 ||index1 == 18 ||index1 == 19 ||index1 == 28 ||index1 == 29){
             setNumO(16);
