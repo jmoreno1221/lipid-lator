@@ -264,60 +264,84 @@ class Calculations {
         // SN3 Dropdown: 44 values
         // # of Possible Combination: 94,864
 
-
         double[] aGL_sn1 = {
-                5,10,4, 7,14,4, 9,18,4, 11,22,4,
-                13,26,4, 15,30,4, 16,32,4,
-                17,34,4, 17,32,4, 18,36,4, 18,34,4,
-                19,40,3, 19,38,3, 19,38,4,
-                19,36,4, 20,40,4,
-                20,38,4,20,36,4,21,44,3,
-                21,42,3,21,42,4,21,40,4,21,40,4,
-                21,38,4,21,36,4,21,36,4,21,34,4,
-                22,44,4,23,48,3,23,46,3,23,46,4,
-                23,44,4,23,42,4,23,40,4,23,38,4,
-                23,36,4,24,48,4,25,50,4,25,48,4,
-                25,46,4,25,44,4,25,42,4,25,40,4,
-                25,38,4,26,52,4,27,54,4,27,52,4,
-                28,56,4,29,58,4};
+                5,10, 7,14, 9,18, 11,22,
+                13,26, 15,30, 16,32, 17,34,
+                17,32, 18,36, 18,34, 19,40,
+                19,38, 19,38, 19,36, 20,40,
+                20,38, 20,36, 21,44, 21,42,
+                21,42, 21,40, 21,40, 21,38,
+                21,36, 21,36, 21,34, 22,44,
+                23,48, 23,46, 23,46, 23,44,
+                23,42, 23,40, 23,38, 23,36,
+                24,48, 25,50, 25,48, 25,46,
+                25,44, 25,42, 25,40, 25,38,
+                26,52, 27,54, 27,52, 28,56, 29,58};
 
         double[] aGL_other = {
-                5,10,4,7,12,5,9,16,5,
-                11,20,5,13,24,5,15,28,5,17,32,5,
-                18,34,5,19,36,5,19,34,5,20,38,5,
-                20,36,5,21,40,5,21,38,5,22,42,5,
-                22,40,5,22,38,5,23,44,5,23,42,5,
-                23,42,5,23,40,5,23,38,5,23,38,5,
-                23,36,5,24,46,5,25,48,5,25,46,5,
-                25,44,5,25,42,5,25,40,5,25,38,5,
-                26,50,5,27,52,5,27,50,5,27,48,5,
-                27,46,5,27,44,5,27,42,5,27,40,5,
-                28,54,5,29,56,5,29,54,5,30,58,5,
-                31,60,5};
+                5,10,7,12,9,16,11,20,
+                13,24,15,28,17,32,
+                18,34,19,36,19,34,20,38,
+                20,36,21,40,21,38,22,42,
+                22,40,22,38,23,44,23,42,
+                23,42,23,40,23,38,23,38,
+                23,36,24,46,25,48,25,46,
+                25,44,25,42,25,40,25,38,
+                26,50,27,52,27,50,27,48,
+                27,46,27,44,27,42,27,40,
+                28,54,29,56,29,54,30,58,
+                31,60};
+
+        int[] addCarbon = {
+                0, 2, 4, 6, 8, 10, 12,
+                13, 14, 14, 15, 15, 16,
+                16, 17, 17, 17, 18, 18,
+                18, 18, 18, 18, 18, 19,
+                20, 20, 20, 20,	20,	20,
+                21, 22,	22,	22,	22,	22,
+                22, 22, 23, 24, 24, 25, 26
+        };
+
+        int numOfC = (int)aGL_sn1[i1 * 2];
+
+        if (i2 == 0 && i3 == 0) {setNumC(numOfC);}
+        // else if (i2 < 6 && i3 < 6) { numOfC = numOfC + (i2 * 2) + (i3 * 2);}
+
+        /*if (i2 <= 6) {numOfC = numOfC + (i2 * 2);}
+        else if (i2 == 7) {numOfC = numOfC + 13;}
+        else if (i2 == 8) {numOfC = numOfC + ;}*/
+
+        else {
+            numOfC = numOfC + addCarbon[i2] + addCarbon[i3];
+        }
+
+
+
+
+
+
+
+
+        setNumC(numOfC);
 
         // If SN1 Dropdown index is not O or P
-        if (i1 != 11 || i1 != 12 || i1 != 18 || i1 != 19 || i1 != 28 || i1 != 29) {
+        if (i1 != 11 && i1 != 12 && i1 != 18 && i1 != 19 && i1 != 28 && i1 != 29) {
 
-            if ((i2 == 0 && i2 == 0))
-                setNumO(4);
+            if (i2 == 0 && i3 == 0){ setNumO(4); }
 
-            else if ((i2 == 0 && i3 != 0) || (i2 != 0 && i3 == 0))
-                setNumO(5);
+            else if (i2 == 0 || i3 == 0) { setNumO(5); }
 
-            else if (i2 != 0 && i3 != 0)
-                setNumO(6);
+            else setNumO(6);
+        } else {
+
+            if (i2 == 0 && i3 == 0){ setNumO(3); }
+
+            else if (i2 == 0 || i3 == 0) { setNumO(4); }
+
+            else setNumO(5);
 
         }
 
-        else if ((i2 == 0 && i3 != 0) || (i2 != 0 && i3 == 0))
-            setNumO(4);
-
-        else if (i2 != 0 && i3 != 0)
-            setNumO(5);
-
-        else setNumO(3);
-
-       // setNumC((int)aGL_sn1[(i1 * 2) + 0]);
         // setNumH((int)aGL_sn1[(i2 * 2) + 0]);
         // setNumO((int)arrayGlycerolipid_sn2_3[(i3 * 3) + 0]);
 
@@ -372,6 +396,49 @@ class Calculations {
     }
     double calculateSLBasicMass(int headgroup, int sBase, int nAcyl)
     {
+        int[] sBaseDif = {0,0,0,0,0,2,0,0,0,-2,0,0,0,2,1,0,0,0,1,0,2,4,0,0,
+                2,6,0,0,2,2,0,0,2,6,1,0,2,4,1,0,-2,-4,0,0,-2,-2,0,0,-2,-6,0,0,
+                -2,-2,1,0,-2,-4,1,0,-4,-8,0,0,-4,-6,0,0,-4,-10,0,0,-4,-6,1,0,
+                -4,-8,1,0,-3,-6,0,0,-3,-4,0,0,-3,-8,0,0,-3,-4,1,0,-3,-6,1,0,
+                -1,-2,0,0,-1,0,0,0,-1,-4,0,0,-1,0,1,0,-1,-2,1,0,1,2,0,0,1,4,
+                0,0,1,0,0,0,1,4,1,0,1,2,1,0,3,6,0,0,3,8,0,0,3,4,0,0,3,8,1,0,
+                3,6,1,0,4,8,0,0,4,10,0,0,4,6,0,0,4,10,1,0,4,8,1,0};
+        int[] nAcylDif = {0,0,0,0,1,2,0,0,2,4,0,0,2,4,1,0,3,6,0,0,3,6,1,0,4,8,0,0,
+                4,6,0,0,4,8,1,0,4,6,1,0,5,10,0,0,5,10,1,0,6,12,0,0,6,10,0,0,6,12,1,0,
+                6,10,1,0,7,14,0,0,7,14,1,0,8,16,0,0,8,14,0,0,8,16,1,0,8,14,1,0,9,18,0,0,
+                9,18,1,0,10,20,0,0,10,18,0,0,10,20,1,0,10,18,1,0,11,22,0,0,11,22,1,0,
+                12,24,0,0,12,22,0,0,12,24,1,0,12,22,1,0,13,26,0,0,13,26,1,0,14,28,0,0,
+                14,26,0,0,14,28,1,0,14,26,1,0,15,30,0,0,15,30,1,0,16,32,0,0,16,32,1,0,
+                17,34,0,0,17,34,1,0,18,36,0,0,18,36,1,0,19,38,0,0,19,38,1,0,20,40,0,0,20,40,1,0};
+        int carbon, hydrogen, oxygen, nitrogen, phosphorus = 0;
+        if(headgroup==0){carbon = 30;hydrogen = 59;oxygen = 3;nitrogen = 1;}
+        else if(headgroup==1){carbon = 35;hydrogen = 71;oxygen = 6;nitrogen = 2;}
+        else if(headgroup==2){carbon = 30;hydrogen = 60;oxygen = 6;nitrogen = 1;phosphorus = 1;}
+        else if(headgroup==3){carbon = 32;hydrogen = 65;oxygen = 6;nitrogen = 2;phosphorus = 1;}
+        else if(headgroup==4){carbon = 36;hydrogen = 70;oxygen = 11;nitrogen = 1;phosphorus = 1;}
+        else if(headgroup==5){carbon = 36;hydrogen = 69;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==6){carbon = 36;hydrogen = 69;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==7){carbon = 42;hydrogen = 79;oxygen = 13;nitrogen = 1;}
+        else if(headgroup==8){carbon = 53;hydrogen = 96;oxygen = 21;nitrogen = 2;}
+        else if(headgroup==9){carbon = 47;hydrogen = 86;oxygen = 16;nitrogen = 2;}
+        else if(headgroup==10){carbon = 48;hydrogen = 89;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==11){carbon = 48;hydrogen = 89;oxygen = 8;nitrogen = 1;}
+        else if(headgroup==12){carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+        else if(headgroup==13){carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+        else if(headgroup==14){carbon = 42;hydrogen = 79;oxygen = 13;nitrogen = 1;}
+        else if(headgroup==15){carbon = 48;hydrogen = 89;oxygen = 18;nitrogen = 1;}
+        else {carbon = 50;hydrogen = 92;oxygen = 18;nitrogen = 2;}
+
+        setNumC(carbon+(sBaseDif[sBase * 4])+(nAcylDif[nAcyl * 4]));
+        setNumH(hydrogen+(sBaseDif[(sBase * 4)+1])+(nAcylDif[(nAcyl * 4)+1]));
+        setNumO(oxygen+(sBaseDif[(sBase * 4)+2])+(nAcylDif[(nAcyl * 4)+2]));
+        setNumN(nitrogen+(sBaseDif[(sBase * 4)+3])+(nAcylDif[(nAcyl * 4)+3]));
+        setNumP(phosphorus);
+
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
+
         return getMass();
     }
     double calculateInitialMass(int numC, int numH, int numO, int numN
