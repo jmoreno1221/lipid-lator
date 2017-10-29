@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
 
     @Override
@@ -45,8 +47,14 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         //change the final mass of the basic mass, and finally the calculateFormula to be
         //able to create your formula string
 
-        //////////////////////////////////
+        double mass = calc.calculateGPBasicMass(ion, headGroupIndex, sn1_1Index, sn1_1Index);
+        double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
+        String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
+                calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
+                calc.getNumP(), calc.getNumS(), calc.getNumF());
+        String formatted = String.format(Locale.ENGLISH,"% ,4f",molarMass).replace(",","");
 
+        //tvIon_result.setText();
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
