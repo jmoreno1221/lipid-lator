@@ -257,98 +257,73 @@ class Calculations {
         setNumO(2);
         return getMass();
     }
-    double calculateGBasicMass(int i1, int i2, int i3){
 
-        // SN1 Dropdown: 49 values
-        // SN2 Dropdown: 44 Values
-        // SN3 Dropdown: 44 values
-        // # of Possible Combination: 94,864
+    /** Method: calculateGLBasicMass(int i1, int i2, int i3)
+     * This method takes the indexes of sn1, sn2, and sn3 for Glycerolipids.
+     * The indexes are used to figure out/set how much C, H, O there are in
+     * the molecular formula. This method returns the basic mass of Glycerolipids.
+     *
+     * @param i1 index of sn1 dropdown menu
+     * @param i2 index of sn2 dropdown menu
+     * @param i3 index of sn3 dropdown menu
+     * @return the basic mass of Glycerolipids
+     */
 
-        double[] aGL_sn1 = {
-                5,10, 7,14, 9,18, 11,22,
-                13,26, 15,30, 16,32, 17,34,
-                17,32, 18,36, 18,34, 19,40,
-                19,38, 19,38, 19,36, 20,40,
-                20,38, 20,36, 21,44, 21,42,
-                21,42, 21,40, 21,40, 21,38,
-                21,36, 21,36, 21,34, 22,44,
-                23,48, 23,46, 23,46, 23,44,
-                23,42, 23,40, 23,38, 23,36,
-                24,48, 25,50, 25,48, 25,46,
-                25,44, 25,42, 25,40, 25,38,
-                26,52, 27,54, 27,52, 28,56, 29,58};
+    double calculateGLBasicMass(int i1, int i2, int i3){
 
-        double[] aGL_other = {
-                5,10,7,12,9,16,11,20,
-                13,24,15,28,17,32,
-                18,34,19,36,19,34,20,38,
-                20,36,21,40,21,38,22,42,
-                22,40,22,38,23,44,23,42,
-                23,42,23,40,23,38,23,38,
-                23,36,24,46,25,48,25,46,
-                25,44,25,42,25,40,25,38,
-                26,50,27,52,27,50,27,48,
-                27,46,27,44,27,42,27,40,
-                28,54,29,56,29,54,30,58,
-                31,60};
+        // Array of Glycerolipid's num of Carbon, Hydrogen repeated (for SN1 Dropdown Menu's values)
+        int[] arrayGL_sn1 = {
+                5,10,    7,14,   9,18,  11,22, 13,26,  15,30,  16,32,  17,34,
+                17,32,  18,36,  18,34,  19,40, 19,38,  19,38,  19,36,  20,40,
+                20,38,  20,36,  21,44,  21,42, 21,42,  21,40,  21,40,  21,38,
+                21,36,  21,36,  21,34,  22,44, 23,48,  23,46,  23,46,  23,44,
+                23,42,  23,40,  23,38,  23,36, 24,48,  25,50,  25,48,  25,46,
+                25,44,  25,42,  25,40,  25,38, 26,52,  27,54,  27,52,  28,56, 29,58};
 
+        // addCarbon array: Amount of increase in Carbon when on certain sn2 & sn3 index position
         int[] addCarbon = {
-                0, 2, 4, 6, 8, 10, 12,
-                13, 14, 14, 15, 15, 16,
-                16, 17, 17, 17, 18, 18,
-                18, 18, 18, 18, 18, 19,
-                20, 20, 20, 20,	20,	20,
-                21, 22,	22,	22,	22,	22,
-                22, 22, 23, 24, 24, 25, 26
-        };
+                0, 2, 4, 6, 8, 10, 12, 13, 14, 14, 15, 15, 16, 16, 17, 17, 17,
+                18, 18, 18, 18, 18, 18, 18, 19, 20, 20, 20, 20,	20,	20, 21, 22,
+                22,	22,	22,	22, 22, 22, 23, 24, 24, 25, 26 };
 
-        int numOfC = (int)aGL_sn1[i1 * 2];
+        // addHydrogen array: Amount of increase in Hydrogen when on certain sn2 & sn3 index position
+        int[] addHydrogen = {
+                0, 2, 6, 10, 14, 18, 22, 24, 26, 24, 28, 26, 30, 28, 32, 30, 28,
+                34,	32,	32,	30,	28,	28,	26,	36,	38,	36,	34,	32,	30,	28,	40,	42,
+                40,	38,	36,	34,	32,	30,	44,	46,	44,	48,	50 };
 
-        if (i2 == 0 && i3 == 0) {setNumC(numOfC);}
-        // else if (i2 < 6 && i3 < 6) { numOfC = numOfC + (i2 * 2) + (i3 * 2);}
+        // Get the # of C & H depending on the index position of SN1's dropdown menu
+        int numOfC = arrayGL_sn1[i1 * 2], numOfH = arrayGL_sn1[i1 * 2 + 1];
 
-        /*if (i2 <= 6) {numOfC = numOfC + (i2 * 2);}
-        else if (i2 == 7) {numOfC = numOfC + 13;}
-        else if (i2 == 8) {numOfC = numOfC + ;}*/
+        // Add carbon & hydrogen depending on SN2 and SN3 dropdown menu's index position
+        numOfC = numOfC + addCarbon[i2] + addCarbon[i3];
+        numOfH = numOfH + addHydrogen[i2] + addHydrogen[i3];
 
-        else {
-            numOfC = numOfC + addCarbon[i2] + addCarbon[i3];
-        }
+        /* Set Number of Carbon & Hydrogen */
+        setNumC(numOfC); setNumH(numOfH);
 
-
-
-
-
-
-
-
-        setNumC(numOfC);
+        /* Set Number of Oxygen */
 
         // If SN1 Dropdown index is not O or P
         if (i1 != 11 && i1 != 12 && i1 != 18 && i1 != 19 && i1 != 28 && i1 != 29) {
 
             if (i2 == 0 && i3 == 0){ setNumO(4); }
-
             else if (i2 == 0 || i3 == 0) { setNumO(5); }
-
             else setNumO(6);
+
+        // If SN1 Dropdown index is O or P
         } else {
 
             if (i2 == 0 && i3 == 0){ setNumO(3); }
-
             else if (i2 == 0 || i3 == 0) { setNumO(4); }
-
             else setNumO(5);
-
         }
 
-        // setNumH((int)aGL_sn1[(i2 * 2) + 0]);
-        // setNumO((int)arrayGlycerolipid_sn2_3[(i3 * 3) + 0]);
+        // Sets the basic mass based on the elemental composition of the monoisotopic distribution
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(), getNumAg(),
+                getNumLi(), getNumNa(), getNumK(), getNumCl(), getNumP(), getNumS(), getNumF()));
 
-        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
-                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
-                getNumP(), getNumS(), getNumF()));
-
+        // Return basic mass
         return getMass();
     }
 
@@ -441,6 +416,12 @@ class Calculations {
 
         return getMass();
     }
+
+    /** calculateInitialMass()
+     *
+     *  This method takes the amount of C, H, O, N, Ag, Li, Na, K, Cl, P, S, and F
+     *  and returns the sum of intial mass that will be used to find the monoisotopic mass
+     */
     double calculateInitialMass(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
@@ -448,6 +429,7 @@ class Calculations {
                 (LITHIUM*numLi)+(SODIUM*numNa)+(POTASSIUM*numK)+(CHLORIDE*numCl)+(PHOSPHORUS*numP)+
                 (SULFUR*numS)+(FLUORIDE*numF));
     }
+
     double calculateFinalMass(int ion, double basicMass)
     {
         if(ion == 0){basicMass+= 1.00727; setNumH(getNumH()+1);}

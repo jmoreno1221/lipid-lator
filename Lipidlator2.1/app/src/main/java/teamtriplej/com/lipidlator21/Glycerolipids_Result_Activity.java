@@ -36,7 +36,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         String sn3Selected = getIntent().getExtras().getString("sn3Selected");
 
         Calculations calc = new Calculations();
-        double mass = calc.calculateGBasicMass(sn1Index, sn2Index, sn3Index);
+        double mass = calc.calculateGLBasicMass(sn1Index, sn2Index, sn3Index);
         double molarMass = Math.round(calc.calculateFinalMass(ionIndex, mass) * 10000d) / 10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
@@ -47,7 +47,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         sn1Result.setText(sn1Selected);
         sn2Result.setText(sn2Selected);
         sn3Result.setText(sn3Selected);
-        abvResult.setText("MG(" + sn1Selected + "/" + sn2Selected + "/" + sn3Selected + ")");
+        abvResult.setText("TG(" + sn1Selected + "/" + sn2Selected + "/" + sn3Selected + ")");
         formulaResult.setText(formula);
         molarMassResult.setText(Double.toString(molarMass));
 
