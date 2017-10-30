@@ -1,6 +1,8 @@
 package teamtriplej.com.lipidlator21;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,6 +17,10 @@ public class FattyAcidsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatty_acids);
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        if (bar != null) {
+            bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#B5A10E")));
+        }
         //Create an instance of each of the interactive things on our screen
         //for example in this case we have 2 buttons and 3 spinners
         final Spinner spnI = (Spinner) findViewById(R.id.spnIon);
