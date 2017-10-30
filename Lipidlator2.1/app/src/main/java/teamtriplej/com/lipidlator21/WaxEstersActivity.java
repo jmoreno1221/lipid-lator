@@ -1,6 +1,8 @@
 package teamtriplej.com.lipidlator21;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,6 +16,10 @@ public class WaxEstersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wax_esters);
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        if (bar != null) {
+            bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#2E6D27")));
+        }
         final Spinner spnI = (Spinner) findViewById(R.id.spnIon);
         final Spinner spnAc = (Spinner) findViewById(R.id.spnAcid);
         final Spinner spnAl = (Spinner) findViewById(R.id.spnAlcohol);

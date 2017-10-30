@@ -54,6 +54,10 @@
     <string name="SPLabel">Sphingolipids\nTesting</string>
     <string name="CELabel">Cholesteryl Esters\nTesting</string>
     <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="ok">OK</string>
+    <string name="HelpDescription">Here is where we will input all of the details about what this app is about and a few other things we will think about later on. Begin to think of things to put here. Also some images here and there.</string>
 
     <string-array name="ion_array">
         <item>[M+H]+</item>

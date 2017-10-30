@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#AA3939</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="ScreenBack">#cececc</color>
+    <color name="SpinBack">#878781</color>
     <color name="CL">#AA3939</color>
     <color name="FA">#B5A10E</color>
+    <color name="WE">#2e6d27</color>
+    <color name="SL">#1b738e</color>
+    <color name="COA">#864499</color>
+    <color name="GLY">#d87c2b</color>
+    <color name="AC">#07b78e</color>
 </resources>
