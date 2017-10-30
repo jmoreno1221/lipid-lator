@@ -58,13 +58,12 @@
         app:layout_constraintHorizontal_bias="0.504" />
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        android:id="@+id/scroll_view"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
