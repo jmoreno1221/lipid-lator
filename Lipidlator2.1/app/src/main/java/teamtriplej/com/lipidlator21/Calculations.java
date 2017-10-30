@@ -347,22 +347,35 @@ class Calculations {
                 ,30,50,7,1,0,1,0,31,64,7,1,0,1,0,32,66,7,1,0,1,0
                 ,32,64,7,1,0,1,0,33,68,7,1,0,1,0,34,70,7,1,0,1,0};
 
-        int[] sn2_elements = {10,22,7,1,0,1,0,12,24,8,1,0,1,0,14,28,8,1,0,1,0,15,28,9,1,0,1,0,16,32,8,1,0,1,0,18,36,8,1,0,1,0,
+        int[] sn2_elements = {12,24,8,1,0,1,0,14,28,8,1,0,1,0,15,28,9,1,0,1,0,16,32,8,1,0,1,0,18,36,8,1,0,1,0,
                 19,36,9,1,0,1,0,20,40,8,1,0,1,0,22,44,8,1,0,1,0,23,46,8,1,0,1,0,24,48,8,1,0,1,0,24,46,8,1,0,1,0,25,50,8,1,0,1,0,25,48,8,1,0,1,0,
                 26,52,8,1,0,1,0,26,50,8,1,0,1,0,27,54,8,1,0,1,0,27,52,8,1,0,1,0,27,50,8,1,0,1,0,28,56,8,1,0,1,0,28,54,8,1,0,1,0,28,54,8,1,0,1,0,
                 28,52,8,1,0,1,0,28,50,8,1,0,1,0,28,50,8,1,0,1,0,28,48,8,1,0,1,0,29,58,8,1,0,1,0,30,60,8,1,0,1,0,30,58,8,1,0,1,0,30,56,8,1,0,1,0,
                 30,54,8,1,0,1,0,30,52,8,1,0,1,0,30,50,8,1,0,1,0,31,62,8,1,0,1,0,32,64,8,1,0,1,0,32,62,8,1,0,1,0,32,60,8,1,0,1,0,32,58,8,1,0,1,0,
                 32,56,8,1,0,1,0,32,54,8,1,0,1,0,32,52,8,1,0,1,0,33,66,8,1,0,1,0,34,68,8,1,0,1,0,34,66,8,1,0,1,0,35,70,8,1,0,1,0,36,72,8,1,0,1,0};
 
-        //if(index3 > 0){
-        setNumC((sn2_elements[(index4 + 8)]-(sn2_elements[((index4 + 8)-8)])));
-        setNumH((sn2_elements[(index4 + 9)]-(sn2_elements[(index4 + 9)-9])));
-        setNumO((sn2_elements[(index4 + 10)]-(sn2_elements[(index4 + 10)-10])));
-        setNumN((sn2_elements[(index4 + 11)]-(sn2_elements[(index4 + 11)-11])));
-        setNumF((sn2_elements[(index4 + 12)]-(sn2_elements[(index4 + 12)-12])));
-        setNumP((sn2_elements[(index4 + 13)]-(sn2_elements[(index4 + 13)-13])));
-        setNumS((sn2_elements[(index4 + 14)]-(sn2_elements[(index4 + 14)-14])));
-        //}
+        int[] hg_elements={10,22,7,1,0,1,0,5,11,7,0,0,1,0,8,16,9,1,0,1,0,
+                           7,16,7,1,0,1,0,8,17,9,0,0,1,0,8,18,12,0,0,2,0,
+                           11,21,12,0,0,1,0,11,22,15,0,0,2,0,11,23,18,0,0,3,0,11,24,21,0,0,4,0};
+
+        if(index4 == 0){
+        setNumC((sn1_elements[index3 * 7 + 0]));
+        setNumH((sn1_elements[index3 * 7 + 1]));
+        setNumO((sn1_elements[index3 * 7 + 2]));
+        setNumN((sn1_elements[index3 * 7 + 3]));
+        setNumF((sn1_elements[index3 * 7 + 4]));
+        setNumP((sn1_elements[index3 * 7 + 5]));
+        setNumS((sn1_elements[index3 * 7 + 6]));
+        }
+        else{
+            setNumC((sn1_elements[index4 * 7 + 0]));
+            setNumH((sn1_elements[index4 * 7 + 1] - 2));
+            setNumO((sn1_elements[index4 * 7 + 2] + 1));
+            setNumN((sn1_elements[index4 * 7 + 3]));
+            setNumF((sn1_elements[index4 * 7 + 4]));
+            setNumP((sn1_elements[index4 * 7 + 5]));
+            setNumS((sn1_elements[index4 * 7 + 6]));
+        }
 
         setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
                 getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),

@@ -47,10 +47,14 @@ public class Glycerophospholipids_Activity extends AppCompatActivity {
                 //After creating the intent to prepare to go to the next screen, before
                 //we start the screen, we need to also add the variables above to our
                 //intent to make sure we don't leave anything behind.
-                intent.putExtra("ion",ionIndex);
+                intent.putExtra("ionIndex",ionIndex);
                 intent.putExtra("headGroupIndex", headGroupIndex);
                 intent.putExtra("sn1_1Index", sn1_1Index);
                 intent.putExtra("sn2_1Index", sn2_1Index);
+                intent.putExtra("ionselected", ionSelected);
+                intent.putExtra("headGroupSelected", headGroupSelected);
+                intent.putExtra("sn1_1Selected", sn1_1Selected);
+                intent.putExtra("sn2_1Selected", sn2_1Selected);
                 startActivity(intent);
             }
         });

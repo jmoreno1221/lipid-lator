@@ -21,7 +21,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         TextView tvHeadGroup_Result = (TextView) findViewById(R.id.tvHeadGroup_Result);
         TextView tvSn1_Result= (TextView) findViewById(R.id.tvSn1_Result);
         TextView tvSn2_Result= (TextView) findViewById(R.id.tvSn2_Result);
-        TextView Abbreviation_Result= (TextView) findViewById(R.id.tvAbbreviation_Result);
+        TextView tvAbbreviation_Result= (TextView) findViewById(R.id.tvAbbreviation_Result);
         TextView tvMolarMass_Result= (TextView) findViewById(R.id.tvMolarMass_Result);
         TextView tvFormula_Result= (TextView) findViewById(R.id.tvFormula_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
@@ -35,7 +35,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         int sn1_1Index = getIntent().getExtras().getInt("sn1_1Index");
         int sn2_1Index = getIntent().getExtras().getInt("sn2_1Index");
 
-        String ionSelected = getIntent().getExtras().getString("ionSelected");
+        String ionselected = getIntent().getExtras().getString("ionselected");
         String headGroupSelected = getIntent().getExtras().getString("headGroupSelected");
         String sn1_1Selected = getIntent().getExtras().getString("sn1_1Selected");
         String sn2_1Selected = getIntent().getExtras().getString("sn2_1Selected");
@@ -47,13 +47,19 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         //change the final mass of the basic mass, and finally the calculateFormula to be
         //able to create your formula string
 
-        double mass = calc.calculateGPBasicMass(ion, headGroupIndex, sn1_1Index, sn1_1Index);
+        double mass = calc.calculateGPBasicMass(ion, headGroupIndex, sn1_1Index, sn2_1Index);
         double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
         String formatted = String.format(Locale.ENGLISH,"% ,4f",molarMass).replace(",","");
-
+        tvMolarMass_Result.setText(formatted);
+        tvFormula_Result.setText(formula);
+        tvIon_result.setText(ionselected);
+        tvHeadGroup_Result.setText(headGroupSelected);
+        tvSn1_Result.setText(sn1_1Selected);
+        tvSn2_Result.setText(sn2_1Selected);
+        tvAbbreviation_Result.setText("PC(" + sn1_1Selected + "/" + sn2_1Selected + ")");
         //tvIon_result.setText();
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
