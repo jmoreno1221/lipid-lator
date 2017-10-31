@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Lipid-lator</string>
-    <string name="appTitle">Lipid-lator</string>
+    <string name="app_name">Lipid-Lator</string>
+    <string name="appTitle">Lipid-Lator</string>
     <string name="Ion">Ion:</string>
     <string name="Acid">Acid:</string>
     <string name="Ester">Ester:</string>
@@ -56,6 +56,7 @@
     <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
     <string name="about">About</string>
     <string name="help">Help</string>
+    <string name="info">More Info</string>
     <string name="contactUs">Contact Us</string>
     <string name="ok">OK</string>
     <string name="HelpDescription">Here is where we will input all of the details about what this app is about and a few other things we will think about later on. Begin to think of things to put here. Also some images here and there.</string>
