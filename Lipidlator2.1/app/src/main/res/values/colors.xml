@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#000000</color>
     <color name="ScreenBack">#cececc</color>
     <color name="SpinBack">#878781</color>
     <color name="CL">#AA3939</color>

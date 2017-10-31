@@ -19,6 +19,18 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        boolean firstrun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstrun", true);
+        if (firstrun){
+            //... Display the dialog message here ...
+            Alert alert = new Alert();
+            alert.show(getFragmentManager(),"hello");
+            // Save the state
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                    .edit()
+                    .putBoolean("firstrun", false)
+                    .apply();
+        }
+
         ActionBar bar = getSupportActionBar();
         if (bar != null) {
             bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8e8e8d")));
