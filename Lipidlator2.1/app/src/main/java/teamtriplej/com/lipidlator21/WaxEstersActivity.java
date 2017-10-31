@@ -48,8 +48,7 @@ public class WaxEstersActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WaxEstersActivity.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

@@ -52,8 +52,7 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FattyAcids_Result_Activity.this, FattyAcidsActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener(){

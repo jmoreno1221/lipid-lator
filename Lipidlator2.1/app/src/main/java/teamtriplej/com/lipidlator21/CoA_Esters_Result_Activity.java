@@ -43,8 +43,7 @@ public class CoA_Esters_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CoA_Esters_Result_Activity.this, CoA_EstersActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener(){

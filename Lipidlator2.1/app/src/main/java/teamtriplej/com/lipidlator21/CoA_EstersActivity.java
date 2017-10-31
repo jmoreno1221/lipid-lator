@@ -63,8 +63,7 @@ public class CoA_EstersActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CoA_EstersActivity.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

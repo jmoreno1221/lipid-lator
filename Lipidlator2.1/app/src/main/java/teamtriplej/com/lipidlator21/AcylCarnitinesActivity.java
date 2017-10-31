@@ -44,8 +44,7 @@ public class AcylCarnitinesActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AcylCarnitinesActivity.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

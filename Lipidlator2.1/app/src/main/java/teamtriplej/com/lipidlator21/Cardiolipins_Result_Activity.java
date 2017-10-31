@@ -56,8 +56,7 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cardiolipins_Result_Activity.this, CardiolipinsActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

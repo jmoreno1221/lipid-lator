@@ -41,8 +41,7 @@ public class CholesterylEstersActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CholesterylEstersActivity.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

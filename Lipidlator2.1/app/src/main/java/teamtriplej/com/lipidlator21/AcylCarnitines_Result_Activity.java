@@ -38,12 +38,10 @@ public class AcylCarnitines_Result_Activity extends AppCompatActivity {
         acylResult.setText(acylSelected);
         abbreviationResult.setText("CAR(" + acylSelected + ")");
 
-        // Toast.makeText(this, acyl, Toast.LENGTH_SHORT).show();
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AcylCarnitines_Result_Activity.this, AcylCarnitinesActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener(){

@@ -47,14 +47,13 @@ public class WaxEsters_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WaxEsters_Result_Activity.this, WaxEstersActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WaxEsters_Result_Activity.this, HomeActivity.class);
+                Intent intent = new Intent(WaxEsters_Result_Activity.this,HomeActivity.class);
                 startActivity(intent);
             }
         });

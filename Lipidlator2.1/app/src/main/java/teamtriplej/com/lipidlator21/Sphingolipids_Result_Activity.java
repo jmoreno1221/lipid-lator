@@ -52,8 +52,7 @@ public class Sphingolipids_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Sphingolipids_Result_Activity.this, Sphingolipids_Activity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

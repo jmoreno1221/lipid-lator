@@ -54,8 +54,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Glycerolipids_Result_Activity.this, GlycerolipidsActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener(){
