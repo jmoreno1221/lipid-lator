@@ -56,6 +56,7 @@
     <string name="FAImageDesc">Android image placeholder to represent a Fatty Acid image</string>
     <string name="about">About</string>
     <string name="help">Help</string>
+    <string name="contactUs">Contact Us</string>
     <string name="ok">OK</string>
     <string name="HelpDescription">Here is where we will input all of the details about what this app is about and a few other things we will think about later on. Begin to think of things to put here. Also some images here and there.</string>
     <string name="AlertMessage"><b>WELCOME TO LIPID-LATOR!</b>\n\n\nThank you for downloading our app, we really hope all of the information provided here is of utmost use to you.
