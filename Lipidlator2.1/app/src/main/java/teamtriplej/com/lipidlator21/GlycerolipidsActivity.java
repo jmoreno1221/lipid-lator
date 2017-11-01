@@ -6,11 +6,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import static teamtriplej.com.lipidlator21.R.id.spnIon;
 
@@ -19,7 +21,7 @@ public class GlycerolipidsActivity extends AppCompatActivity {
     // Variables
     public int ionIndex, sn1Index, sn2Index, sn3Index;
     public String ionSelected,sn1Selected, sn2Selected, sn3Selected;
-
+    public String title = "Lipid-Lator";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,19 @@ public class GlycerolipidsActivity extends AppCompatActivity {
         if (bar != null) {
             bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#d87c2b")));
         }
+        View view = getLayoutInflater().inflate(R.layout.action_bar, null);
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(
+                ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.MATCH_PARENT,
+                Gravity.CENTER);
+
+        TextView Title = (TextView) view.findViewById(R.id.actionbar_title);
+        Title.setText(title);
+        Title.setTextColor(Color.parseColor("#FFFFFF"));
+
+        getSupportActionBar().setCustomView(view,params);
+        getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
+        getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
         // Spinners and Buttons
         final Spinner spnI = (Spinner) findViewById(spnIon);
         final Spinner spnSn1 = (Spinner) findViewById(R.id.spnSn1);

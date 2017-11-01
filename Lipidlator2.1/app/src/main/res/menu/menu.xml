@@ -5,17 +5,22 @@
     <item
         android:id="@+id/menu_about"
         android:orderInCategory="1"
-        app:showAsAction="never"
-        android:title="@string/about"/>
+        android:title="@string/about"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/menu_help"
         android:orderInCategory="2"
-        app:showAsAction="never"
-        android:title="@string/help"/>
+        android:title="@string/help"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/menu_contact_us"
         android:orderInCategory="3"
         android:title="@string/contactUs"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/more_info"
+        android:orderInCategory="4"
+        android:title="@string/info"
         app:showAsAction="never" />
 
 </menu>

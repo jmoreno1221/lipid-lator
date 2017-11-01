@@ -43,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
 
         TextView Title = (TextView) view.findViewById(R.id.actionbar_title);
         Title.setText(title);
+        Title.setTextColor(Color.parseColor("#FFFFFF"));
 
         getSupportActionBar().setCustomView(view,params);
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
