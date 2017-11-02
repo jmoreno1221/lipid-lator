@@ -212,7 +212,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
@@ -232,7 +232,7 @@
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="@string/Formula"
         android:textColor="@android:color/black"
@@ -245,7 +245,7 @@
         android:id="@+id/tvMolarMass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="8dp"
         android:text="@string/MolarMass"
         android:textColor="@android:color/black"
         android:textSize="24sp"
