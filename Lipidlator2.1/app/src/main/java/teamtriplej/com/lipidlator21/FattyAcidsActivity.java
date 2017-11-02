@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class FattyAcidsActivity extends AppCompatActivity {
     //Create all the necessary variables
-    public int ion, massIndex, esterIndex;
+    public int ionIndex, esterIndex, acidIndex;
     public String ionSelected, esterSelected, acidSelected;
     public String title = "Lipid-Lator";
     @Override
@@ -52,8 +52,8 @@ public class FattyAcidsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Retrieve all data from whatever is selected in each of the
                 //spinners to set our variables to them.
-                ion = spnI.getSelectedItemPosition();
-                massIndex = spnA.getSelectedItemPosition();
+                ionIndex = spnI.getSelectedItemPosition();
+                acidIndex = spnA.getSelectedItemPosition();
                 esterIndex = spnE.getSelectedItemPosition();
                 ionSelected = spnI.getSelectedItem().toString();
                 esterSelected = spnE.getSelectedItem().toString();
@@ -62,8 +62,8 @@ public class FattyAcidsActivity extends AppCompatActivity {
                 //After creating the intent to prepare to go to the next screen, before
                 //we start the screen, we need to also add the variables above to our
                 //intent to make sure we don't leave anything behind.
-                intent.putExtra("ion",ion);
-                intent.putExtra("massIndex", massIndex);
+                intent.putExtra("ionIndex",ionIndex);
+                intent.putExtra("acidIndex", acidIndex);
                 intent.putExtra("esterIndex", esterIndex);
                 intent.putExtra("ionSelected",ionSelected);
                 intent.putExtra("esterSelected",esterSelected);

@@ -48,14 +48,15 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
         TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormulaResult);
         TextView tvEsterSelected = (TextView) findViewById(R.id.tvEsterResult);
-        TextView tvIonSelected = (TextView) findViewById(R.id.tvIonSelected);
+        TextView tvAcidSelected = (TextView) findViewById(R.id.tvAcidResult);
+        TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
         TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviationResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
         Button btnHome = (Button) findViewById(R.id.btnHome);
         //Bring over all of the additional data that was stored into the intent and
         //set them into new variables on this screen
-        int ion = getIntent().getExtras().getInt("ion");
-        int massIndex = getIntent().getExtras().getInt("massIndex");
+        int ionIndex = getIntent().getExtras().getInt("ionIndex");
+        int acidIndex = getIntent().getExtras().getInt("acidIndex");
         int esterIndex = getIntent().getExtras().getInt("esterIndex");
         String ionSelected = getIntent().getExtras().getString("ionSelected");
         String esterSelected = getIntent().getExtras().getString("esterSelected");
@@ -66,16 +67,17 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         //of your lipid, then calculateFinalMass to be able to bring in the ion that will
         //change the final mass of the basic mass, and finally the calculateFormula to be
         //able to create your formula string
-        double mass = calc.calculateFABasicMass(massIndex,esterIndex);
-        double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
+        double mass = calc.calculateFABasicMass(acidIndex,esterIndex);
+        double molarMass = Math.round(calc.calculateFinalMass(ionIndex, mass)*10000d)/10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
         //Set all textviews from above to the newly calculated results
-        tvMolarMassResult.setText(String.format(Locale.ENGLISH,"% ,4f",molarMass));
+        tvMolarMassResult.setText(String.format(Locale.ENGLISH,"%.4f",molarMass));
         tvFormulaResult.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvEsterSelected.setText(esterSelected);
+        tvAcidSelected.setText(acidSelected);
         if(esterIndex == 0){tvAbbreviation.setText(acidSelected);}else
             tvAbbreviation.setText(acidSelected + " " + esterSelected);
         btnBack.setOnClickListener(new View.OnClickListener(){
