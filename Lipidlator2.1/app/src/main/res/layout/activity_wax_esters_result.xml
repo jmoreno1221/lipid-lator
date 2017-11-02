@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_we"
     tools:context="teamtriplej.com.lipidlator21.WaxEsters_Result_Activity">
 
     <Button
