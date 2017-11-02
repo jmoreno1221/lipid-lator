@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glycerophospholipids__result_);
         //Create an instance of each of the interactive things on our screen
-        //for example in this case we have 2 buttons and 7 textviews
+        //for example in this case we have 2 buttons and 7 textViews
         TextView tvIon_result = (TextView) findViewById(R.id.tvIon_Result);
         TextView tvHeadGroup_Result = (TextView) findViewById(R.id.tvHeadGroup_Result);
         TextView tvSn1_Result= (TextView) findViewById(R.id.tvSn1_Result);
@@ -37,7 +36,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         int sn1_1Index = getIntent().getExtras().getInt("sn1_1Index");
         int sn2_1Index = getIntent().getExtras().getInt("sn2_1Index");
 
-        String ionselected = getIntent().getExtras().getString("ionselected");
+        String ionSelected = getIntent().getExtras().getString("ionSelected");
         String headGroupSelected = getIntent().getExtras().getString("headGroupSelected");
         String sn1_1Selected = getIntent().getExtras().getString("sn1_1Selected");
         String sn2_1Selected = getIntent().getExtras().getString("sn2_1Selected");
@@ -54,14 +53,14 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        String formatted = String.format(Locale.ENGLISH,"% ,4f",molarMass).replace(",","");
+        String formatted = String.format(Locale.ENGLISH,"%.4f",molarMass).replace(",","");
         tvMolarMass_Result.setText(formatted);
         tvFormula_Result.setText(formula);
-        tvIon_result.setText(ionselected);
+        tvIon_result.setText(ionSelected);
         tvHeadGroup_Result.setText(headGroupSelected);
         tvSn1_Result.setText(sn1_1Selected);
         tvSn2_Result.setText(sn2_1Selected);
-        tvAbbreviation_Result.setText("PC(" + sn1_1Selected + "/" + sn2_1Selected + ")");
+        tvAbbreviation_Result.setText(headGroupSelected + "(" + sn1_1Selected + "/" + sn2_1Selected + ")");
         //tvIon_result.setText();
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
