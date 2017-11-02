@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_we"
     tools:context="teamtriplej.com.lipidlator21.WaxEstersActivity">
 
     <TextView
@@ -64,9 +65,10 @@
     <Spinner
         android:id="@+id/spnIon"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:entries="@array/ion_array"
         android:layout_marginLeft="25dp"
+        android:background="@drawable/border"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@+id/tvIon"
@@ -77,9 +79,10 @@
     <Spinner
         android:id="@+id/spnAlcohol"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:entries="@array/ratios_array"
         android:layout_marginLeft="25dp"
+        android:background="@drawable/border"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@+id/tvAlcohol"
@@ -90,9 +93,10 @@
     <Spinner
         android:id="@+id/spnAcid"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:entries="@array/ratios_array"
         android:layout_marginLeft="25dp"
+        android:background="@drawable/border"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@+id/tvAcid"

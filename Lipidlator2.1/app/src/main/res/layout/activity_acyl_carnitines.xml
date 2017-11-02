@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_ac"
     tools:context="teamtriplej.com.lipidlator21.AcylCarnitinesActivity">
 
     <TextView
@@ -57,7 +58,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="12dp"
         android:entries="@array/ion_array"
-        android:background="@color/ScreenBack"
+        android:background="@drawable/border"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -71,7 +72,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="12dp"
         android:entries="@array/ratios_array"
-        android:background="@color/ScreenBack"
+        android:background="@drawable/border"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
