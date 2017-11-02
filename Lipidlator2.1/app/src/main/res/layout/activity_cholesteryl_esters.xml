@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_cho"
     tools:context="teamtriplej.com.lipidlator21.CholesterylEstersActivity">
 
     <TextView
@@ -42,13 +43,14 @@
     <Spinner
         android:id="@+id/spnIon"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginEnd="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="12dp"
         android:entries="@array/ion_array"
+        android:background="@drawable/border"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -71,11 +73,12 @@
     <Spinner
         android:id="@+id/spnAcylChain"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="12dp"
         android:entries="@array/ratios_array"
+        android:background="@drawable/border"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHeadGroup" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_sl"
     tools:context="teamtriplej.com.lipidlator21.Sphingolipids_Activity">
 
         <TextView
@@ -42,7 +43,8 @@
         <Spinner
             android:id="@+id/spnIon"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
             android:layout_marginEnd="25dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
@@ -71,7 +73,8 @@
     <Spinner
         android:id="@+id/spnHeadGroup"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
         android:layout_marginEnd="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -136,7 +139,8 @@
     <Spinner
         android:id="@+id/spnSphingoidBase"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
         android:layout_marginEnd="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -165,7 +169,8 @@
     <Spinner
         android:id="@+id/spnNAcyl"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="11dp"
