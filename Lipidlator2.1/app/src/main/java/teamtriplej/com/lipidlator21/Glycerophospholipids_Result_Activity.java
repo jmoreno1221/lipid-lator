@@ -47,7 +47,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         //change the final mass of the basic mass, and finally the calculateFormula to be
         //able to create your formula string
 
-        double mass = calc.calculateGPBasicMass(ion, headGroupIndex, sn1_1Index, sn2_1Index);
+        double mass = calc.calculateGPBasicMass(headGroupIndex, sn1_1Index, sn2_1Index);
         double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
