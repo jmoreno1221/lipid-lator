@@ -67,7 +67,7 @@ public class CoA_EstersActivity extends AppCompatActivity {
 
                 // putExtra to be able to transfer indexes & String values
                 intent.putExtra("ionIndex", ionIndex);
-                intent.putExtra("acylIndex", acylIndex);      
+                intent.putExtra("acylIndex", acylIndex);
                 intent.putExtra("ionSelected", ionSelected);
                 intent.putExtra("acylSelected", acylSelected);
 

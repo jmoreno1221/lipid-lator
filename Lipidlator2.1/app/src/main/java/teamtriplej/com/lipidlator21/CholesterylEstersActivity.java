@@ -52,10 +52,10 @@ public class CholesterylEstersActivity extends AppCompatActivity {
                 acylIndex = spnAcyl.getSelectedItemPosition();
                 ionSelected = spnIon.getSelectedItem().toString();
                 acylSelected = spnAcyl.getSelectedItem().toString();
-                setIon(ionIndex);
+
                 Intent intent = new Intent(CholesterylEstersActivity.this, CholesterylEsters_Result_Activity.class);
-                intent.putExtra("ionIndex", getIonIndex());
-                intent.putExtra("acylIndex", getAcyIndex());
+                intent.putExtra("ionIndex", ionIndex);
+                intent.putExtra("acylIndex", acylIndex);
                 intent.putExtra("ionSelected", ionSelected);
                 intent.putExtra("acylSelected", acylSelected);
                 startActivity(intent);
@@ -89,16 +89,5 @@ public class CholesterylEstersActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void setIon(int ion2) {
-        ionIndex = ion2;
-    }
-
-    public int getIonIndex() {
-        return ionIndex;
-    }
-
-    public int getAcyIndex() {
-        return acylIndex;
-    }
 }
 
