@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
 
         ActionBar bar = getSupportActionBar();
         if (bar != null) {
-            bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8e8e8d")));
+            bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         }
         View view = getLayoutInflater().inflate(R.layout.action_bar, null);
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(
