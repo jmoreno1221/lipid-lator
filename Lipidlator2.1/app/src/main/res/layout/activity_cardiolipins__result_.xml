@@ -188,6 +188,8 @@
         android:id="@+id/scroll_view"
         android:layout_height="0dp"
         android:background="@drawable/border"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -199,7 +201,7 @@
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
         android:text="@string/Abbreviation"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -212,11 +214,12 @@
         android:id="@+id/tvAbbreviation_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/tvAbbreviation"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -251,11 +254,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="25dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textSize="18sp"
         android:textColor="@android:color/black"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula_Result" />
 
     <TextView
@@ -264,10 +268,11 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="25dp"
         android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvFormula"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation_Result" />
 </android.support.constraint.ConstraintLayout>
     </HorizontalScrollView>
