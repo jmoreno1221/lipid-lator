@@ -1,8 +1,12 @@
 package teamtriplej.com.lipidlator21;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,11 +16,30 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
-
+    public String title = "Lipid-Lator";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glycerophospholipids__result_);
+
+        ActionBar bar = getSupportActionBar();
+        if (bar != null) {
+            bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3f51b5")));
+        }
+        View view = getLayoutInflater().inflate(R.layout.action_bar, null);
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(
+                ActionBar.LayoutParams.WRAP_CONTENT,
+                ActionBar.LayoutParams.MATCH_PARENT,
+                Gravity.CENTER);
+
+        TextView Title = (TextView) view.findViewById(R.id.actionbar_title);
+        Title.setText(title);
+        Title.setTextColor(Color.parseColor("#FFFFFF"));
+
+        getSupportActionBar().setCustomView(view,params);
+        getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
+        getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
+
         //Create an instance of each of the interactive things on our screen
         //for example in this case we have 2 buttons and 7 textviews
         TextView tvIon_result = (TextView) findViewById(R.id.tvIon_Result);
