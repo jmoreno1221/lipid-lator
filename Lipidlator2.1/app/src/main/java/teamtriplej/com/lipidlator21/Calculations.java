@@ -327,7 +327,7 @@ class Calculations {
         return getMass();
     }
 
-    double calculateGPBasicMass(int index1, int index2, int index3, int index4)
+    double calculateGPBasicMass(int index2, int index3, int index4)
     {
         int[] sn1_elements = {10,22,7,1,0,1,0
                 ,12,26,7,1,0,1,0,14,30,7,1,0,1,0,16,34,7,1,0,1,0
