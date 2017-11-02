@@ -63,12 +63,11 @@ public class CoA_EstersActivity extends AppCompatActivity {
                 acylSelected = spnAcyl.getSelectedItem().toString();
 
                 // setIon and create intent
-                setIon(ionIndex);
                 Intent intent = new Intent(CoA_EstersActivity.this, CoA_Esters_Result_Activity.class);
 
                 // putExtra to be able to transfer indexes & String values
-                intent.putExtra("ionIndex", getIonIndex());
-                intent.putExtra("acylIndex", getAcylIndex());
+                intent.putExtra("ionIndex", ionIndex);
+                intent.putExtra("acylIndex", acylIndex);      
                 intent.putExtra("ionSelected", ionSelected);
                 intent.putExtra("acylSelected", acylSelected);
 
@@ -105,18 +104,5 @@ public class CoA_EstersActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // Set ion
-    public void setIon(int ion){
-        ionIndex = ion;
-    }
-
-    // Getters methods for indexes
-    public int getIonIndex(){
-        return ionIndex;
-    }
-
-    public int getAcylIndex(){
-        return acylIndex;
-    }
 
 }

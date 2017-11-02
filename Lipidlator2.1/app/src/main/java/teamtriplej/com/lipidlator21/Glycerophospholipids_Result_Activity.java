@@ -1,8 +1,10 @@
 package teamtriplej.com.lipidlator21;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -47,7 +49,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         //change the final mass of the basic mass, and finally the calculateFormula to be
         //able to create your formula string
 
-        double mass = calc.calculateGPBasicMass(ion, headGroupIndex, sn1_1Index, sn2_1Index);
+        double mass = calc.calculateGPBasicMass(headGroupIndex, sn1_1Index, sn2_1Index);
         double molarMass = Math.round(calc.calculateFinalMass(ion, mass)*10000d)/10000d;
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
@@ -78,4 +80,25 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
             }
         });
     }
+
+    // create an action bar button
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // handle button activities
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.menu_about) {
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+            // do something here
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
