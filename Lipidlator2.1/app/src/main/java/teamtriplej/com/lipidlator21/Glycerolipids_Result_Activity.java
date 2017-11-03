@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class Glycerolipids_Result_Activity extends AppCompatActivity {
     public String title = "Lipid-Lator";
 
@@ -69,6 +71,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                  calc.getNumP(), calc.getNumS(), calc.getNumF());
+        String formatted = String.format(Locale.ENGLISH,"%.4f",molarMass).replace(",","");
 
         // Set Text
         ionResult.setText(ionSelected);
@@ -77,7 +80,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         sn3Result.setText(sn3Selected);
         abvResult.setText("TG(" + sn1Selected + "/" + sn2Selected + "/" + sn3Selected + ")");
         formulaResult.setText(formula);
-        molarMassResult.setText(Double.toString(molarMass));
+        molarMassResult.setText(formatted);
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
