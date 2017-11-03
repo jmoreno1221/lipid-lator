@@ -45,7 +45,7 @@ public class Sphingolipids_Result_Activity extends AppCompatActivity {
         TextView tvHeadGroup = (TextView) findViewById(R.id.tvHeadGroupResult);
         TextView tvSphingoidBase = (TextView) findViewById(R.id.tvSphingoidBaseResult);
         TextView tvNAcyl = (TextView) findViewById(R.id.tvNAcyl_Result);
-        TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviation_Result);
+        TextView tvAbbreviationResult = (TextView) findViewById(R.id.tvAbbreviation_Result);
         TextView tvFormula = (TextView) findViewById(R.id.tvFormula_Result);
         TextView tvMolarMass = (TextView) findViewById(R.id.tvMolarMass_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
@@ -67,13 +67,13 @@ public class Sphingolipids_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        tvMolarMass.setText(String.format(Locale.ENGLISH,"% ,4f", molarMass));
+        tvMolarMass.setText(String.format(Locale.ENGLISH,"%.4f", molarMass));
         tvFormula.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvHeadGroup.setText(headSelected);
         tvSphingoidBase.setText(baseSelected);
         tvNAcyl.setText(acylSelected);
-
+        tvAbbreviationResult.setText(headSelected + "(" + baseSelected + "/" + acylSelected + ")");
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
