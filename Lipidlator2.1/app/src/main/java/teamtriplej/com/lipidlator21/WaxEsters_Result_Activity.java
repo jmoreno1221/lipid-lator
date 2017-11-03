@@ -63,7 +63,7 @@ public class WaxEsters_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        tvMolarMassResult.setText(String.format(Locale.ENGLISH,"% ,4f",molarMass));
+        tvMolarMassResult.setText(String.format(Locale.ENGLISH,"%.4f",molarMass));
         tvFormulaResult.setText(formula);
         tvIonSelected.setText(ionSelected);
         tvAlcoholResult.setText(alcoholSelected);
