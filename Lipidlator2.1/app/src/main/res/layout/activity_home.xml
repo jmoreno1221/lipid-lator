@@ -9,15 +9,14 @@
 
     <ImageButton
         android:id="@+id/imbtnFattyAcids"
-        android:layout_width="67dp"
-        android:layout_height="51dp"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
         android:layout_marginLeft="35dp"
         android:adjustViewBounds="false"
-        android:background="@android:color/transparent"
+        android:background="@drawable/button_fa"
         android:contentDescription="@string/FAImageDesc"
         android:cropToPadding="false"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="103dp" />
 
@@ -127,13 +126,12 @@
 
     <ImageButton
         android:id="@+id/imbtnWaxEsters"
-        android:layout_width="67dp"
-        android:layout_height="51dp"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
         android:adjustViewBounds="false"
-        android:background="@android:color/transparent"
+        android:background="@drawable/button_we"
         android:contentDescription="@string/FAImageDesc"
         android:cropToPadding="false"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
         app:layout_constraintLeft_toRightOf="@+id/imbtnFattyAcids"
         android:layout_marginLeft="8dp"
         app:layout_constraintRight_toLeftOf="@+id/imbtnAcylCarnitines"

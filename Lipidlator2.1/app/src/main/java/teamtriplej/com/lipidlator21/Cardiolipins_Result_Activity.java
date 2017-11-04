@@ -68,7 +68,7 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        String formatted = String.format(Locale.ENGLISH,"% ,4f",molarMass).replace(",","");
+        String formatted = String.format(Locale.ENGLISH,"%.4f",molarMass).replace(",","");
         tvMolarMassResult.setText(formatted);
         tvFormulaResult.setText(formula);
         tvIonResult.setText(ionselected);

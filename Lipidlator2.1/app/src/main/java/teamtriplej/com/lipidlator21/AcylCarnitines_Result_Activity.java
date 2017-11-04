@@ -58,7 +58,7 @@ public class AcylCarnitines_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        molarMassResult.setText(String.format(Locale.ENGLISH,"% ,4f",molarMass));
+        molarMassResult.setText(String.format(Locale.ENGLISH,"%.4f",molarMass));
         formulaResult.setText(formula);
         ionResult.setText(ionSelected);
         acylResult.setText(acylSelected);
