@@ -25,6 +25,7 @@
         android:text="@string/Back"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         />
@@ -37,6 +38,7 @@
             android:text="@string/Submit"
             android:textColor="@android:color/white"
             android:textStyle="bold"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
     </LinearLayout>
