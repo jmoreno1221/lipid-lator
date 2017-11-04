@@ -26,11 +26,12 @@
         android:layout_weight="1"
         android:background="@color/CL"
         android:text="@string/Back"
+        android:textSize="24sp"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
-        
+
         <Button
             android:id="@+id/btnHome"
             android:layout_width="0dp"
@@ -39,6 +40,7 @@
             android:layout_weight="1"
             android:background="@color/CL"
             android:text="@string/Home"
+            android:textSize="24sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
