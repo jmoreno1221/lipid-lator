@@ -203,7 +203,7 @@
     <HorizontalScrollView
         android:layout_width="0dp"
         android:id="@+id/scroll_view"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/border"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="30dp"
