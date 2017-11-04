@@ -88,6 +88,5 @@ public class CholesterylEstersActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
 
