@@ -27,7 +27,6 @@ public class CholesterylEstersActivityTest {
     private CholesterylEstersActivity mActivity = null;
 
     Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(CholesterylEsters_Result_Activity.class.getName(),null,false);
-    Instrumentation.ActivityMonitor home = getInstrumentation().addMonitor(HomeActivity.class.getName(),null,false);
 
     @Before
     public void setUp() throws Exception {
