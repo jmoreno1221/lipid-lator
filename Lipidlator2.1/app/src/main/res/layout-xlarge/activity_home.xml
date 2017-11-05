@@ -12,83 +12,92 @@
         android:layout_height="0dp"
         android:columnCount="3"
         android:rowCount="3"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageButton
             android:id="@+id/imbtnFattyAcids"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_fa"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
         <ImageButton
             android:id="@+id/imbtnWaxEsters"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_we"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
         <ImageButton
             android:id="@+id/imbtnAcylCarnitines"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_ac"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
         <ImageButton
             android:id="@+id/imbtnCoAEsters"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_coa"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
         <ImageButton
             android:id="@+id/imbtnGlycerolipids"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_gl"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
         <ImageButton
             android:id="@+id/imbtnGlycerophospholipids"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_gpl"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
         <ImageButton
             android:id="@+id/imbtnCardiolipins"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_cl"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
         <ImageButton
             android:id="@+id/imbtnSphingolipids"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_sl"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
         <ImageButton
             android:id="@+id/imbtnCholesterylEsters"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
             android:adjustViewBounds="false"
             android:background="@drawable/button_ce"
             android:contentDescription="@string/FAImageDesc"
             android:cropToPadding="false" />
+
+
+
 
     </GridLayout>
 

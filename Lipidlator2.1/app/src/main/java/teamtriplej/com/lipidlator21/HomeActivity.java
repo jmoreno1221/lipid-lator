@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -43,6 +44,7 @@ public class HomeActivity extends AppCompatActivity {
 
         TextView Title = (TextView) view.findViewById(R.id.actionbar_title);
         Title.setText(title);
+        Title.setTextSize(36);
         Title.setTextColor(Color.parseColor("#FFFFFF"));
 
         getSupportActionBar().setCustomView(view,params);
