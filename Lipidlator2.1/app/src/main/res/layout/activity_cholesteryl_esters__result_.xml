@@ -7,37 +7,47 @@
     android:background="@drawable/gradient_cho"
     tools:context="teamtriplej.com.lipidlator21.CholesterylEsters_Result_Activity">
 
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:background="@color/CHO"
+            android:text="@string/Back"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            style="?android:attr/buttonBarButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
         android:id="@+id/btnHome"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="38dp"
         android:background="@color/CHO"
         android:text="@string/Home"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        style="?android:attr/buttonBarButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@color/CHO"
-        android:text="@string/Back"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvTitle"
@@ -68,7 +78,7 @@
         android:textSize="18sp"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
@@ -81,14 +91,14 @@
         android:textSize="18sp"
         android:layout_marginTop="18dp"
         app:layout_constraintTop_toBottomOf="@+id/tvIon"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/Formula"
         android:textStyle="bold"
@@ -101,7 +111,7 @@
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/Abbreviation"
         android:textStyle="bold"
@@ -114,7 +124,7 @@
         android:id="@+id/tvMolarMass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/MolarMass"
         android:textStyle="bold"
@@ -127,7 +137,7 @@
         android:id="@+id/tvIonResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="30dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
@@ -139,7 +149,7 @@
         android:id="@+id/tvAcylChainResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
@@ -151,7 +161,7 @@
         android:id="@+id/tvAbbreviationResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
@@ -163,7 +173,7 @@
         android:id="@+id/tvFormulaResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
@@ -175,7 +185,7 @@
         android:id="@+id/tvMolarMassResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
