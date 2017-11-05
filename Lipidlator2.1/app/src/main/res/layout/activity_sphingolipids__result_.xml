@@ -20,6 +20,7 @@
         android:id="@+id/btnBack"
         android:layout_width="0dp"
         android:layout_weight="1"
+        android:textSize="24sp"
         android:layout_height="wrap_content"
         android:background="@color/SL"
         android:text="@string/Back"
@@ -27,13 +28,12 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent" />
     <Button
         android:id="@+id/btnHome"
         android:layout_width="0dp"
         android:layout_weight="1"
+        android:textSize="24sp"
         android:layout_height="wrap_content"
         android:background="@color/SL"
         android:text="@string/Home"
@@ -41,8 +41,6 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 </LinearLayout>
     <TextView
