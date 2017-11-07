@@ -19,46 +19,67 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AboutActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".FattyAcidsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".FattyAcids_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CholesterylEstersActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CholesterylEsters_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Sphingolipids_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Sphingolipids_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CardiolipinsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Cardiolipins_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Glycerophospholipids_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Glycerophospholipids_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".WaxEstersActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AcylCarnitinesActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CoA_EstersActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".GlycerolipidsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".WaxEsters_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AcylCarnitines_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CoA_Esters_Result_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Glycerolipids_Result_Activity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FattyAcidsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FattyAcids_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CholesterylEstersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CholesterylEsters_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sphingolipids_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sphingolipids_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CardiolipinsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cardiolipins_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Glycerophospholipids_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Glycerophospholipids_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WaxEstersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AcylCarnitinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoA_EstersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GlycerolipidsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WaxEsters_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AcylCarnitines_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoA_Esters_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Glycerolipids_Result_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HelpActivity"></activity>
     </application>
 
 </manifest>
