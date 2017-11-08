@@ -25,16 +25,24 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/helpTitle"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:text="@string/how_to_use_this_app"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="127dp"
-                tools:layout_editor_absoluteY="63dp" />
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/paragraphOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paragraph_one"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
