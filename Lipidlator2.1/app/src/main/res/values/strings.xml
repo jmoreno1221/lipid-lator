@@ -63,6 +63,8 @@
     <string name="AlertMessage"><b>WELCOME TO LIPID-LATOR!</b>\n\n\nThank you for downloading our app, we really hope all of the information provided here is of utmost use to you.
     If you need any assistance please take a look at our help menu in the top right corner of any screen. Also if you wish to give us feedback on anything send us a message
     in the "About" section also found in the menu.\n\n<b>**Before you get started quick important detail. All of our molar masses being calculated might have a \u00B1 0.000555 m/z ratio.**</b>\n\nHope you enjoy!</string>
+    <string name="how_to_use_this_app">HOW TO USE THIS APP</string>
+    <string name="got_it">Got It!</string>
 
     <string-array name="ion_array">
         <item>[M+H]+</item>

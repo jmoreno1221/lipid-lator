@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -157,6 +156,10 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
             // do something here
+        }else if (id == R.id.menu_help){
+            Intent intent = new Intent(this, HelpActivity.class);
+            startActivity(intent);
+        // do something here
         }
         return super.onOptionsItemSelected(item);
     }
