@@ -7,6 +7,7 @@
     android:background="@drawable/gradient_sl"
     tools:context="teamtriplej.com.lipidlator21.Sphingolipids_Result_Activity">
 
+    <!-- BUTTONS: Back and Home Buttons in Linear Layout -->
     <LinearLayout
         android:id="@+id/buttonPanel"
         android:orientation="horizontal"
@@ -16,33 +17,38 @@
         android:layout_centerHorizontal="true"
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent">
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:textSize="24sp"
-        android:layout_height="wrap_content"
-        android:background="@color/SL"
-        android:text="@string/Back"
-        style="?android:attr/buttonBarButtonStyle"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:textSize="24sp"
-        android:layout_height="wrap_content"
-        android:background="@color/SL"
-        android:text="@string/Home"
-        style="?android:attr/buttonBarButtonStyle"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-</LinearLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:background="@color/SL"
+            android:text="@string/Back"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:background="@color/SL"
+            android:text="@string/Home"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+    <!-- SCREEN TITLE: Sphingolipids Mass Calculations -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -59,6 +65,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Border for  Previous Screen Info Results -->
     <HorizontalScrollView
         android:layout_width="0dp"
         android:id="@+id/top_scroll_view"
@@ -74,71 +82,75 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
         android:fadeScrollbars="false">
+
+        <!-- Constraint Previous Screen Info Results -->
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp">
-    <TextView
-        android:id="@+id/tvIon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="@string/Ion"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/tvHeadGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/HeadGroup"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIon" />
+        <TextView
+            android:id="@+id/tvIon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Ion"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/tvSphingoidBase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/SphingoidBase"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeadGroup" />
+        <TextView
+            android:id="@+id/tvHeadGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/HeadGroup"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIon" />
 
-    <TextView
-        android:id="@+id/tvSphingoidBaseResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintLeft_toRightOf="@id/tvSphingoidBase"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeadGroupResult" />
+        <TextView
+            android:id="@+id/tvSphingoidBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/SphingoidBase"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeadGroup" />
 
-    <TextView
-        android:id="@+id/tvNAcyl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/NAcyl"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvSphingoidBase"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        <TextView
+            android:id="@+id/tvSphingoidBaseResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/ResultPlaceHolder"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toRightOf="@id/tvSphingoidBase"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeadGroupResult" />
+
+        <TextView
+            android:id="@+id/tvNAcyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NAcyl"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvSphingoidBase"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
         <TextView
             android:id="@+id/tvHeadGroupResult"
             android:layout_width="wrap_content"
@@ -164,6 +176,7 @@
             app:layout_constraintLeft_toRightOf="@id/tvIon"
             android:layout_marginStart="10dp"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/tvNAcyl_Result"
             android:layout_width="wrap_content"
@@ -177,8 +190,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginBottom="5dp"
             app:layout_constraintTop_toBottomOf="@+id/tvSphingoidBaseResult" />
-</android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
     </HorizontalScrollView>
+
+
     <HorizontalScrollView
         android:layout_width="0dp"
         android:id="@+id/scroll_view"
@@ -198,80 +214,82 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp">
-    <TextView
-        android:id="@+id/tvFormula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="@string/Formula"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
 
-    <TextView
-        android:id="@+id/tvAbbreviation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="@string/Abbreviation"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvFormula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/Formula"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
 
-    <TextView
-        android:id="@+id/tvMolarMass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/MolarMass"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormula"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        <TextView
+            android:id="@+id/tvAbbreviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/Abbreviation"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvAbbreviation_Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginStart="10dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@id/tvAbbreviation"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvMolarMass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MolarMass"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvFormula"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
-    <TextView
-        android:id="@+id/tvFormula_Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginStart="10dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@id/tvFormula"
-        app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation_Result"
-    />
+        <TextView
+            android:id="@+id/tvAbbreviation_Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/ResultPlaceHolder"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/tvAbbreviation"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvMolarMass_Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormula_Result" />
+        <TextView
+            android:id="@+id/tvFormula_Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/ResultPlaceHolder"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/tvFormula"
+            app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation_Result"
+        />
+
+        <TextView
+            android:id="@+id/tvMolarMass_Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/ResultPlaceHolder"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
+            app:layout_constraintTop_toBottomOf="@+id/tvFormula_Result" />
+
 </android.support.constraint.ConstraintLayout></HorizontalScrollView>
 </android.support.constraint.ConstraintLayout>

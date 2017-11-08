@@ -17,7 +17,6 @@
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent">
 
-
     <Button
         android:id="@+id/btnBack"
         android:layout_width="0dp"

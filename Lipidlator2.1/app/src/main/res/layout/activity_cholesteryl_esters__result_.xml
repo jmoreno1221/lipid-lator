@@ -7,6 +7,7 @@
     android:background="@drawable/gradient_cho"
     tools:context="teamtriplej.com.lipidlator21.CholesterylEsters_Result_Activity">
 
+    <!-- BUTTONS: Back & Home Buttons in Linear Layout-->
     <LinearLayout
         android:id="@+id/buttonPanel"
         android:orientation="horizontal"
@@ -31,24 +32,23 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent" />
 
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:textSize="24sp"
-        android:layout_height="wrap_content"
-        android:background="@color/CHO"
-        android:text="@string/Home"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        style="?android:attr/buttonBarButtonStyle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:background="@color/CHO"
+            android:text="@string/Home"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            style="?android:attr/buttonBarButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
     </LinearLayout>
 
+    <!-- SCREEN TITLE -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -68,6 +68,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
+    <!--*****************************************************-->
+
+    <!-- ION TEXT LABEL -->
     <TextView
         android:id="@+id/tvIon"
         android:layout_width="wrap_content"
@@ -81,6 +84,20 @@
         android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
+    <!-- ION RESULT TEXT LABEL -->
+    <TextView
+        android:id="@+id/tvIonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/ResultPlaceHolder"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <!-- ACYL CHAIN TEXT LABEL -->
     <TextView
         android:id="@+id/tvAcylChain"
         android:layout_width="wrap_content"
@@ -94,19 +111,20 @@
         android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
+    <!-- ACYL CHAIN RESULT TEXT LABEL -->
     <TextView
-        android:id="@+id/tvFormula"
+        android:id="@+id/tvAcylChainResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="18dp"
-        android:text="@string/Formula"
-        android:textStyle="bold"
+        android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIonResult" />
 
+    <!-- ABV TEXT LABEL -->
     <TextView
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
@@ -120,43 +138,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAcylChain" />
 
-    <TextView
-        android:id="@+id/tvMolarMass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/MolarMass"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
-
-    <TextView
-        android:id="@+id/tvIonResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
-
-    <TextView
-        android:id="@+id/tvAcylChainResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/ResultPlaceHolder"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIonResult" />
-
+    <!-- ABV RESULT TEXT LABEL -->
     <TextView
         android:id="@+id/tvAbbreviationResult"
         android:layout_width="wrap_content"
@@ -169,6 +151,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAcylChainResult" />
 
+    <!-- FORMULA TEXT LABEL -->
+    <TextView
+        android:id="@+id/tvFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/Formula"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
+
+    <!-- FORMULA RESULT TEXT LABEL -->
     <TextView
         android:id="@+id/tvFormulaResult"
         android:layout_width="wrap_content"
@@ -181,6 +178,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviationResult" />
 
+    <!-- MOLAR MASS TEXT LABEL-->
+    <TextView
+        android:id="@+id/tvMolarMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/MolarMass"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
+    
+    <!-- MOLAR MASS RESULT TEXT LABEL-->
     <TextView
         android:id="@+id/tvMolarMassResult"
         android:layout_width="wrap_content"
@@ -192,6 +204,5 @@
         android:textSize="18sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFormulaResult" />
-
 
 </android.support.constraint.ConstraintLayout>
