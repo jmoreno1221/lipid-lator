@@ -191,7 +191,7 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
-    
+
     <!-- MOLAR MASS RESULT TEXT LABEL-->
     <TextView
         android:id="@+id/tvMolarMassResult"
