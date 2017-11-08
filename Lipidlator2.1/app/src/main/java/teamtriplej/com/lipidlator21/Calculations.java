@@ -6,34 +6,7 @@ package teamtriplej.com.lipidlator21;
 
 class Calculations {
     private double mass;
-    private String newFormula;
     private int numC, numH, numN, numO, numAg, numLi, numNa, numK, numCl, numP, numS, numF;
-    private final double CARBON = 12.000000;
-    private final double HYDROGEN = 1.007825;
-    private final double NITROGEN = 14.003074;
-    private final double OXYGEN = 15.994915;
-    private final double SILVER = 106.905090;
-    private final double LITHIUM = 7.016004;
-    private final double SODIUM = 22.989771;
-    private final double POTASSIUM = 38.963707;
-    private final double CHLORIDE = 34.968853;
-    private final double PHOSPHORUS = 30.973761;
-    private final double SULFUR = 31.972071;
-    private final double FLUORIDE = 18.998404;
-    private double[] ratioValues = {28.02908,2,4,56.06038,4,8,84.09168,6,12,112.12298,8,16,
-            140.15428,10,20,168.18558,12,24,182.20123,13,26,
-            196.21688,14,28,194.20123,14,26,210.23253,15,30,
-            208.21688,15,28,224.24818,16,32,222.23253,16,30,
-            238.26383,17,34,236.24818,17,32,234.23253,17,30,
-            252.27948,18,36,250.26383,18,34,250.26383,18,34,
-            248.24818,18,32,246.23253,18,30,246.23253,18,30,
-            244.21688,18,28,266.29513,19,38,280.31078,20,40,
-            278.29513,20,38,276.27948,20,36,274.26383,20,34,
-            272.24818,20,32,270.23253,20,30,294.32643,21,42,
-            308.34208,22,44,306.32643,22,42,304.31078,22,40,
-            302.29513,22,38,300.27948,22,36,298.26383,22,34,
-            296.24818,22,32,322.35773,23,46,336.37338,24,48,
-            334.35773,24,46,350.38903,25,50,364.40468,26,52};
     Calculations() {
     }
     String calculateFormula(int numC, int numH, int numO, int numN
@@ -45,6 +18,7 @@ class Calculations {
         String SUB_THREE = "\u2083";String SUB_EIGHT = "\u2088";
         String SUB_FOUR = "\u2084";String SUB_NINE = "\u2089";
         String formula = "C" + numC + "H" + numH;
+        
         if(numN == 1){formula+= "N";} else if(numN > 1){formula+= "N"+numN;}
         if(numO == 1){formula+= "O";} else if(numO > 1){formula+= "O"+numO;}
         if(numP == 1){formula+= "P";} else if(numP > 1){formula+= "P"+numP;}
@@ -55,104 +29,74 @@ class Calculations {
         if(numK == 1){formula+= "K";} else if(numK > 1){formula+= "K"+numK;}
         if(numCl == 1){formula+= "Cl";} else if(numCl > 1){formula+= "Cl"+numCl;}
         if(numF == 1){formula+= "F";} else if(numF > 1){formula+= "F"+numF;}
-        return newFormula = formula.replaceAll("0", SUB_ZERO).replaceAll("1", SUB_ONE)
+        return formula.replaceAll("0", SUB_ZERO).replaceAll("1", SUB_ONE)
                 .replaceAll("2", SUB_TWO).replaceAll("3", SUB_THREE).replaceAll("4", SUB_FOUR)
                 .replaceAll("5", SUB_FIVE).replaceAll("6", SUB_SIX).replaceAll("7", SUB_SEVEN)
                 .replaceAll("8", SUB_EIGHT).replaceAll("9", SUB_NINE);
     }
     double calculateFABasicMass(int massIndex, int esterIndex)
     {
-        double[] esterArray1 = {60.021130,2,4,88.052430,4,8,116.083730,6,12,
-                144.115030,8,16,172.146330,10,20,200.177630,12,24,
-                214.193280,13,26,228.208930,14,28,226.193280,14,26,
-                242.224580,15,30,240.208930,15,28,256.240230,16,32,
-                254.224580,16,30,270.255880,17,34,268.240230,17,32,
-                266.224580,17,30,284.271530,18,36,282.255880,18,34,
-                282.255880,18,34,280.240230,18,32,278.224580,18,30,
-                278.224580,18,30,276.208930,18,28,298.287180,19,38,
-                312.302830,20,40,310.287180,20,38,308.271530,20,36,
-                306.255880,20,34,304.240230,20,32,302.224580,20,30,
-                326.318480,21,42,340.334130,22,44,338.318480,22,42,
-                336.302830,22,40,334.287180,22,38,332.271530,22,36,
-                330.255880,22,34,328.240230,22,32,354.349780,23,46,
-                368.365430,24,48,366.349780,24,46,382.381080,25,50,
-                396.396730,26,52};
-        double[] esterArray2 = {74.036780,3,6,102.068080,5,10,130.099380,7,14,
-                158.130680,9,18,186.161980,11,22,214.193280,13,26,
-                228.208930,14,28,242.224580,15,30,240.208930,15,28,
-                256.240230,16,32,254.224580,16,30,270.255880,17,34,
-                268.240230,17,32,284.271530,18,36,282.255880,18,34,
-                280.240230,18,32,298.287180,19,38,296.271530,19,36,
-                296.271530,19,36,294.255880,19,34,292.240230,19,32,
-                292.240230,19,32,290.224580,19,30,312.302830,20,40,
-                326.318480,21,42,324.302830,21,40,322.287180,21,38,
-                320.271530,21,36,318.255880,21,34,316.240230,21,32,
-                340.334130,22,44,354.349780,23,46,352.334130,23,44,
-                350.318480,23,42,348.302830,23,40,346.287180,23,38,
-                344.271530,23,36,342.255880,23,34,368.365430,24,48,
-                382.381080,25,50,380.365430,25,48,396.396730,26,52,
-                410.412380,27,54};
-        double[] esterArray3 = {240.020970,9,5,268.052270,11,9,296.083570,13,13,
-                324.114870,15,17,352.146170,17,21,380.177470,19,25,394.193120,20,27,
-                408.208770,21,29,406.193120,21,27,422.224420,22,31,420.208770,22,29,
-                436.240070,23,33,434.224420,23,31,450.255720,24,35,448.240070,24,33,
-                446.224420,24,31,464.271370,25,37,462.255720,25,35,462.255720,25,35,
-                460.240070,25,33,458.224420,25,31,458.224420,25,31,456.208770,25,29,
-                478.287020,26,39,492.302670,27,41,490.287020,27,39,488.271370,27,37,
-                486.255720,27,35,484.240070,27,33,482.224420,27,31,506.318320,28,43,
-                520.333970,29,45,518.318320,29,43,516.302670,29,41,514.287020,29,39,
-                512.271370,29,37,510.255720,29,35,508.240070,29,33,534.349620,30,47,
-                548.365270,31,49,546.349620,31,47,562.380920,32,51,576.396570,33,53};
+        int[] esterArray1 = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,
+                28,16,32,16,30,17,34,17,32,17,30,18,36,18,34,18,34,18,32,18,30,18,30,
+                18,28,19,38,20,40,20,38,20,36,20,34,20,32,20,30,21,42,22,44,22,42,22,
+                40,22,38,22,36,22,34,22,32,23,46,24,48,24,46,25,50,26,52};
+        int[] esterArray2 = {3,6,5,10,7,14,9,18,11,22,13,26,14,28,15,30,15,28,16,32,16,
+                30,17,34,17,32,18,36,18,34,18,32,19,38,19,36,19,36,19,34,19,32,19,32,19,
+                30,20,40,21,42,21,40,21,38,21,36,21,34,21,32,22,44,23,46,23,44,23,42,23,
+                40,23,38,23,36,23,34,24,48,25,50,25,48,26,52,27,54};
+        int[] esterArray3 = {9,5,11,9,13,13,15,17,17,21,19,25,20,27,21,29,21,27,22,31,22,
+                29,23,33,23,31,24,35,24,33,24,31,25,37,25,35,25,35,25,33,25,31,25,31,25,
+                29,26,39,27,41,27,39,27,37,27,35,27,33,27,31,28,43,29,45,29,43,29,41,29,
+                39,29,37,29,35,29,33,30,47,31,49,31,47,32,51,33,53};
         if(esterIndex == 0){
-            setMass(esterArray1[(massIndex * 3)]);
-            setNumC((int)esterArray1[(massIndex * 3)+1]);
-            setNumH((int)esterArray1[(massIndex * 3)+2]);
+            setNumC(esterArray1[(massIndex * 2)]);
+            setNumH(esterArray1[(massIndex * 2)+1]);
             setNumO(2);
         }else if(esterIndex == 1){
-            setMass(esterArray2[(massIndex * 3)]);
-            setNumC((int)esterArray2[(massIndex * 3)+1]);
-            setNumH((int)esterArray2[(massIndex * 3)+2]);
+            setNumC(esterArray2[(massIndex * 2)]);
+            setNumH(esterArray2[(massIndex * 2)+1]);
             setNumO(2);
         }else if(esterIndex == 2){
-            setMass(esterArray3[(massIndex * 3)]);
-            setNumC((int)esterArray3[(massIndex * 3)+1]);
-            setNumH((int)esterArray3[(massIndex * 3)+2]);
+            setNumC(esterArray3[(massIndex * 2)]);
+            setNumH(esterArray3[(massIndex * 2)+1]);
             setNumO(2);
             setNumF(5);}
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
     double calculateWEBasicMass(int alcoholIndex, int acidIndex)
     {
-        double alcohol = ratioValues[(alcoholIndex * 3)];
-        int carbonAlcohol = (int)ratioValues[(alcoholIndex * 3) + 1];
-        int hydrogenAlcohol = (int)ratioValues[(alcoholIndex * 3) + 2];
-        double acid = ratioValues[(acidIndex * 3)];
-        int carbonAcid = (int)ratioValues[(acidIndex * 3) + 1];
-        int hydrogenAcid = (int)ratioValues[(acidIndex * 3) + 2];
-        setMass((alcohol + acid) + 31.99205);
+        int[] ratioValues = {2,4,4,8,6,12,8,16,10,20,12,24,13,26,14,28,14,26,15,30,15,28,16,
+                32,16,30,17,34,17,32,17,30,18,36,18,34,18,34,18,32,18,30,18,30,18,28,19,38,
+                20,40,20,38,20,36,20,34,20,32,20,30,21,42,22,44,22,42,22,40,22,38,22,36,22,
+                34,22,32,23,46,24,48,24,46,25,50,26,52};
+        int carbonAlcohol = ratioValues[(alcoholIndex * 2)];
+        int hydrogenAlcohol = ratioValues[(alcoholIndex*2)+1];
+        int carbonAcid = ratioValues[(acidIndex*2)];
+        int hydrogenAcid = ratioValues[(acidIndex*2)+1];
         setNumC(carbonAlcohol + carbonAcid);
         setNumH(hydrogenAlcohol + hydrogenAcid);
         setNumO(2);
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
     double calculateACBasicMass(int acylIndex)
     {
-        double[] acArray = {203.115759,9,17,231.147059,11,21,259.178359,13,25,287.209659,15,29,
-                315.240959,17,33,343.272259,19,37,357.287909,20,39,371.303559,21,41,
-                369.287909,21,39,385.319209,22,43,383.303559,22,41,399.334859,23,45,
-                397.319209,23,43,413.350509,24,47,411.334859,24,45,409.319209,24,43,
-                427.366159,25,49,425.350509,25,47,425.350509,25,47,423.334859,25,45,
-                421.319209,25,43,421.319209,25,43,419.303559,25,41,441.381809,26,51,
-                455.397459,27,53,453.381809,27,51,451.366159,27,49,449.350509,27,47,
-                447.334859,27,45,445.319209,27,43,469.413109,28,55,483.428759,29,57,
-                481.413109,29,55,479.397459,29,53,479.397459,29,53,475.366159,29,49,
-                473.350509,29,47,471.334859,29,45,497.444409,30,59,511.460059,31,61,
-                509.444409,31,59,525.475709,32,63,539.491359,33,65};
-        setMass(acArray[(acylIndex * 3)]);
-        setNumC((int)acArray[(acylIndex * 3) + 1]);
-        setNumH((int)acArray[(acylIndex * 3) + 2]);
+        int[] acArray = {9,17,11,21,13,25,15,29,17,33,19,37,20,39,21,41,21,39,22,43,22,
+                41,23,45,23,43,24,47,24,45,24,43,25,49,25,47,25,47,25,45,25,43,25,43,
+                25,41,26,51,27,53,27,51,27,49,27,47,27,45,27,43,28,55,29,57,29,55,29,
+                53,29,53,29,49,29,47,29,45,30,59,31,61,31,59,32,63,33,65};
+        setNumC(acArray[(acylIndex*2)]);
+        setNumH(acArray[(acylIndex*2)+1]);
         setNumO(4);
         setNumN(1);
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
     double calculateCLBasicMass(int index1, int index2, int index3, int index4)
@@ -213,48 +157,35 @@ class Calculations {
     }
     double calculateCoABasicMass(int acylIndex)
     {
-        double[] coaArray = {809.125784,23,38,837.157084,25,42,865.188384,27,46,
-                893.219684,29,50,921.250984,31,54,949.282284,33,58,963.297934,34,60,
-                977.313584,35,62,975.297934,35,60,991.329234,36,64,989.313584,36,62,
-                1005.344884,37,66,1003.329234,37,64,1019.360534,38,68,
-                1017.344884,38,66,1015.329234,38,64,1033.376184,39,70,
-                1031.360534,39,68,1031.360534,39,68,1029.344884,39,66,
-                1027.329234,39,64,1027.329234,39,64,1025.313584,39,62,
-                1047.391834,40,72,1061.407484,41,74,1059.391834,41,72,
-                1057.376184,41,70,1055.360534,41,68,1053.344884,41,66,
-                1051.329234,41,64,1075.423134,42,76,1089.438784,43,78,
-                1087.423134,43,76,1085.407484,43,74,1083.391834,43,72,
-                1081.376184,43,70,1079.360534,43,68,1077.344884,43,66,
-                1103.454434,44,80,1117.470084,45,82,1115.454434,45,80,
-                1131.485734,46,84,1145.501384,47,86};
+        int[] coaArray = {23,38,25,42,27,46,29,50,31,54,33,58,34,60,35,62,35,60,36,64,
+                36,62,37,66,37,64,38,68,38,66,38,64,39,70,39,68,39,68,39,66,39,64,
+                39,64,39,62,40,72,41,74,41,72,41,70,41,68,41,66,41,64,42,76,43,78,
+                43,76,43,74,43,72,43,70,43,68,43,66,44,80,45,82,45,80,46,84,47,86};
 
-        setMass(coaArray[acylIndex * 3]);
-        setNumC((int)coaArray[(acylIndex * 3) + 1]);
-        setNumH((int)coaArray[(acylIndex * 3) + 2]);
+        setNumC(coaArray[(acylIndex*2)]);
+        setNumH(coaArray[(acylIndex*2)+1]);
         setNumO(17);
         setNumN(7);
         setNumP(3);
         setNumS(1);
 
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
     double calculateCHEBasicMass(int acylIndex)
     {
-        double[] arrayCHE = {428.365430,29,48,456.396730,31,52,484.428030,33,56,
-                512.459330,35,60,540.490630,37,64,568.521930,39,68,582.537580,40,70,
-                596.553230,41,72,594.537580,41,70,610.568880,42,74,608.553230,42,72,
-                624.584530,43,76,622.568880,43,74,638.600180,44,78,636.584530,44,76,
-                634.568880,44,74,652.615830,45,80,650.600180,45,78,650.600180,45,78,
-                648.584530,45,76,646.568880,45,74,644.553230,45,72,666.631480,46,82,
-                680.647130,47,84,678.631480,47,82,676.615830,47,80,674.600180,47,78,
-                672.584530,47,76,670.568880,47,74,694.662780,48,86,706.662780,49,86,
-                708.678430,49,88,706.662780,49,86,704.647130,49,84,702.631480,49,82,
-                700.615830,49,80,698.600180,49,78,696.584530,49,76,722.694080,50,90,
-                736.709730,51,92,734.694080,51,90,750.725380,52,94,764.741030,53,96};
-        setMass(arrayCHE[acylIndex * 3]);
-        setNumC((int)arrayCHE[(acylIndex * 3) + 1]);
-        setNumH((int)arrayCHE[(acylIndex * 3) + 2]);
+        int[] arrayCHE = {29,48,31,52,33,56,35,60,37,64,39,68,40,70,41,72,41,70,42,74,42,
+                72,43,76,43,74,44,78,44,76,44,74,45,80,45,78,45,78,45,76,45,74,45,72,46,
+                82,47,84,47,82,47,80,47,78,47,76,47,74,48,86,49,86,49,88,49,86,49,84,49,
+                82,49,80,49,78,49,76,50,90,51,92,51,90,52,94,53,96};
+        setNumC(arrayCHE[(acylIndex*2)]);
+        setNumH(arrayCHE[(acylIndex*2)+1]);
         setNumO(2);
+        setMass(calculateInitialMass(getNumC(), getNumH(), getNumO(), getNumN(),
+                getNumAg(), getNumLi(), getNumNa(), getNumK(), getNumCl(),
+                getNumP(), getNumS(), getNumF()));
         return getMass();
     }
 
@@ -268,8 +199,8 @@ class Calculations {
      * @param i3 index of sn3 dropdown menu
      * @return the basic mass of Glycerolipids
      */
-
-    double calculateGLBasicMass(int i1, int i2, int i3){
+    double calculateGLBasicMass(int i1, int i2, int i3)
+    {
 
         // Array of Glycerolipid's num of Carbon, Hydrogen repeated (for SN1 Dropdown Menu's values)
         int[] arrayGL_sn1 = {
@@ -326,7 +257,6 @@ class Calculations {
         // Return basic mass
         return getMass();
     }
-
     double calculateGPBasicMass(int index2, int index3, int index4)
     {
         int[] newsn1_elements = {0,0,0,2,4,0,4,8,0,6,12,0,8,16,0,10,20,0,
@@ -413,10 +343,22 @@ class Calculations {
      *  This method takes the amount of C, H, O, N, Ag, Li, Na, K, Cl, P, S, and F
      *  and returns the sum of intial mass that will be used to find the monoisotopic mass
      */
-    double calculateInitialMass(int numC, int numH, int numO, int numN
+    private double calculateInitialMass(int numC, int numH, int numO, int numN
             , int numAg, int numLi, int numNa, int numK, int numCl, int numP, int numS, int numF)
     {
-        return mass = ((CARBON*numC)+(HYDROGEN*numH)+(OXYGEN*numO)+(NITROGEN*numN)+(SILVER*numAg)+
+        double CARBON = 12.000000;
+        double HYDROGEN = 1.007825;
+        double NITROGEN = 14.003074;
+        double OXYGEN = 15.994915;
+        double SILVER = 106.905090;
+        double LITHIUM = 7.016004;
+        double SODIUM = 22.989771;
+        double POTASSIUM = 38.963707;
+        double CHLORIDE = 34.968853;
+        double PHOSPHORUS = 30.973761;
+        double SULFUR = 31.972071;
+        double FLUORIDE = 18.998404;
+        return mass = ((CARBON *numC)+(HYDROGEN*numH)+(OXYGEN*numO)+(NITROGEN*numN)+(SILVER*numAg)+
                 (LITHIUM*numLi)+(SODIUM*numNa)+(POTASSIUM*numK)+(CHLORIDE*numCl)+(PHOSPHORUS*numP)+
                 (SULFUR*numS)+(FLUORIDE*numF));
     }
