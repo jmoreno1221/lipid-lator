@@ -17,19 +17,19 @@
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent">
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="0dp"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/CL"
-        android:text="@string/Back"
-        android:textSize="24sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/CL"
+            android:text="@string/Back"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <Button
             android:id="@+id/btnHome"
