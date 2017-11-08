@@ -20,28 +20,16 @@ import static org.junit.Assert.*;
 import static teamtriplej.com.lipidlator21.R.id.imbtnCholesterylEsters;
 
 public class CholesterylEstersActivityTest {
-
     @Rule
     public ActivityTestRule<CholesterylEstersActivity> mActivityTestRule = new ActivityTestRule<>(CholesterylEstersActivity.class);
 
     private CholesterylEstersActivity mActivity = null;
 
-    Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(CholesterylEsters_Result_Activity.class.getName(),null,false);
+    private Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(CholesterylEsters_Result_Activity.class.getName(),null,false);
 
     @Before
     public void setUp() throws Exception {
         mActivity = mActivityTestRule.getActivity();
-    }
-
-    //This tests out the submit button and it should take you to the Result screen to pass
-    @Test
-    public void testLaunchOfResultActivity()
-    {
-        assertNotNull(mActivity.findViewById(R.id.btnSubmit));
-        onView(withId(R.id.btnSubmit)).perform(click());
-        Activity CholesterylEsters_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
-        assertNotNull(CholesterylEsters_Result);
-        CholesterylEsters_Result.finish();
     }
 
     //Integration Test between Selection Screen and Calculation Screen
@@ -70,6 +58,17 @@ public class CholesterylEstersActivityTest {
         onView(withId(R.id.btnSubmit)).perform(click());
         Activity CholesterylEsters_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
         assertNotNull(CholesterylEsters_Result);
+    }
+
+    //This tests out the submit button and it should take you to the Result screen to pass
+    @Test
+    public void testLaunchOfResultActivity()
+    {
+        assertNotNull(mActivity.findViewById(R.id.btnSubmit));
+        onView(withId(R.id.btnSubmit)).perform(click());
+        Activity CholesterylEsters_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
+        assertNotNull(CholesterylEsters_Result);
+        CholesterylEsters_Result.finish();
     }
 
     //This tests out the back button and it should take you to the Home screen to pass
