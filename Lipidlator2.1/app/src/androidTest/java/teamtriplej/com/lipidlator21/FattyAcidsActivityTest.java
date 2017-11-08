@@ -51,6 +51,34 @@ public class FattyAcidsActivityTest {
         Assert.assertNotNull(FattyAcid_Result);
     }
 
+    //Integration Test between Selection Screen and Calculation Screen
+    @Test
+    public void selectionAcidTest()
+    {
+        onView(withId(R.id.spnAcid)).perform(click());
+        onData(anything()).atPosition(3).perform(click());
+        onView(withId(R.id.spnAcid)).check(matches(withSpinnerText(containsString("8:0"))));
+
+        Assert.assertNotNull(mActivity.findViewById(R.id.btnSubmit));
+        onView(withId(R.id.btnSubmit)).perform(click());
+        Activity FattyAcid_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
+        Assert.assertNotNull(FattyAcid_Result);
+    }
+
+    //Integration Test between Selection Screen and Calculation Screen
+    @Test
+    public void selectionEsterTest()
+    {
+        onView(withId(R.id.spnEster)).perform(click());
+        onData(anything()).atPosition(1).perform(click());
+        onView(withId(R.id.spnEster)).check(matches(withSpinnerText(containsString("Methyl ester"))));
+
+        Assert.assertNotNull(mActivity.findViewById(R.id.btnSubmit));
+        onView(withId(R.id.btnSubmit)).perform(click());
+        Activity FattyAcid_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
+        Assert.assertNotNull(FattyAcid_Result);
+    }
+
     //This tests out the submit button and it should take you to the Result screen to pass
     @Test
     public void testLaunchOfResultActivity()
