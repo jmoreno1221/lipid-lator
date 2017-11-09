@@ -19,6 +19,9 @@ import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.*;
 import static teamtriplej.com.lipidlator21.R.id.imbtnCholesterylEsters;
 
+/* @Author: Joseph Tsegaye
+ * @Date: 10/12/2017
+ */
 public class CholesterylEstersActivityTest {
     @Rule
     public ActivityTestRule<CholesterylEstersActivity> mActivityTestRule = new ActivityTestRule<>(CholesterylEstersActivity.class);

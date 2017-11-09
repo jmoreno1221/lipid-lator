@@ -19,14 +19,16 @@ import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.*;
 import static teamtriplej.com.lipidlator21.R.id.imbtnCholesterylEsters;
 
-
+/* @Author: Joseph Tsegaye
+ * @Date: 10/12/2017
+ */
 public class CardiolipinsActivityTest {
     @Rule
     public ActivityTestRule<CardiolipinsActivity> mActivityTestRule = new ActivityTestRule<>(CardiolipinsActivity.class);
 
     private CardiolipinsActivity mActivity = null;
 
-    Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(Cardiolipins_Result_Activity.class.getName(),null,false);
+    private Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(Cardiolipins_Result_Activity.class.getName(),null,false);
 
     @Before
     public void setUp() throws Exception {
