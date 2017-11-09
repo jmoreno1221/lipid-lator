@@ -176,39 +176,38 @@
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/Abbreviation"
-        android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAcylChain" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- ABV RESULT TEXT LABEL -->
     <TextView
         android:id="@+id/tvAbbreviationResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAcylChainResult" />
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvAbbreviation" />
 
     <!-- FORMULA TEXT LABEL -->
     <TextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/Formula"
-        android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
 
@@ -217,12 +216,13 @@
         android:id="@+id/tvFormulaResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvFormula"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviationResult" />
 
     <!-- MOLAR MASS TEXT LABEL-->
@@ -230,12 +230,11 @@
         android:id="@+id/tvMolarMass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/MolarMass"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
 
@@ -244,12 +243,13 @@
         android:id="@+id/tvMolarMassResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
         app:layout_constraintTop_toBottomOf="@+id/tvFormulaResult" />
 
         </android.support.constraint.ConstraintLayout></HorizontalScrollView>
