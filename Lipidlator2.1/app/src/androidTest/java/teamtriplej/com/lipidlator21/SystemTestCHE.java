@@ -25,7 +25,7 @@ public class SystemTestCHE {
 
     //public ActivityTestRule<CholesterylEstersActivity> mActivityTestRule = new ActivityTestRule<>(CholesterylEstersActivity.class);
 
-   // private CholesterylEstersActivity mActivity = null;
+    // private CholesterylEstersActivity mActivity = null;
 
 
     //Declaring and initialize the variable
@@ -35,10 +35,9 @@ public class SystemTestCHE {
     }
 
     @Test
-    public void fullTest()
-    {
+    public void fullTest() {
         //View viewCHE = mhomeActivity.findViewById(R.id.imbtnCholesterylEsters);
-       // assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
+        // assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
         //onView(withId(R.id.imbtnCholesterylEsters));
         assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
         onView(withId(R.id.imbtnCholesterylEsters)).perform(click());
@@ -68,35 +67,4 @@ public class SystemTestCHE {
     public void tearDown() throws Exception {
         mhomeActivity = null;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
