@@ -10,15 +10,15 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Joseph on 10/13/2017.
+/* @Author: Joseph Tsegaye
+ * @Date: 10/12/2017
  */
 
 public class HomeActivityTest {
 
     //This is the creation of the rule for the Home Screen
     @Rule
-    public ActivityTestRule<HomeActivity> homeActivityActivityTestRule = new ActivityTestRule<HomeActivity>(HomeActivity.class);
+    public ActivityTestRule<HomeActivity> homeActivityActivityTestRule = new ActivityTestRule<>(HomeActivity.class);
 
     private HomeActivity mhomeActivity = null;
 
