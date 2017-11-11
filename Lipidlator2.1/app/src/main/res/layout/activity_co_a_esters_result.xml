@@ -28,6 +28,7 @@
         android:text="@string/Back"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        style="?attr/buttonBarButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -41,6 +42,7 @@
         android:text="@string/Home"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        style="?attr/buttonBarButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
