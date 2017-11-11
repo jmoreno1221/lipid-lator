@@ -36,9 +36,6 @@ public class SystemTestCHE {
 
     @Test
     public void fullTest() {
-        //View viewCHE = mhomeActivity.findViewById(R.id.imbtnCholesterylEsters);
-        // assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
-        //onView(withId(R.id.imbtnCholesterylEsters));
         assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
         onView(withId(R.id.imbtnCholesterylEsters)).perform(click());
         mhomeActivity.findViewById(R.id.spnIon);
@@ -51,16 +48,6 @@ public class SystemTestCHE {
         mhomeActivity.findViewById(R.id.btnHome);
         onView(withId(R.id.btnHome)).perform(click());
         assertNotNull(mhomeActivity);
-        // View viewCHE = mhomeActivity.findViewById(R.id.imbtnCholesterylEsters);
-        //assertNotNull(viewCHE);
-//        onView(withId(R.id.spnIon)).perform(click());
-//        onData(anything()).atPosition(3).perform(click());
-//        onView(withId(R.id.spnIon)).check(matches(withSpinnerText(containsString("[M+3H]3+"))));
-//        mhomeActivity.findViewById(R.id.spnAcylChain);
-//        onView(withId(R.id.spnAcylChain)).perform(click());
-//        onData(anything()).atPosition(3).perform(click());
-//        onView(withId(R.id.spnAcylChain)).check(matches(withSpinnerText(containsString("8:0"))));
-//        mhomeActivity.findViewById(R.id.btnSubmit);
     }
 
     @After
