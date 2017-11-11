@@ -1,5 +1,9 @@
 package teamtriplej.com.lipidlator21;
 
+/* @Author: Joseph Tsegaye
+ * @Date: 10/12/2017
+ */
+
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.support.test.rule.ActivityTestRule;
@@ -15,17 +19,12 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.assertNotNull;
 
-
-/* @Author: Joseph Tsegaye
- * @Date: 10/12/2017
- */
-public class SystemTestCHE {
-
+public class SystemTestSphingolipids {
     @Rule
     public ActivityTestRule<HomeActivity> homeActivityActivityTestRule = new ActivityTestRule<>(HomeActivity.class);
-    private HomeActivity mhomeActivity = null;
-    private Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(CholesterylEsters_Result_Activity.class.getName(),null,false);
+    private Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(Sphingolipids_Result_Activity.class.getName(),null,false);
 
+    private HomeActivity mhomeActivity = null;
 
 
     //Declaring and initialize the variable
@@ -36,17 +35,21 @@ public class SystemTestCHE {
 
     @Test
     public void fullTest() {
-        assertNotNull(mhomeActivity.findViewById(R.id.imbtnCholesterylEsters));
-        onView(withId(R.id.imbtnCholesterylEsters)).perform(click());
+        assertNotNull(mhomeActivity.findViewById(R.id.imbtnSphingolipids));
+        onView(withId(R.id.imbtnSphingolipids)).perform(click());
         mhomeActivity.findViewById(R.id.spnIon);
+        mhomeActivity.findViewById(R.id.spnHeadGroup);
+        mhomeActivity.findViewById(R.id.spnSphingoidBase);
+        mhomeActivity.findViewById(R.id.spnNAcyl);
         mhomeActivity.findViewById(R.id.btnSubmit);
         onView(withId(R.id.btnSubmit)).perform(click());
-        Activity CholesterolEster_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
-        assertNotNull(CholesterolEster_Result);
+        Activity Sphingolipids_Result = getInstrumentation().waitForMonitorWithTimeout(monitor,5000);
+        assertNotNull(Sphingolipids_Result);
         mhomeActivity.findViewById(R.id.btnBack);
         onView(withId(R.id.btnBack)).perform(click());
         mhomeActivity.findViewById(R.id.btnSubmit);
         onView(withId(R.id.btnSubmit)).perform(click());
+        assertNotNull(Sphingolipids_Result);
         mhomeActivity.findViewById(R.id.btnHome);
         onView(withId(R.id.btnHome)).perform(click());
         assertNotNull(mhomeActivity);

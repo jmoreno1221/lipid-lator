@@ -26,10 +26,8 @@ public class Sphingolipids_ActivityTest {
 
     @Rule
     public ActivityTestRule<Sphingolipids_Activity> mActivityTestRule = new ActivityTestRule<>(Sphingolipids_Activity.class);
-
-    private Sphingolipids_Activity mActivity = null;
-
     private Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(Sphingolipids_Result_Activity.class.getName(),null,false);
+    private Sphingolipids_Activity mActivity = null;
 
     @Before
     public void setUp() throws Exception {
