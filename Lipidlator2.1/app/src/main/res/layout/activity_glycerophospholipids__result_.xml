@@ -93,35 +93,34 @@
         android:id="@+id/tvIon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:text="@string/Ion"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- ION RESULT LABEL -->
     <TextView
         android:id="@+id/tvIon_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintLeft_toRightOf="@id/tvIon"
+        app:layout_constraintTop_toBottomOf="parent" />
 
     <!-- HEAD GROUP LABEL -->
     <TextView
         android:id="@+id/tvHeadGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
         android:text="@string/HeadGroup"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -134,12 +133,13 @@
         android:id="@+id/tvHeadGroup_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvHeadGroup"
         app:layout_constraintTop_toBottomOf="@+id/tvIon_Result" />
 
     <!-- SN1(1') LABEL -->
@@ -147,8 +147,7 @@
         android:id="@+id/tvSn1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
         android:text="@string/sn1_1"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -161,12 +160,13 @@
         android:id="@+id/tvSn1_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvSn1_1"
         app:layout_constraintTop_toBottomOf="@+id/tvHeadGroup_Result" />
 
     <!-- SN2(1') LABEL-->
@@ -174,27 +174,26 @@
         android:id="@+id/tvSn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
         android:text="@string/sn2_1"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSn1_1" />
-
+        app:layout_constraintTop_toBottomOf="@id/tvSn1_1" />
 
     <!-- SN2(1') RESULT LABEL -->
     <TextView
         android:id="@+id/tvSn2_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvSn2"
         app:layout_constraintTop_toBottomOf="@+id/tvSn1_Result" />
 
         </android.support.constraint.ConstraintLayout>
@@ -225,37 +224,36 @@
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/Abbreviation"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSn2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- ABV RESULT LABEL -->
     <TextView
         android:id="@+id/tvAbbreviation_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSn2_Result" />
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvAbbreviation"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- FORMULA LABEL -->
     <TextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:text="@string/Formula"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -266,12 +264,13 @@
         android:id="@+id/tvFormula_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvFormula"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation_Result" />
 
     <!-- MOLAR MASS LABEL -->
@@ -279,11 +278,10 @@
         android:id="@+id/tvMolarMass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/MolarMass"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
@@ -293,12 +291,13 @@
         android:id="@+id/tvMolarMass_Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="18dp"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula_Result" />
 
         </android.support.constraint.ConstraintLayout></HorizontalScrollView>
