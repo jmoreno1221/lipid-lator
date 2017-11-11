@@ -224,13 +224,12 @@
         android:id="@+id/tvAbbreviation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="@string/Abbreviation"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="18dp"
         app:layout_constraintTop_toBottomOf="parent" />
 
     <!-- ABV RESULT LABEL -->
@@ -238,26 +237,26 @@
         android:id="@+id/tvAbbreviationResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="parent" />
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvAbbreviation"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- FORMULA LABEL -->
     <TextView
         android:id="@+id/tvFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="@string/Formula"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="18dp"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviation" />
 
     <!-- FORMULA RESULT LABEL -->
@@ -265,12 +264,13 @@
         android:id="@+id/tvFormulaResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvFormula"
         app:layout_constraintTop_toBottomOf="@+id/tvAbbreviationResult" />
 
     <!-- MOLAR MASS LABEL -->
@@ -278,13 +278,12 @@
         android:id="@+id/tvMolarMass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="@string/MolarMass"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginStart="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="18dp"
         app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
 
     <!-- MOLAR MASS RESULT LABEL -->
@@ -292,13 +291,14 @@
         android:id="@+id/tvMolarMassResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ResultPlaceHolder"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormula" />
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tvMolarMass"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormulaResult" />
 
         </android.support.constraint.ConstraintLayout></HorizontalScrollView>
 </android.support.constraint.ConstraintLayout>
