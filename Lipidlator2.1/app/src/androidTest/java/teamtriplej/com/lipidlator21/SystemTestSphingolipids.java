@@ -19,6 +19,10 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.assertNotNull;
 
+/* @Author: Joseph Tsegaye
+ * @Date: 11/10/2017
+ */
+
 public class SystemTestSphingolipids {
     @Rule
     public ActivityTestRule<HomeActivity> homeActivityActivityTestRule = new ActivityTestRule<>(HomeActivity.class);
