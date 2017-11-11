@@ -65,7 +65,18 @@
     in the "About" section also found in the menu.\n\n<b>**Before you get started quick important detail. All of our molar masses being calculated might have a \u00B1 0.000555 m/z ratio.**</b>\n\nHope you enjoy!</string>
     <string name="how_to_use_this_app">HOW TO USE THIS APP</string>
     <string name="got_it">Got It!</string>
-    <string name="paragraph_one"><b>Step 1:</b>\nBegin by selecting one of the 9 lipids in the home screen.</string>
+    <string name="paragraph_one">Begin by selecting one of the 9 lipids in the home screen.</string>
+    <string name="step_1">Step 1:</string>
+    <string name="menuimage1">First screen in help menu</string>
+    <string name="step_2">Step 2:</string>
+    <string name="paragraph_two">You are now in the configuration screen for the selected lipid class. Here you can make any changes to conform to your needs and specifications. Once you have selected everything you need, proceed by tapping the <b>SUBMIT</b> button.</string>
+    <string name="configuration_screen">Configuration Screen</string>
+    <string name="step_3">Step 3:</string>
+    <string name="paragraph_three">Now you will be in the results screen. Here you can view what you selected in the previous screen and you will also see your final calculations at the bottom. These include the: Abbreviation, Formula, and Molar Mass. Tap on <b>BACK</b> to change some of the specifications or <b>HOME</b> to return to the main menu.</string>
+    <string name="resultscreen">Result Screen</string>
+    <string name="step_4">Step 4:</string>
+    <string name="paragraph_four">If you need to return to this menu, tap HELP in the top right menu. Also be sure to check out the other tabs as well.</string>
+    <string name="menu_screen">Menu Screen</string>
 
     <string-array name="ion_array">
         <item>[M+H]+</item>

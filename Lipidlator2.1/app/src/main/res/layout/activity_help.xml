@@ -4,36 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="@drawable/help_border"
     tools:context="teamtriplej.com.lipidlator21.HelpActivity">
-
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="@string/how_to_use_this_app"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
     <ScrollView
         android:id="@+id/mainScroll"
-        android:background="@drawable/help_border"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomButton"
+        android:layout_height="wrap_content"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helpTitle"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
 
             <TextView
-                android:id="@+id/helpTitle"
+                android:id="@+id/stepone"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:text="@string/how_to_use_this_app"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
-
+                android:text="@string/step_1"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
             <TextView
                 android:id="@+id/paragraphOne"
                 android:layout_width="match_parent"
@@ -43,6 +56,95 @@
                 android:textSize="24sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:contentDescription="@string/menuimage1"
+                android:src="@drawable/initialmenu"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp" />
+            <TextView
+                android:id="@+id/steptwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/step_2"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+           <TextView
+                android:id="@+id/paragraphTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paragraph_two"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+           <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:contentDescription="@string/configuration_screen"
+                android:src="@drawable/firstscreen"
+                android:layout_weight="0.10"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp" />
+             <TextView
+                android:id="@+id/stepthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/step_3"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/paragraphThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paragraph_three"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+            <!--   <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:contentDescription="@string/resultscreen"
+                   android:src="@drawable/secondscreen"
+                   android:layout_weight="0.15"
+                   android:layout_marginStart="50dp"
+                   android:layout_marginEnddp" />
+               <TextView
+                   android:id="@+id/stepfour"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="30sp"
+                   android:text="@string/step_4"
+                   android:textColor="@android:color/holo_orange_light"
+                   android:textStyle="bold"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginEnd="8dp"/>
+               <TextView
+                   android:id="@+id/paragraphFour"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/paragraph_four"
+                   android:textColor="@android:color/white"
+                   android:textSize="24sp"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginEnd="8dp"/>
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:contentDescription="@string/menu_screen"
+                   android:src="@drawable/helpmenu"
+                   android:layout_weight="0.10"
+                   android:layout_marginStart="50dp"
+                   android:layout_marginEnd="50dp" />-->
         </LinearLayout>
     </ScrollView>
     <LinearLayout
