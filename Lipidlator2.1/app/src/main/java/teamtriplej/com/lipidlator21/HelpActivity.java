@@ -35,6 +35,7 @@ public class HelpActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(view,params);
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
+
         Button back = (Button) findViewById(R.id.helpBack);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
