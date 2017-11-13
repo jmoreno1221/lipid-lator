@@ -77,6 +77,7 @@
     <string name="step_4">Step 4:</string>
     <string name="paragraph_four">If you need to return to this menu, tap HELP in the top right menu. Also be sure to check out the other tabs as well.</string>
     <string name="menu_screen">Menu Screen</string>
+    <string name="logo_for_app">Logo for app</string>
 
     <string-array name="ion_array">
         <item>[M+H]+</item>
@@ -267,6 +268,17 @@
         <item>"PIP2"</item>
         <item>"PIP3"</item>
     </string-array>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">Connect the charger</string>
+    <string name="desc_slide1">It will start automatically when charger is connected</string>
+    <string name="title_slide2">Battery status update</string>
+    <string name="desc_slide2">It will  keep you updated on battery charging status through notification and home screen widget</string>
+    <string name="title_slide3">Alert on 100%</string>
+    <string name="desc_slide3">It will alert you when battery reaches 100%</string>
+
 
     <string-array name="sph_headgroup_array_values">
         <item>"unsubstituted(Ceramide)"</item>
