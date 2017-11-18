@@ -23,7 +23,10 @@
     <!-- dots active colors -->
     <color name="dot_active">#000000</color>
 
-
     <!-- dots inactive colors -->
     <color name="dot_inactive">#cccccc</color>
+
+    <!-- About Screen Color -->
+    <color name="violet">#726ee1</color>
+    <color name="white">#ffffff</color>
 </resources>

@@ -280,6 +280,13 @@
     <string name="desc_slide3">It will alert you when battery reaches 100%</string>
 
 
+    <!-- About Screen Information -->
+    <string name="aboutDesc">Lipid-Lator is an offline tool for the fast retrieval of data. This
+        android app calculates the abbreviation, formula, and monoisotopic molar mass of different lipids.
+        Select from over 97 million combinations of drop-down options to get the result you are looking
+        for! \n\nLoving the app so far? Visit \"Contact Us\" from our help menu, located on the top right corner
+        of the screen, to find out how you can rate Lipid-Lator!</string>
+
     <string-array name="sph_headgroup_array_values">
         <item>"unsubstituted(Ceramide)"</item>
         <item>"Sphingomyelin"</item>
