@@ -65,6 +65,7 @@
         android:layout_marginEnd="25dp"
         android:fadeScrollbars="false"
         android:scrollbarThumbVertical="@drawable/about_scroll_bar"
+        android:scrollbarStyle="outsideInset"
         >
 
         <android.support.constraint.ConstraintLayout

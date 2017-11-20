@@ -286,6 +286,7 @@
         Select from over 97 million combinations of drop-down options to get the result you are looking
         for! \n\nLoving the app so far? Visit \"Contact Us\" from our help menu, located on the top right corner
         of the screen, to find out how you can rate Lipid-Lator!</string>
+    <string name="helpstep1">Begin by selecting one of the 9 lipid classes.</string>
 
     <string-array name="sph_headgroup_array_values">
         <item>"unsubstituted(Ceramide)"</item>
