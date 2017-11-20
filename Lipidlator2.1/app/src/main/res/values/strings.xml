@@ -65,6 +65,8 @@
     in the "About" section also found in the menu.\n\n<b>**Before you get started quick important detail. All of our molar masses being calculated might have a \u00B1 0.000555 m/z ratio.**</b>\n\nHope you enjoy!</string>
     <string name="how_to_use_this_app">HOW TO USE THIS APP</string>
     <string name="got_it">Got It!</string>
+    <string name="fb">FB</string>
+    <string name="rate_us">Rate Us!</string>
     <string name="paragraph_one">Begin by selecting one of the 9 lipids in the home screen.</string>
     <string name="step_1">Step 1:</string>
     <string name="menuimage1">First screen in help menu</string>
@@ -287,6 +289,10 @@
         for! \n\nLoving the app so far? Visit \"Contact Us\" from our help menu, located on the top right corner
         of the screen, to find out how you can rate Lipid-Lator!</string>
     <string name="helpstep1">Begin by selecting one of the 9 lipid classes.</string>
+    <string name="aboutContact">Team TripleJ is the creator of the app, Lipid-Lator.
+        \nIf any questions or inquires arise please send an email to: lipidlator@gmail.com.
+        \n\nRate us on the Google Play Store!
+        \n\nJoin our Facebook Group!</string>
 
     <string-array name="sph_headgroup_array_values">
         <item>"unsubstituted(Ceramide)"</item>

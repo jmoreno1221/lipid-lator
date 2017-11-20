@@ -87,6 +87,9 @@ public class WaxEstersActivity extends AppCompatActivity {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
             // do something here
+        }else if (id == R.id.menu_contact_us) {
+            Intent intent = new Intent(this, Contact_Us_Activity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
