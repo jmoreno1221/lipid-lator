@@ -293,6 +293,9 @@
         \nIf any questions or inquires arise please send an email to: lipidlator@gmail.com.
         \n\nRate us on the Google Play Store!
         \n\nJoin our Facebook Group!</string>
+    <string name="helpstep2">Make your desired selections using the provided drop-down menus and hit SUBMIT.</string>
+    <string name="helpstep3">View your results. Hit BACK to change your configuration or HOME to return to the main menu.</string>
+    <string name="helpstep4">For additional information, refer to the menu in the top right corner.</string>
 
     <string-array name="sph_headgroup_array_values">
         <item>"unsubstituted(Ceramide)"</item>

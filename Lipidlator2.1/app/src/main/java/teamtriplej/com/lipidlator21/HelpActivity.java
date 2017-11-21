@@ -2,11 +2,12 @@ package teamtriplej.com.lipidlator21;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class HelpActivity extends AppCompatActivity {
@@ -30,10 +31,18 @@ public class HelpActivity extends AppCompatActivity {
         TextView Title = (TextView) view.findViewById(R.id.actionbar_title);
         Title.setText(title);
         Title.setTextColor(Color.parseColor("#FFFFFF"));
-        Title.setTextSize(36);
+        Title.setTextSize(30);
 
         getSupportActionBar().setCustomView(view,params);
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
+
+        Button back = (Button) findViewById(R.id.backButton);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
