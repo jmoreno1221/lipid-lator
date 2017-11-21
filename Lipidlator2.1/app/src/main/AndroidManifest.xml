@@ -79,8 +79,12 @@
         <activity
             android:name=".Glycerolipids_Result_Activity"
             android:screenOrientation="portrait" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".Contact_Us_Activity"></activity>
+        <activity android:name=".HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Contact_Us_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MoreInfoActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

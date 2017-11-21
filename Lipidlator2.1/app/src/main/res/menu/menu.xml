@@ -13,7 +13,7 @@
         android:title="@string/contactUs"
         app:showAsAction="never" />
     <item
-        android:id="@+id/more_info"
+        android:id="@+id/menu_more_info"
         android:orderInCategory="3"
         android:title="@string/info"
         app:showAsAction="never" />

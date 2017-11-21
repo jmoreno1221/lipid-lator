@@ -163,6 +163,9 @@ public class HomeActivity extends AppCompatActivity {
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);
+        } else if (id == R.id.menu_more_info){
+            Intent intent = new Intent(this, MoreInfoActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

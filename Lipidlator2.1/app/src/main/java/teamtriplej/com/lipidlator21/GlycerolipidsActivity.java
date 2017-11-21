@@ -94,15 +94,24 @@ public class GlycerolipidsActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    // handle button activities
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.menu_about){
+        if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
+            // do something here
+        }else if (id == R.id.menu_help){
+            Intent intent = new Intent(this, HelpActivity.class);
+            startActivity(intent);
+            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
+            startActivity(intent);
+        } else if (id == R.id.menu_more_info){
+            Intent intent = new Intent(this, MoreInfoActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
