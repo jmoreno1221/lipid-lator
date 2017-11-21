@@ -49,7 +49,7 @@ public class Glycerophospholipids_Result_Activity extends AppCompatActivity {
         TextView tvMolarMass_Result= (TextView) findViewById(R.id.tvMolarMass_Result);
         TextView tvFormula_Result= (TextView) findViewById(R.id.tvFormula_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnHome);
+        Button btnHome = (Button) findViewById(R.id.btnBack);
 
         //Bring over all of the additional data that was stored into the intent and
         //set them into new variables on this screen

@@ -8,49 +8,45 @@
     tools:context="teamtriplej.com.lipidlator21.Contact_Us_Activity">
 
     <Button
-        android:id="@+id/btnGotIt"
+        android:id="@+id/btnBack"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/got_it"
+        android:layout_height="93dp"
+        android:text="@string/Back"
         android:textStyle="bold"
         android:textSize="25sp"
         android:background="@color/violet"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="31dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginEnd="80dp" />
 
-    <Button
-        android:id="@+id/btnRateUs"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="31dp"
-        android:layout_marginEnd="80dp"
-        android:background="@color/violet"
-        android:text="@string/rate_us"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/btnGotIt"
-        android:layout_marginStart="40dp" />
-
-    <Button
+    <ImageButton
         android:id="@+id/btnFB"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/fb"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:background="@color/violet"
-        android:textColor="@color/white"
-        android:layout_marginEnd="40dp"
+        android:layout_width="107dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/button_facebook_logo"
+        android:contentDescription="@string/fb_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <ImageButton
+        android:id="@+id/btnRateUs"
+        android:layout_width="107dp"
+        android:layout_height="93dp"
         android:layout_marginBottom="31dp"
-        android:layout_marginStart="8dp" />
+        android:contentDescription="@string/google_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/button_google_play"
+        app:layout_constraintLeft_toRightOf="@+id/btnBack"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintRight_toLeftOf="@+id/btnFB"
+        android:layout_marginRight="12dp"
+        app:layout_constraintHorizontal_bias="0.515" />
 
     <View
         android:layout_width="0dp"
@@ -85,7 +81,7 @@
         android:fadeScrollbars="false"
         android:scrollbarStyle="outsideInset"
         android:scrollbarThumbVertical="@drawable/about_scroll_bar"
-        app:layout_constraintBottom_toTopOf="@+id/btnGotIt"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"

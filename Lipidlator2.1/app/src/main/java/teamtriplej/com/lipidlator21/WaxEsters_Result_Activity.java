@@ -48,7 +48,7 @@ public class WaxEsters_Result_Activity extends AppCompatActivity {
         TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
         TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviationResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnHome);
+        Button btnHome = (Button) findViewById(R.id.btnBack);
         //Bring over the data from previous screen
         int ion = getIntent().getExtras().getInt("ion");
         int alcoholIndex = getIntent().getExtras().getInt("alcoholIndex");

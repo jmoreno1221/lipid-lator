@@ -39,7 +39,7 @@ public class AboutActivity extends AppCompatActivity {
 
 
 
-        Button btnGotIt = (Button) findViewById(R.id.btnGotIt);
+        Button btnGotIt = (Button) findViewById(R.id.btnBack);
 
         btnGotIt.setOnClickListener(new View.OnClickListener(){
            @Override

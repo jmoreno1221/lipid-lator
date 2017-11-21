@@ -8,7 +8,7 @@
     tools:context="teamtriplej.com.lipidlator21.MoreInfoActivity">
 
     <Button
-        android:id="@+id/btnGotIt"
+        android:id="@+id/btnBack"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/got_it"
@@ -56,7 +56,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintBottom_toTopOf="@+id/btnGotIt"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:layout_marginStart="25dp"

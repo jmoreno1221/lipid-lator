@@ -80,6 +80,8 @@
     <string name="paragraph_four">If you need to return to this menu, tap HELP in the top right menu. Also be sure to check out the other tabs as well.</string>
     <string name="menu_screen">Menu Screen</string>
     <string name="logo_for_app">Logo for app</string>
+    <string name="google_content">Google FeedBack</string>
+    <string name="fb_content">FaceBook Group</string>
 
     <string-array name="ion_array">
         <item>[M+H]+</item>

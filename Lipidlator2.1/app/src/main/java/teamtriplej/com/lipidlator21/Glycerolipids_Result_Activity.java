@@ -44,7 +44,7 @@ public class Glycerolipids_Result_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
 
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnHome);
+        Button btnHome = (Button) findViewById(R.id.btnBack);
 
         // TextView
         TextView ionResult = (TextView) findViewById(R.id.tvIonResult);

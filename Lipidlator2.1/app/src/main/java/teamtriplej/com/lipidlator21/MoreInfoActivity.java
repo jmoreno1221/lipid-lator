@@ -39,7 +39,7 @@ public class MoreInfoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
 
-        Button btnGotIt = (Button) findViewById(R.id.btnGotIt);
+        Button btnGotIt = (Button) findViewById(R.id.btnBack);
 
         btnGotIt.setOnClickListener(new View.OnClickListener(){
             @Override

@@ -40,8 +40,7 @@ public class Contact_Us_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
 
-
-        Button btnGotIt = (Button) findViewById(R.id.btnGotIt);
+        Button btnGotIt = (Button) findViewById(R.id.btnBack);
 
         btnGotIt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +49,7 @@ public class Contact_Us_Activity extends AppCompatActivity {
             }
         });
 
-        Button btnRateUs = (Button) findViewById(R.id.btnRateUs);
+        View btnRateUs =  findViewById(R.id.btnRateUs);
 
         btnRateUs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +73,7 @@ public class Contact_Us_Activity extends AppCompatActivity {
             }
         });
 
-        Button btnFB = (Button) findViewById(R.id.btnFB);
+        View btnFB = findViewById(R.id.btnFB);
         btnFB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -50,7 +50,7 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviation_Result);
         TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormula_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnHome);
+        Button btnHome = (Button) findViewById(R.id.btnBack);
 
         int ion = getIntent().getExtras().getInt("ion");
         int index1 = getIntent().getExtras().getInt("spn1Index");

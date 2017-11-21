@@ -49,7 +49,7 @@ public class Sphingolipids_Result_Activity extends AppCompatActivity {
         TextView tvFormula = (TextView) findViewById(R.id.tvFormula_Result);
         TextView tvMolarMass = (TextView) findViewById(R.id.tvMolarMass_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnHome);
+        Button btnHome = (Button) findViewById(R.id.btnBack);
 
         int ion = getIntent().getExtras().getInt("ion");
         int headIndex = getIntent().getExtras().getInt("headIndex");

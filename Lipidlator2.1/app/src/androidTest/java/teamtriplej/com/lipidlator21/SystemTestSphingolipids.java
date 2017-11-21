@@ -54,8 +54,8 @@ public class SystemTestSphingolipids {
         mhomeActivity.findViewById(R.id.btnSubmit);
         onView(withId(R.id.btnSubmit)).perform(click());
         assertNotNull(Sphingolipids_Result);
-        mhomeActivity.findViewById(R.id.btnHome);
-        onView(withId(R.id.btnHome)).perform(click());
+        mhomeActivity.findViewById(R.id.btnBack);
+        onView(withId(R.id.btnBack)).perform(click());
         assertNotNull(mhomeActivity);
     }
 
