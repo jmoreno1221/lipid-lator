@@ -86,11 +86,9 @@ public class WaxEstersActivity extends AppCompatActivity {
         if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_help){
             Intent intent = new Intent(this, HelpActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);

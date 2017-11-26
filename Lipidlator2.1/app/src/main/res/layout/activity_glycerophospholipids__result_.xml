@@ -33,7 +33,7 @@
             app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnHome"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:textSize="24sp"

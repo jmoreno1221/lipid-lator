@@ -21,7 +21,6 @@ public class AboutActivity extends AppCompatActivity {
         if (bar != null) {
             bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
         }
-
         View view = getLayoutInflater().inflate(R.layout.action_bar, null);
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(
                 ActionBar.LayoutParams.WRAP_CONTENT,
@@ -36,8 +35,6 @@ public class AboutActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(view,params);
         getSupportActionBar().setDisplayShowCustomEnabled(true); //show custom title
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
-
-
 
         Button btnGotIt = (Button) findViewById(R.id.btnBack);
 

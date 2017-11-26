@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 
 public class CholesterylEsters_Result_Activity extends AppCompatActivity {
     public String title = "Lipid-Lator";
@@ -41,7 +43,7 @@ public class CholesterylEsters_Result_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
 
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnBack);
+        Button btnHome = (Button) findViewById(R.id.btnHome);
 
         TextView ionResult = (TextView) findViewById(R.id.tvIonResult);
         TextView acylResult = (TextView) findViewById(R.id.tvAcylChainResult);
@@ -60,7 +62,7 @@ public class CholesterylEsters_Result_Activity extends AppCompatActivity {
         String formula = calc.calculateFormula(calc.getNumC(), calc.getNumH(), calc.getNumO(), calc.getNumN(),
                 calc.getNumAg(), calc.getNumLi(), calc.getNumNa(), calc.getNumK(), calc.getNumCl(),
                 calc.getNumP(), calc.getNumS(), calc.getNumF());
-        molarMassResult.setText(Double.toString(molarMass));
+        molarMassResult.setText(String.format(Locale.ENGLISH,"%.4f",molarMass));
         formulaResult.setText(formula);
         ionResult.setText(ionSelected);
         acylResult.setText(acylSelected);
@@ -100,11 +102,9 @@ public class CholesterylEsters_Result_Activity extends AppCompatActivity {
         if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_help){
             Intent intent = new Intent(this, HelpActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);

@@ -42,7 +42,6 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-
         //Create an instance of each of the interactive things on our screen
         //for example in this case we have 2 buttons and 5 textviews
         TextView tvMolarMassResult = (TextView) findViewById(R.id.tvMolarMassResult);
@@ -52,7 +51,7 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         TextView tvIonSelected = (TextView) findViewById(R.id.tvIonResult);
         TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviationResult);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnBack);
+        Button btnHome = (Button) findViewById(R.id.btnHome);
         //Bring over all of the additional data that was stored into the intent and
         //set them into new variables on this screen
         int ionIndex = getIntent().getExtras().getInt("ionIndex");
@@ -112,11 +111,9 @@ public class FattyAcids_Result_Activity extends AppCompatActivity {
         if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_help){
             Intent intent = new Intent(this, HelpActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);

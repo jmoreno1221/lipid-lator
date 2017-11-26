@@ -50,7 +50,7 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         TextView tvAbbreviation = (TextView) findViewById(R.id.tvAbbreviation_Result);
         TextView tvFormulaResult = (TextView) findViewById(R.id.tvFormula_Result);
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnBack);
+        Button btnHome = (Button) findViewById(R.id.btnHome);
 
         int ion = getIntent().getExtras().getInt("ion");
         int index1 = getIntent().getExtras().getInt("spn1Index");
@@ -77,7 +77,7 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         tvSpn3Result.setText(spn3selected);
         tvSpn4Result.setText(spn4selected);
         tvAbbreviation.setText("CL(" + spn1selected + "/" + spn2selected + "/" + spn3selected
-        + "/" + spn4selected + ")");
+                + "/" + spn4selected + ")");
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -112,11 +112,9 @@ public class Cardiolipins_Result_Activity extends AppCompatActivity {
         if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_help){
             Intent intent = new Intent(this, HelpActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);

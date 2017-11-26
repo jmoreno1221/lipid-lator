@@ -42,7 +42,7 @@ public class CoA_Esters_Result_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false); //hide the default title
 
         Button btnBack = (Button) findViewById(R.id.btnBack);
-        Button btnHome = (Button) findViewById(R.id.btnBack);
+        Button btnHome = (Button) findViewById(R.id.btnHome);
 
         TextView ionResult = (TextView) findViewById(R.id.tvIonResult);
         TextView acylResult = (TextView) findViewById(R.id.tvAcylChainResult);
@@ -100,11 +100,9 @@ public class CoA_Esters_Result_Activity extends AppCompatActivity {
         if (id == R.id.menu_about) {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_help){
             Intent intent = new Intent(this, HelpActivity.class);
             startActivity(intent);
-            // do something here
         }else if (id == R.id.menu_contact_us) {
             Intent intent = new Intent(this, Contact_Us_Activity.class);
             startActivity(intent);

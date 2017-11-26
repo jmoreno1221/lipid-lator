@@ -35,7 +35,7 @@
 
         <!-- HOME BUTTON -->
         <Button
-            android:id="@+id/btnBack"
+            android:id="@+id/btnHome"
             android:layout_width="0dp"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_height="wrap_content"
