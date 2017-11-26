@@ -54,22 +54,8 @@ public class Contact_Us_Activity extends AppCompatActivity {
         btnRateUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String YourPageURL = "https://www.facebook.com/groups/1464257160356520/";
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YourPageURL));
-//
-//                startActivity(browserIntent);
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en")));
 
-//                try {
-//                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
-//                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-//                    startActivity(goToMarket);
-//                } catch (ActivityNotFoundException e) {
-//                    startActivity(new Intent(Intent.ACTION_VIEW,
-//                          //  Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName()
-//                            Uri.parse( "https://play.google.com/store/apps?hl=en" + getPackageName()
-//                            )));
-//                }
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=teamtriplej.com.lipidlator21&hl=en")));
             }
         });
 
