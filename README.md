@@ -3,7 +3,7 @@
 
 Team Triple J consists of members: Jessica Sok, Joseph Tsegaye, and Jose Moreno. Client, Dr. Jon Rees, a part-time chemistry professor at Georgia Gwinnett College (GGC) and a full-time employee at the CDC, requested Team Triple J to build him an android application that would allow him to calculate the mass of lipid ions offline.
 
-![LipidLatorFlyer](Flyer/LipidLatorFlyer.png)
+<center>![LipidLatorFlyer](Flyer/LipidLatorFlyer.png)</center>
 
 ## 1. Team & Project Name 
 
