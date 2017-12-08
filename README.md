@@ -54,3 +54,8 @@ _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Conventi
 
 ### Links to Our Coding Convention:
 _<a href="https://github.com/soft-eng-practicum/lipid-lator/blob/master/Convention/NamingConventionExample.PNG" target="_blank">Coding Convention Example</a>_
+
+## 7. Documentation
+
+- _[Installation Document](https://github.com/soft-eng-practicum/lipid-lator/blob/master/Doumentation/LL_InstallationDocument.pdf)_
+- _[User Documentation](https://github.com/soft-eng-practicum/lipid-lator/blob/master/Doumentation/LL_UserDocumention.pdf)_
